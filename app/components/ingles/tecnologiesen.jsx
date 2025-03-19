@@ -3,7 +3,7 @@ import Image from 'next/image';
 const TecnologiasEN = () => {
   return (
     <div className="lenguajes">
-        <h2>TECNOLOGIES</h2>
+        <h2>TECHNOLOGIES</h2>
 
         <div className="grid-containertec">
           <div className="grid-itemtec">
