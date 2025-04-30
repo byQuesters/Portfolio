@@ -10,16 +10,20 @@ const TecnologiasEN = () => {
             <h2>Frontend</h2>
              <div className="tecnologias">
               <div className="image-with-text">
-                <Image src="https://cdn-icons-png.flaticon.com/512/732/732212.png" width={200} height={200} alt="" />
-                <p>HTML</p>
+              <Image src="/icons/html5.png" width={200} height={200} alt="HTML5" />                
+              <p>HTML</p>
               </div>
               <div className="image-with-text">
-                <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/2048px-CSS3_logo.svg.png" width={200} height={200} alt="" />
-                <p>CSS</p>
+              <Image src="/icons/css3.png" width={200} height={200} alt="HTML5" />                
+              <p>CSS</p>
               </div>
               <div className="image-with-text">
-                <Image src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" width={200} height={200} alt="" />
+                <Image src="/icons/js.png" width={200} height={200} alt="HTML5" />                
                 <p>JavaScript</p>
+              </div>
+              <div className="image-with-text">
+                <Image src="/icons/reactn.png" width={200} height={200} alt="HTML5" />                
+                <p>React</p>
               </div>
             </div>
           </div>
@@ -27,24 +31,24 @@ const TecnologiasEN = () => {
             <h2>Backend</h2>
             <div className="tecnologias">
               <div className="image-with-text">
-                <Image src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_prisma_icon_130234.png" width={200} height={200} alt="" />
-                <p>Prisma</p>
+              <Image src="/icons/prisma.png" width={200} height={200} alt="HTML5" />                
+              <p>Prisma</p>
               </div>
               <div className="image-with-text">
-                <Image src="https://cdn-icons-png.flaticon.com/512/5968/5968332.png" width={300} height={300} alt="" />
-                <p>PHP</p>
+              <Image src="/icons/php.png" width={200} height={200} alt="HTML5" />                
+              <p>PHP</p>
               </div>
               <div className="image-with-text">
-                <Image src="https://static-00.iconduck.com/assets.00/next-js-icon-512x512-zuauazrk.png" width={200} height={200} alt="" />
-                <p>NextJS</p>
+              <Image src="/icons/nextjs.png" width={200} height={200} alt="HTML5" />                
+              <p>NextJS</p>
               </div>
               <div className="image-with-text">
-                <Image src="https://cdn-icons-png.flaticon.com/512/5968/5968313.png" width={200} height={200} alt="" />
-                <p>MySQL</p>
+              <Image src="/icons/mysql.png" width={200} height={200} alt="HTML5" />                
+              <p>MySQL</p>
               </div>
               <div className="image-with-text">
-                <Image src="https://cdn.iconscout.com/icon/free/png-256/free-node-js-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-company-brand-vol-5-pack-logos-icons-2945054.png?f=webp&w=256" width={200} height={200} alt="" />
-                <p>NodeJS</p>
+              <Image src="/icons/nodejs.png" width={200} height={200} alt="HTML5" />                
+              <p>NodeJS</p>
               </div>
             </div>
 
@@ -53,12 +57,12 @@ const TecnologiasEN = () => {
             <h2>Extra</h2>
             <div className="tecnologias">
               <div className="image-with-text">
-                <Image src="https://cdn4.iconfinder.com/data/icons/logos-3/504/Swift-2-512.png" width={200} height={200} alt="" />
-                <p>Swift</p>
+              <Image src="/icons/swift.png" width={200} height={200} alt="HTML5" />                
+              <p>Swift</p>
               </div>
               <div className="image-with-text">
-                <Image src="https://cdn.iconscout.com/icon/free/png-256/free-python-3521655-2945099.png?f=webp" width={200} height={200} alt="" />
-                <p>Python</p>
+              <Image src="/icons/python.png" width={200} height={200} alt="HTML5" />                
+              <p>Python</p>
               </div>
             </div>
 
@@ -67,24 +71,24 @@ const TecnologiasEN = () => {
             <h2>Tools</h2>
             <div className="tecnologias">
               <div className="image-with-text">
-                <Image src="https://upload.wikimedia.org/wikipedia/commons/3/31/ITerm2_v3.4_icon.png" width={200} height={200} alt="" />
-                <p>Terminal</p>
+              <Image src="/icons/terminal.png" width={200} height={200} alt="HTML5" />                
+              <p>Terminal</p>
               </div>
               <div className="image-with-text">
-                <Image src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/visual-studio-code-icon.png" width={200} height={200} alt="" />
-                <p>VS Code</p>
+              <Image src="/icons/vscode.png" width={200} height={200} alt="HTML5" />                
+              <p>VS Code</p>
               </div>
               <div className="image-with-text">
-                <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png" width={200} height={200} alt="" />
-                <p>Git</p>
+              <Image src="/icons/git.png" width={200} height={200} alt="HTML5" />                
+              <p>Git</p>
               </div>
               <div className="image-with-text">
-                <Image src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width={200} height={200} alt="" />
-                <p>GitHub</p>
+              <Image src="/icons/github.png" width={200} height={200} alt="HTML5" />                
+              <p>GitHub</p>
               </div>
               <div className="image-with-text">
-                <Image src="https://img.icons8.com/color/200/npm.png" width={200} height={200} alt="" />
-                <p>npm</p>
+              <Image src="/icons/npm.png" width={200} height={200} alt="HTML5" />                
+              <p>npm</p>
               </div>
             </div>
           </div>

@@ -8,8 +8,10 @@ import HyH1 from '../../images/HarmonyAndHeavenL.jpg';
 import PEE from '../../images/PickEm.jpg';
 import PEE1 from '../../images/PickEm1.jpg';
 import PEE2 from '../../images/PickEm2.jpg';
-import BB from '../../images/BB1.jpg';
-import BB1 from "../../images/BB2.jpeg";
+import StJ1 from '../../images/StJ1.png';
+import StJ2 from '../../images/StJ2.png';
+import StJ3 from '../../images/StJ3.png';
+import StJ4 from '../../images/StJ4.png';
 import CR from '../../images/CR.png';
 import CR1 from '../../images/CR1.png';
 import CR2 from '../../images/CR2.png';
@@ -62,11 +64,11 @@ const ProyectosEN = () => {
             <h4>Website for scheduling appointments and managing the schedule of a barbershop</h4>
           </div>
           <div className="lenguajesprj">
-            <Image src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" width={200} height={200} alt="" />
-            <Image src="https://static-00.iconduck.com/assets.00/next-js-icon-512x512-zuauazrk.png" width={200} height={200} alt="" />
-            <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/2048px-CSS3_logo.svg.png" width={200} height={200} alt="" />
-            <Image src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_prisma_icon_130234.png" width={200} height={200} alt="" />
-            <Image src="https://cdn.iconscout.com/icon/free/png-256/free-node-js-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-company-brand-vol-5-pack-logos-icons-2945054.png?f=webp&w=256" width={200} height={200} alt="" />
+            <Image src="/icons/js.png" width={200} height={200} alt="" />
+            <Image src="/icons/nextjs.png" width={200} height={200} alt="" />
+            <Image src="/icons/css3.png" width={200} height={200} alt="" />
+            <Image src="/icons/prisma.png" width={200} height={200} alt="" />
+            <Image src="/icons/nodejs.png" width={200} height={200} alt="" />
           </div>
           <br />
           <div className="github">
@@ -84,11 +86,11 @@ const ProyectosEN = () => {
             <h4>Social Network for Photographers</h4>
           </div>
           <div className="lenguajesprj">
-            <Image src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" width={200} height={200} alt="" />
-            <Image src="https://static-00.iconduck.com/assets.00/next-js-icon-512x512-zuauazrk.png" width={200} height={200} alt="" />
-            <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/2048px-CSS3_logo.svg.png" width={200} height={200} alt="" />
-            <Image src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_prisma_icon_130234.png" width={200} height={200} alt="" />
-            <Image src="https://cdn.iconscout.com/icon/free/png-256/free-node-js-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-company-brand-vol-5-pack-logos-icons-2945054.png?f=webp&w=256" width={200} height={200} alt="" />
+            <Image src="/icons/js.png" width={200} height={200} alt="" />
+            <Image src="/icons/nextjs.png" width={200} height={200} alt="" />
+            <Image src="/icons/css3.png" width={200} height={200} alt="" />
+            <Image src="/icons/prisma.png" width={200} height={200} alt="" />
+            <Image src="/icons/nodejs.png" width={200} height={200} alt="" />
           </div>
           <div className="categorie" style={{ color: 'yellow' }}>In development</div>
           <br />
@@ -134,18 +136,18 @@ const ProyectosEN = () => {
         </button>
 
         <button className="container-project" onClick={() => openModalForProject("BugB")}>
-          <div className="nameprj">BuggBlock</div>
+          <div className="nameprj">St. John's Gym</div>
           <div className="categorie">Group</div>
           <div className="photoprj">
-            <Image src={BB} alt="" width={"auto"} height={"auto"} />
+            <Image src={StJ1} alt="" width={"auto"} height={"auto"} />
           </div>
           <div className="descriptionprj">
-            <h4>Web Computer blog focused on technology and computers, users can make new posts and the admin can delete them</h4>
+            <h4>Web Computer blog focused on Gym</h4>
           </div>
           <div className="lenguajesprj">
-            <Image src="https://cdn-icons-png.flaticon.com/512/5968/5968332.png" width={200} height={200} alt="" />
-            <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/2048px-CSS3_logo.svg.png" width={200} height={200} alt="" />
-            <Image src="https://cdn-icons-png.flaticon.com/512/5968/5968313.png" width={40} height={40} alt="" />
+            <Image src="/icons/nextjs.png" width={200} height={200} alt="" />
+            <Image src="/icons/css3.png" width={200} height={200} alt="" />
+            <Image src="/icons/js.png" width={40} height={40} alt="" />
           </div>
           <div className="github">
             <i class="bi bi-eye-fill"></i>See project

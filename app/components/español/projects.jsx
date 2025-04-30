@@ -7,8 +7,10 @@ import HyH1 from '../../images/HarmonyAndHeavenL.jpg';
 import PEE from '../../images/PickEm.jpg';
 import PEE1 from '../../images/PickEm1.jpg';
 import PEE2 from '../../images/PickEm2.jpg';
-import BB from '../../images/BB1.jpg';
-import BB1 from "../../images/BB2.jpeg";
+import StJ1 from '../../images/StJ1.png';
+import StJ2 from '../../images/StJ2.png';
+import StJ3 from '../../images/StJ3.png';
+import StJ4 from '../../images/StJ4.png';
 import CR from '../../images/CR.png';
 import CR1 from '../../images/CR1.png';
 import CR2 from '../../images/CR2.png';
@@ -19,6 +21,18 @@ import SMMain from "../../images/SMMain.png"
 import SMDb from "../../images/SMDb.png"
 import SMLg from "../../images/SMLg.png"
 import SM from "../../images/SM.png"
+import Spk1 from "../../images/Spk1.jpeg"
+import Spk2 from "../../images/Spk2.jpeg"
+import Spk3 from "../../images/Spk3.jpeg"
+import Spk4 from "../../images/Spk4.jpeg"
+import Spk5 from "../../images/Spk5.jpeg"
+import Spk6 from "../../images/Spk6.jpeg"
+import Spk7 from "../../images/Spk7.jpeg"
+import Spk8 from "../../images/Spk8.jpeg"
+import Spk9 from "../../images/Spk9.jpeg"
+import Spk10 from "../../images/Spk10.jpeg"
+import Spk11 from "../../images/Spk11.jpeg"
+import Spk12 from "../../images/Spk12.jpeg"
 
 
 import "../../css/modal.css";
@@ -68,6 +82,23 @@ const Proyectos = () => {
           <Image src="/icons/nodejs.png" width={200} height={200} alt="" />
           </div>
           <br />
+          <div className="github">
+            <i className="bi bi-eye-fill"></i>Ver proyecto
+          </div>
+        </button>
+
+        <button className="container-project" onClick={() => openModalForProject("Spike")}>
+          <div className="nameprj">Spike - Cuidado de Mascotas</div>
+          <div className="categorie">Grupal</div>
+          <div className="photoprj">
+            <Image src={Spk12} alt="" width={"auto"} height={"auto"} />
+          </div>
+          <div className="descriptionprj">
+            <h4>Aplicación movil para gestión de citas y servicios veterinarios de forma centralizada.</h4>
+          </div>
+          <div className="lenguajesprj">
+          <Image src="/icons/reactn.png" width={200} height={200} alt="" />
+          </div>
           <div className="github">
             <i className="bi bi-eye-fill"></i>Ver proyecto
           </div>
@@ -133,13 +164,13 @@ const Proyectos = () => {
         </button>
 
         <button className="container-project" onClick={() => openModalForProject("BugB")}>
-          <div className="nameprj">BuggBlock</div>
+          <div className="nameprj">Gimnasio St. John's</div>
           <div className="categorie">Grupal</div>
           <div className="photoprj">
-            <Image src={BB} alt="" width={"auto"} height={"auto"} />
+            <Image src={StJ1} alt="" width={"auto"} height={"auto"} />
           </div>
           <div className="descriptionprj">
-            <h4>Web Blog informatico enfocado a la tecnologia y computadoras, los usuarios pueden hacer nuevas publicaciones y el admin borrarlas</h4>
+            <h4>Pagina web landing page responsiva para un gimnasio.</h4>
           </div>
           <div className="lenguajesprj">
           <Image src="/icons/php.png" width={200} height={200} alt="" />
@@ -215,6 +246,43 @@ const Proyectos = () => {
                 <a href="https://github.com/byquesters/ControlOfBarberShop"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>Ver en GitHub</a>
               </button>
             </div>
+          </div>
+        </div>
+      )}
+
+{modalOpen && selectedProject === "Spike" && (
+        <div className='modalprj1' onClick={closeModal}>
+          <div className='modalcontent1' onClick={(e) => e.stopPropagation()}>
+
+            <button className="close-modal" onClick={closeModal}>
+              <X size={24} />
+            </button>
+
+            <div className="nameprj1">Spike</div>
+            <div className="categorie1">Grupal</div>
+            <div className="lenguajesprj1">
+            <Image src="/icons/reactn.png" width={200} height={200} alt="" />
+            </div>
+            <div className="photoprj1">
+              <Image src={Spk1} alt="" width={"auto"} height={"auto"} />
+            </div>
+
+            <div className="descriptionprj1">
+              <h4>Tienda de instrumentos con CRUD - Inventario y Punto de venta.</h4>
+            </div>
+            <div className='descriptionprj2'>
+              <p>Harmony &amp; Heaven se desarrollo como un inventario para una tienda de instrumentos donde se registrarán los productos con &quot;unidades a la venta&quot;, &quot;precio del producto&quot; y &quot;categoria&quot;, ademas se creo el punto de venta para el cliente donde podra añadir al carrito cualquier producto disponible de la tienda.</p>
+              <p>En el apartado de Vendedor, Harmony &amp; Heaven cuenta con un motor de busqueda y filtrado de los datos para facilitar la recoleccion de productos, tambien cuenta con un gestor de pedidos al Provedor de productos donde se registraran cuando se soliciten y cuando se reciban para estar en stock añadiendose automaticamente las cantidades recibidas en el inventario, asi como un dashboard para ver resumenes de ventas, empleados y demas cosas.</p>
+              <p>Los productos se pueden editar o eliminar de ser necesario.</p>
+
+              <p>En el apartado de cliente &quot;Punto de venta&quot;, el cliente podra unicamente ver los productos en stock y añadirlos al carrito para su compra, el precio total por los productos a comprar se mostrara siempre hasta realizar la compra.</p>
+            </div>
+            <div className="photoprj1">
+              <Image src={Spk2} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <button className='btngithublink'>
+              <a href="https://github.com/byquesters/Pet-Care.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>Ver en GitHub</a>
+            </button>
           </div>
         </div>
       )}

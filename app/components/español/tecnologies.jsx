@@ -21,6 +21,10 @@ const Tecnologias = () => {
                 <Image src="/icons/js.png" width={200} height={200} alt="" />
                 <p>JavaScript</p>
               </div>
+              <div className="image-with-text">
+                <Image src="/icons/reactn.png" width={200} height={200} alt="HTML5" />                
+                <p>React</p>
+              </div>
             </div>
           </div>
           <div className="grid-itemtec">
