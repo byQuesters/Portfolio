@@ -60,11 +60,11 @@ const Proyectos = () => {
             <h4>Website for scheduling appointments and managing the schedule of a barbershop</h4>
           </div>
           <div className="lenguajesprj">
-            <Image src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" width={200} height={200} alt="" />
-            <Image src="https://static-00.iconduck.com/assets.00/next-js-icon-512x512-zuauazrk.png" width={200} height={200} alt="" />
-            <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/2048px-CSS3_logo.svg.png" width={200} height={200} alt="" />
-            <Image src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_prisma_icon_130234.png" width={200} height={200} alt="" />
-            <Image src="https://cdn.iconscout.com/icon/free/png-256/free-node-js-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-company-brand-vol-5-pack-logos-icons-2945054.png?f=webp&w=256" width={200} height={200} alt="" />
+            <Image src="/icons/js.png" width={200} height={200} alt="" />
+            <Image src="/icons/nextjs.png" width={200} height={200} alt="" />
+            <Image src="/icons/css3.png" width={200} height={200} alt="" />
+            <Image src="/icons/prisma.png" width={200} height={200} alt="" />
+            <Image src="/icons/nodejs.png" width={200} height={200} alt="" />
           </div>
           <br />
           <div className="github">
@@ -82,10 +82,10 @@ const Proyectos = () => {
             <h4>Social Network for Photographers</h4>
           </div>
           <div className="lenguajesprj">
-              <Image src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" width={200} height={200} alt="" />
-              <Image src="https://static-00.iconduck.com/assets.00/next-js-icon-512x512-zuauazrk.png" width={200} height={200} alt="" />
-              <Image src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_prisma_icon_130234.png" width={200} height={200} alt="" />
-              <Image src="https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png" width={200} height={200} alt="" />
+            <Image src="/icons/js.png" width={200} height={200} alt="" />
+            <Image src="/icons/nextjs.png" width={200} height={200} alt="" />
+            <Image src="/icons/prisma.png" width={200} height={200} alt="" />
+            <Image src="/icons/nodejs.png" width={200} height={200} alt="" />
           </div>
           <div className="categorie" style={{ color: 'yellow' }}>In development</div>
           <br />
@@ -104,7 +104,7 @@ const Proyectos = () => {
             <h4>Notes application for iOS</h4>
           </div>
           <div className="lenguajesprj">
-            <Image src="https://cdn4.iconfinder.com/data/icons/logos-3/504/Swift-2-512.png" width={200} height={200} alt="" />
+          <Image src="/icons/swift.png" width={200} height={200} alt="" />
           </div>
           <div className="github">
             <i className="bi bi-eye-fill"></i>View project
@@ -121,7 +121,7 @@ const Proyectos = () => {
               <h4>Car recognition in videos with Python</h4>
             </div>
             <div className="lenguajesprj">
-              <Image src="https://cdn.iconscout.com/icon/free/png-256/free-python-3521655-2945099.png?f=webp" width={200} height={200} alt="" />
+            <Image src="/icons/python.png" width={200} height={200} alt="" />
             </div>
             <div className="github">
               <i className="bi bi-eye-fill"></i>View project
@@ -138,7 +138,7 @@ const Proyectos = () => {
             <h4>Digit recognition program drawn by the user</h4>
           </div>
           <div className="lenguajesprj">
-            <Image src="https://cdn.iconscout.com/icon/free/png-256/free-python-3521655-2945099.png?f=webp" width={200} height={200} alt="" />
+          <Image src="/icons/python.png" width={200} height={200} alt="" />
           </div>
           <div className="github">
             <i className="bi bi-eye-fill"></i>View project
@@ -159,11 +159,11 @@ const Proyectos = () => {
             <div className="nameprj1">Appointment Manager for Barbershop</div>
             <div className="categorie1">Personal</div>
             <div className="lenguajesprj1">
-              <Image src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" width={200} height={200} alt="" />
-              <Image src="https://static-00.iconduck.com/assets.00/next-js-icon-512x512-zuauazrk.png" width={200} height={200} alt="" />
-              <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/2048px-CSS3_logo.svg.png" width={200} height={200} alt="" />
-              <Image src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_prisma_icon_130234.png" width={200} height={200} alt="" />
-              <Image src="https://cdn.iconscout.com/icon/free/png-256/free-node-js-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-company-brand-vol-5-pack-logos-icons-2945054.png?f=webp&w=256" width={200} height={200} alt="" />
+            <Image src="/icons/js.png" width={200} height={200} alt="" />
+            <Image src="/icons/nextjs.png" width={200} height={200} alt="" />
+            <Image src="/icons/css3.png" width={200} height={200} alt="" />
+            <Image src="/icons/prisma.png" width={200} height={200} alt="" />
+            <Image src="/icons/nodejs.png" width={200} height={200} alt="" />
             </div>
             <div className="descriptionprj1">
               <h4>Public web application for people to schedule appointments at a barbershop.</h4>
@@ -190,7 +190,7 @@ const Proyectos = () => {
             </div>
             <div>
               <button className='btngithublink'>
-                <a href="https://github.com/AmbrizAlberto/ControlOfBarberShop"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>View on GitHub</a>
+                <a href="https://github.com/byquesters/ControlOfBarberShop"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>View on GitHub</a>
               </button>
             </div>
           </div>
@@ -209,10 +209,10 @@ const Proyectos = () => {
             <div className="nameprj1">Pixels</div>
             <div className="categorie1">Personal</div>
             <div className="lenguajesprj1">
-              <Image src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" width={200} height={200} alt="" />
-              <Image src="https://seekicon.com/free-icon-download/next-js_1.png" width={200} height={200} alt="" />
-              <Image src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3254224/prisma-icon-md.png" width={200} height={200} alt="" />
-              <Image src="https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png" width={200} height={200} alt="" />
+            <Image src="/icons/js.png" width={200} height={200} alt="" />
+            <Image src="/icons/nextjs.png" width={200} height={200} alt="" />
+            <Image src="/icons/prisma.png" width={200} height={200} alt="" />
+            <Image src="/icons/nodejs.png" width={200} height={200} alt="" />
             </div>
             <div className="photoprj1">
               <Image src={PX1} alt="" width={"auto"} height={"auto"} />
@@ -239,7 +239,7 @@ const Proyectos = () => {
             </div>
             <div>
               <button className='btngithublink'>
-                <a href="https://github.com/AmbrizAlberto/Car-Recognition.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>View on GitHub</a>
+                <a href="https://github.com/byquesters/Car-Recognition.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>View on GitHub</a>
               </button>
             </div>
           </div>
@@ -257,7 +257,7 @@ const Proyectos = () => {
             <div className="nameprj1">Car Recognition</div>
             <div className="categorie1">Personal</div>
             <div className="lenguajesprj1">
-                <Image src="https://cdn.iconscout.com/icon/free/png-256/free-python-3521655-2945099.png?f=webp" width={200} height={200} alt="" />
+            <Image src="/icons/python.png" width={200} height={200} alt="" />
             </div>
             <div className="photoprj1">
               <Image src={CR1} alt="" width={"auto"} height={"auto"} />
@@ -275,7 +275,7 @@ const Proyectos = () => {
               <Image src={CR2} alt="" width={"auto"} height={"auto"} />
             </div>
             <button className='btngithublink'>
-              <a href="https://github.com/AmbrizAlberto/Car-Recognition.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>View on GitHub</a>
+              <a href="https://github.com/byquesters/Car-Recognition.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>View on GitHub</a>
             </button>
           </div>
         </div>
@@ -292,7 +292,7 @@ const Proyectos = () => {
             <div className="nameprj1">Notes APP</div>
             <div className="categorie1">Personal</div>
             <div className="lenguajesprj1">
-                <Image src="https://cdn4.iconfinder.com/data/icons/logos-3/504/Swift-2-512.png" width={200} height={200} alt="" />
+            <Image src="/icons/swift.png" width={200} height={200} alt="" />
             </div>
             <div className="photoprj1">
               <Image src={Nte} alt="" width={"auto"} height={"auto"} />
@@ -321,7 +321,7 @@ const Proyectos = () => {
               </p>
             </div>
             <button className='btngithublink'> 
-              <a href="https://github.com/AmbrizAlberto/NotesAPP-SwiftUI.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>View on GitHub</a>
+              <a href="https://github.com/byquesters/NotesAPP-SwiftUI.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>View on GitHub</a>
             </button>
 
           </div>
@@ -339,7 +339,7 @@ const Proyectos = () => {
             <div className="nameprj1">Number Recognition</div>
             <div className="categorie1">Personal</div>
             <div className="lenguajesprj1">
-              <Image src="https://cdn.iconscout.com/icon/free/png-256/free-python-3521655-2945099.png?f=webp" width={200} height={200} alt="" />
+            <Image src="/icons/python.png" width={200} height={200} alt="" />
             </div>
             <div className="descriptionprj1">
               <h4>SubTitle Soon...</h4>
@@ -353,7 +353,7 @@ const Proyectos = () => {
               Soon...
             </div>
             <button className='btngithublink'> 
-              <a href="https://github.com/AmbrizAlberto/Drawn-Digits-Recognition-1.0/tree/master/Reconocimiento%20de%20numero"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>View on GitHub</a>
+              <a href="https://github.com/byquesters/Drawn-Digits-Recognition-1.0/tree/master/Reconocimiento%20de%20numero"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>View on GitHub</a>
             </button>
 
           </div>

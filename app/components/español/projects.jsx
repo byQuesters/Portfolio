@@ -61,11 +61,11 @@ const Proyectos = () => {
             <h4>Pagina web para agendar citas y gestionar horario de una barberia</h4>
           </div>
           <div className="lenguajesprj">
-            <Image src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" width={200} height={200} alt="" />
-            <Image src="https://camo.githubusercontent.com/57849c6a718458e32ed51527a073b72d8f1737ee515ab6f80d5a9107a485f40c/68747470733a2f2f7777772e6461746f636d732d6173736574732e636f6d2f37353934312f313635373730373837382d6e6578746a735f6c6f676f2e706e67" width={200} height={200} alt="" />
-            <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/2048px-CSS3_logo.svg.png" width={200} height={200} alt="" />
-            <Image src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_prisma_icon_130234.png" width={200} height={200} alt="" />
-            <Image src="https://cdn.iconscout.com/icon/free/png-256/free-node-js-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-company-brand-vol-5-pack-logos-icons-2945054.png?f=webp&w=256" width={200} height={200} alt="" />
+          <Image src="/icons/js.png" width={200} height={200} alt="" />
+          <Image src="/icons/nextjs.png" width={200} height={200} alt="" />
+          <Image src="/icons/css3.png" width={200} height={200} alt="" />
+          <Image src="/icons/prisma.png" width={200} height={200} alt="" />
+          <Image src="/icons/nodejs.png" width={200} height={200} alt="" />
           </div>
           <br />
           <div className="github">
@@ -83,11 +83,11 @@ const Proyectos = () => {
             <h4>Red Social para Fotografos</h4>
           </div>
           <div className="lenguajesprj">
-            <Image src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" width={200} height={200} alt="" />
-            <Image src="https://camo.githubusercontent.com/57849c6a718458e32ed51527a073b72d8f1737ee515ab6f80d5a9107a485f40c/68747470733a2f2f7777772e6461746f636d732d6173736574732e636f6d2f37353934312f313635373730373837382d6e6578746a735f6c6f676f2e706e67" width={200} height={200} alt="" />
-            <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/2048px-CSS3_logo.svg.png" width={200} height={200} alt="" />
-            <Image src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_prisma_icon_130234.png" width={200} height={200} alt="" />
-            <Image src="https://cdn.iconscout.com/icon/free/png-256/free-node-js-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-company-brand-vol-5-pack-logos-icons-2945054.png?f=webp&w=256" width={200} height={200} alt="" />
+          <Image src="/icons/js.png" width={200} height={200} alt="" />
+          <Image src="/icons/nextjs.png" width={200} height={200} alt="" />
+          <Image src="/icons/css3.png" width={200} height={200} alt="" />
+          <Image src="/icons/prisma.png" width={200} height={200} alt="" />
+          <Image src="/icons/nodejs.png" width={200} height={200} alt="" />
           </div>
           <div className="categorie" style={{ color: 'yellow' }}>En desarrollo</div>
           <br />
@@ -106,9 +106,9 @@ const Proyectos = () => {
               <h4>Tienda de instrumentos con CRUD - Inventario y Punto de venta.</h4>
             </div>
             <div className="lenguajesprj">
-              <Image src="https://cdn.iconscout.com/icon/free/png-256/free-node-js-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-company-brand-vol-5-pack-logos-icons-2945054.png?f=webp&w=256" width={40} height={40} alt="" />
-              <Image src="https://cdn-icons-png.flaticon.com/512/5968/5968313.png" width={40} height={40} alt="" />
-              <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/2048px-CSS3_logo.svg.png" width={200} height={200} alt="" />
+            <Image src="/icons/nodejs.png" width={200} height={200} alt="" />
+            <Image src="/icons/mysql.png" width={200} height={200} alt="" />
+            <Image src="/icons/css3.png" width={200} height={200} alt="" />
             </div>
             <div className="github">
               <i className="bi bi-eye-fill"></i>Ver proyecto
@@ -125,7 +125,7 @@ const Proyectos = () => {
             <h4>Videojuego desarrollado con la libreria Pygame de Python</h4>
           </div>
           <div className="lenguajesprj">
-            <Image src="https://cdn.iconscout.com/icon/free/png-256/free-python-3521655-2945099.png?f=webp" width={200} height={200} alt="" />
+          <Image src="/icons/python.png" width={200} height={200} alt="" />
           </div>
           <div className="github">
             <i className="bi bi-eye-fill"></i>Ver proyecto
@@ -142,9 +142,9 @@ const Proyectos = () => {
             <h4>Web Blog informatico enfocado a la tecnologia y computadoras, los usuarios pueden hacer nuevas publicaciones y el admin borrarlas</h4>
           </div>
           <div className="lenguajesprj">
-            <Image src="https://cdn-icons-png.flaticon.com/512/5968/5968332.png" width={200} height={200} alt="" />
-            <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/2048px-CSS3_logo.svg.png" width={200} height={200} alt="" />
-            <Image src="https://cdn-icons-png.flaticon.com/512/5968/5968313.png" width={40} height={40} alt="" />
+          <Image src="/icons/php.png" width={200} height={200} alt="" />
+          <Image src="/icons/css3.png" width={200} height={200} alt="" />
+          <Image src="/icons/mysql.png" width={200} height={200} alt="" />
           </div>
           <div className="github">
             <i className="bi bi-eye-fill"></i>Ver proyecto
@@ -161,7 +161,7 @@ const Proyectos = () => {
               <h4>Reconocimiento de carros en videos con Python</h4>
             </div>
             <div className="lenguajesprj">
-              <Image src="https://cdn.iconscout.com/icon/free/png-256/free-python-3521655-2945099.png?f=webp" width={200} height={200} alt="" />
+            <Image src="/icons/python.png" width={200} height={200} alt="" />
             </div>
             <div className="github">
               <i className="bi bi-eye-fill"></i>Ver proyecto
@@ -181,11 +181,11 @@ const Proyectos = () => {
             <div className="nameprj1">Gestor de citas para Barberia</div>
             <div className="categorie1">Personal</div>
             <div className="lenguajesprj1">
-              <Image src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" width={200} height={200} alt="" />
-              <Image src="https://seekicon.com/free-icon-download/next-js_1.png" width={200} height={200} alt="" />
-              <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/2048px-CSS3_logo.svg.png" width={200} height={200} alt="" />
-              <Image src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3254224/prisma-icon-md.png" width={200} height={200} alt="" />
-              <Image src="https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png" width={200} height={200} alt="" />
+            <Image src="/icons/js.png" width={200} height={200} alt="" />
+          <Image src="/icons/nextjs.png" width={200} height={200} alt="" />
+          <Image src="/icons/css3.png" width={200} height={200} alt="" />
+          <Image src="/icons/prisma.png" width={200} height={200} alt="" />
+          <Image src="/icons/nodejs.png" width={200} height={200} alt="" />
             </div>
             <div className="descriptionprj1">
               <h4>Aplicacion web publica para que las personas puedan agendar citas en una barberia.</h4>
@@ -212,7 +212,7 @@ const Proyectos = () => {
             </div>
             <div>
               <button className='btngithublink'>
-                <a href="https://github.com/AmbrizAlberto/ControlOfBarberShop"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>Ver en GitHub</a>
+                <a href="https://github.com/byquesters/ControlOfBarberShop"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>Ver en GitHub</a>
               </button>
             </div>
           </div>
@@ -230,10 +230,11 @@ const Proyectos = () => {
             <div className="nameprj1">Pixels</div>
             <div className="categorie1">Personal</div>
             <div className="lenguajesprj1">
-              <Image src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" width={200} height={200} alt="" />
-              <Image src="https://seekicon.com/free-icon-download/next-js_1.png" width={200} height={200} alt="" />
-              <Image src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3254224/prisma-icon-md.png" width={200} height={200} alt="" />
-              <Image src="https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png" width={200} height={200} alt="" />
+            <Image src="/icons/js.png" width={200} height={200} alt="" />
+          <Image src="/icons/nextjs.png" width={200} height={200} alt="" />
+          <Image src="/icons/css3.png" width={200} height={200} alt="" />
+          <Image src="/icons/prisma.png" width={200} height={200} alt="" />
+          <Image src="/icons/nodejs.png" width={200} height={200} alt="" />
             </div>
             <div className="photoprj1">
               <Image src={PX1} alt="" width={"auto"} height={"auto"} />
@@ -260,7 +261,7 @@ const Proyectos = () => {
             </div>
             <div>
               <button className='btngithublink'>
-                <a href="https://github.com/AmbrizAlberto/Pixels.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>Ver en GitHub</a>
+                <a href="https://github.com/byquesters/Pixels.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>Ver en GitHub</a>
               </button>
             </div>
           </div>
@@ -278,9 +279,9 @@ const Proyectos = () => {
             <div className="nameprj1">Harmony &amp; Heaven</div>
             <div className="categorie1">Grupal</div>
             <div className="lenguajesprj1">
-              <Image src="https://cdn.iconscout.com/icon/free/png-256/free-node-js-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-company-brand-vol-5-pack-logos-icons-2945054.png?f=webp&w=256" width={40} height={40} alt="" />
-              <Image src="https://cdn-icons-png.flaticon.com/512/5968/5968313.png" width={40} height={40} alt="" />
-              <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/2048px-CSS3_logo.svg.png" width={200} height={200} alt="" />
+            <Image src="/icons/nodejs.png" width={200} height={200} alt="" />
+            <Image src="/icons/mysql.png" width={200} height={200} alt="" />
+            <Image src="/icons/css3.png" width={200} height={200} alt="" />
             </div>
             <div className="photoprj1">
               <Image src={HyH1} alt="" width={"auto"} height={"auto"} />
@@ -300,7 +301,7 @@ const Proyectos = () => {
               <Image src={HyH} alt="" width={"auto"} height={"auto"} />
             </div>
             <button className='btngithublink'>
-              <a href="https://github.com/AmbrizAlberto/HarmonyAndHeavenm.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>Ver en GitHub</a>
+              <a href="https://github.com/byquesters/HarmonyAndHeavenm.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>Ver en GitHub</a>
             </button>
           </div>
         </div>
@@ -317,7 +318,7 @@ const Proyectos = () => {
             <div className="nameprj1">Pick Em&apos; Everithing</div>
             <div className="categorie1">Grupal</div>
             <div className="lenguajesprj1">
-              <Image src="https://cdn.iconscout.com/icon/free/png-256/free-python-3521655-2945099.png?f=webp" width={40} height={40} alt="" />
+            <Image src="/icons/python.png" width={200} height={200} alt="" />
             </div>
             <div className="photoprj1">
               <Image src={PEE} alt="" width={"auto"} height={"auto"} />
@@ -350,7 +351,7 @@ const Proyectos = () => {
               </p>
             </div>
             <button className='btngithublink'> 
-              <a href="https://github.com/AmbrizAlberto/PICK-EM-EVERITHING---PYGAME-PROJECT.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>Ver en GitHub</a>
+              <a href="https://github.com/byquesters/PICK-EM-EVERITHING---PYGAME-PROJECT.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>Ver en GitHub</a>
             </button>
 
           </div>
@@ -368,9 +369,9 @@ const Proyectos = () => {
             <div className="nameprj1">BuggBlock</div>
             <div className="categorie1">Grupal</div>
             <div className="lenguajesprj1">
-              <Image src="https://cdn-icons-png.flaticon.com/512/5968/5968332.png" width={200} height={200} alt="" />
-              <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/2048px-CSS3_logo.svg.png" width={200} height={200} alt="" />
-              <Image src="https://cdn-icons-png.flaticon.com/512/5968/5968313.png" width={40} height={40} alt="" />
+            <Image src="/icons/php.png" width={200} height={200} alt="" />
+            <Image src="/icons/css3.png" width={200} height={200} alt="" />
+            <Image src="/icons/mysql.png" width={200} height={200} alt="" />
             </div>
             <div className="photoprj1">
               <Image src={BB} alt="" width={"auto"} height={"auto"} />
@@ -391,7 +392,7 @@ const Proyectos = () => {
               BuggBlock fue desarrollado con php para el manejo de datos de usuarios y publicaciones por el lado del Backend, y el diseño realizado con iconos de Bootstrap y CSS puro. 
             </div>
             <button className='btngithublink'> 
-              <a href="https://github.com/AmbrizAlberto/BuggBlock.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>Ver en GitHub</a>
+              <a href="https://github.com/byquesters/BuggBlock.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>Ver en GitHub</a>
             </button>
 
           </div>
@@ -409,7 +410,7 @@ const Proyectos = () => {
             <div className="nameprj1">Car Recognition</div>
             <div className="categorie1">Personal</div>
             <div className="lenguajesprj1">
-                <Image src="https://cdn.iconscout.com/icon/free/png-256/free-python-3521655-2945099.png?f=webp" width={200} height={200} alt="" />
+            <Image src="/icons/python.png" width={200} height={200} alt="" />
             </div>
             <div className="photoprj1">
               <Image src={CR1} alt="" width={"auto"} height={"auto"} />
@@ -428,7 +429,7 @@ const Proyectos = () => {
               <Image src={CR2} alt="" width={"auto"} height={"auto"} />
             </div>
             <button className='btngithublink'>
-              <a href="https://github.com/AmbrizAlberto/Car-Recognition.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>Ver en GitHub</a>
+              <a href="https://github.com/byquesters/Car-Recognition.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>Ver en GitHub</a>
             </button>
           </div>
         </div>

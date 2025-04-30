@@ -10,8 +10,6 @@ import Link from 'next/link';
 import styles from "./css/main.css";
 import stylerespons from "./css/mainrespons.css";
 
-import miImagen from './images/1mb.jpeg';
-
 import Navbar from './components/español/navbar';
 import Aboutme from './components/español/aboutme';
 import Tecnologias from './components/español/tecnologies';

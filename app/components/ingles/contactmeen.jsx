@@ -36,13 +36,13 @@ const ContactameEN = () => {
                         {copiadoCorreo ? 'Copied' : 'Copy'}
                     </button>
             </div>
-            <h1>PHONE NUMBER</h1>
+            {/* <h1>PHONE NUMBER</h1>
             <div className="telefono">
             <span id="tel" className='correotxt'>+52 3141576598</span>
             <button className='correobtn' onClick={() => copiarTelefono('+523141576598')}>
                 {copiadoTelefono ? 'Copied' : 'Copy'}
             </button>
-            </div>
+            </div> */}
         </div>
         )
     }
