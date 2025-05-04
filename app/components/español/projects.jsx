@@ -65,6 +65,25 @@ const Proyectos = () => {
       <h2 id='proyecto'>PROYECTOS</h2>
       <div className="grid-containerprj">
 
+        <button className="container-project" onClick={() => openModalForProject("STJohns")}>
+          <div className="nameprj">Gimnasio St. John's</div>
+          <div className="categorie">Grupal</div>
+          <div className="photoprj">
+            <Image src={StJ1} alt="" width={"auto"} height={"auto"} />
+          </div>
+          <div className="descriptionprj">
+            <h4>Pagina web landing page responsive para un gimnasio.</h4>
+          </div>
+          <div className="lenguajesprj">
+          <Image src="/icons/nextjs.png" width={200} height={200} alt="" />
+          <Image src="/icons/css3.png" width={200} height={200} alt="" />
+          <Image src="/icons/js.png" width={200} height={200} alt="" />
+          </div>
+          <div className="github">
+            <i className="bi bi-eye-fill"></i>Ver proyecto
+          </div>
+        </button>
+
         <button className="container-project" onClick={() => openModalForProject("SMatiz")}>
           <div className="nameprj">Gestor de citas - Salon Matiz</div>
           <div className="categorie">Personal</div>
@@ -104,29 +123,6 @@ const Proyectos = () => {
           </div>
         </button>
 
-        <button className="container-project" onClick={() => openModalForProject("Pixels")}>
-          <div className="nameprj">Pixels</div>
-          <div className="categorie">Personal</div>
-          <div className="photoprj">
-            <Image src={PX1} alt="" width={"auto"} height={"auto"} />
-          </div>
-          <div className="descriptionprj">
-            <h4>Red Social para Fotografos</h4>
-          </div>
-          <div className="lenguajesprj">
-          <Image src="/icons/js.png" width={200} height={200} alt="" />
-          <Image src="/icons/nextjs.png" width={200} height={200} alt="" />
-          <Image src="/icons/css3.png" width={200} height={200} alt="" />
-          <Image src="/icons/prisma.png" width={200} height={200} alt="" />
-          <Image src="/icons/nodejs.png" width={200} height={200} alt="" />
-          </div>
-          <div className="categorie" style={{ color: 'yellow' }}>En desarrollo</div>
-          <br />
-          <div className="github">
-            <i className="bi bi-eye-fill"></i>Ver proyecto
-          </div>
-        </button>
-
         <button className="container-project" onClick={() => openModalForProject("harmony_heaven")}>
             <div className="nameprj">Harmony &amp; Heaven</div>
             <div className="categorie">Grupal</div>
@@ -140,6 +136,23 @@ const Proyectos = () => {
             <Image src="/icons/nodejs.png" width={200} height={200} alt="" />
             <Image src="/icons/mysql.png" width={200} height={200} alt="" />
             <Image src="/icons/css3.png" width={200} height={200} alt="" />
+            </div>
+            <div className="github">
+              <i className="bi bi-eye-fill"></i>Ver proyecto
+            </div>
+        </button>
+
+        <button className="container-project" onClick={() => openModalForProject("CarRecognition")}>
+            <div className="nameprj">Reconocimiento de Carros</div>
+            <div className="categorie">Personal</div>
+            <div className="photoprj">
+              <Image src={CR} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <div className="descriptionprj">
+              <h4>Reconocimiento de carros en videos con Python</h4>
+            </div>
+            <div className="lenguajesprj">
+            <Image src="/icons/python.png" width={200} height={200} alt="" />
             </div>
             <div className="github">
               <i className="bi bi-eye-fill"></i>Ver proyecto
@@ -163,40 +176,27 @@ const Proyectos = () => {
           </div>
         </button>
 
-        <button className="container-project" onClick={() => openModalForProject("BugB")}>
-          <div className="nameprj">Gimnasio St. John's</div>
-          <div className="categorie">Grupal</div>
+        <button className="container-project" onClick={() => openModalForProject("Pixels")}>
+          <div className="nameprj">Pixels</div>
+          <div className="categorie">Personal</div>
           <div className="photoprj">
-            <Image src={StJ1} alt="" width={"auto"} height={"auto"} />
+            <Image src={PX1} alt="" width={"auto"} height={"auto"} />
           </div>
           <div className="descriptionprj">
-            <h4>Pagina web landing page responsiva para un gimnasio.</h4>
+            <h4>Red Social para Fotografos</h4>
           </div>
           <div className="lenguajesprj">
-          <Image src="/icons/php.png" width={200} height={200} alt="" />
+          <Image src="/icons/js.png" width={200} height={200} alt="" />
+          <Image src="/icons/nextjs.png" width={200} height={200} alt="" />
           <Image src="/icons/css3.png" width={200} height={200} alt="" />
-          <Image src="/icons/mysql.png" width={200} height={200} alt="" />
+          <Image src="/icons/prisma.png" width={200} height={200} alt="" />
+          <Image src="/icons/nodejs.png" width={200} height={200} alt="" />
           </div>
+          <div className="categorie" style={{ color: 'yellow' }}>En desarrollo</div>
+          <br />
           <div className="github">
             <i className="bi bi-eye-fill"></i>Ver proyecto
           </div>
-        </button>
-
-        <button className="container-project" onClick={() => openModalForProject("CarRecognition")}>
-            <div className="nameprj">Reconocimiento de Carros</div>
-            <div className="categorie">Personal</div>
-            <div className="photoprj">
-              <Image src={CR} alt="" width={"auto"} height={"auto"} />
-            </div>
-            <div className="descriptionprj">
-              <h4>Reconocimiento de carros en videos con Python</h4>
-            </div>
-            <div className="lenguajesprj">
-            <Image src="/icons/python.png" width={200} height={200} alt="" />
-            </div>
-            <div className="github">
-              <i className="bi bi-eye-fill"></i>Ver proyecto
-            </div>
         </button>
 
       </div>
@@ -250,7 +250,7 @@ const Proyectos = () => {
         </div>
       )}
 
-{modalOpen && selectedProject === "Spike" && (
+      {modalOpen && selectedProject === "Spike" && (
         <div className='modalprj1' onClick={closeModal}>
           <div className='modalcontent1' onClick={(e) => e.stopPropagation()}>
 
@@ -260,25 +260,56 @@ const Proyectos = () => {
 
             <div className="nameprj1">Spike</div>
             <div className="categorie1">Grupal</div>
+            <div className="descriptionprj1">
+              <h4>
+                "Spike" es una aplicación Móvil que actúa como gestor integral de clínicas veterinarias y servicios asistenciales de animales domésticos. El problema que resuelve es la falta de un sistema centralizado y accesible para que los dueños de mascotas administren citas, mantengan un historial médico, y contratar servicios adicionales de manera eficiente. Esta plataforma también permitirá a los veterinarios y al personal de la clínica gestionar eficazmente su servicios, clientes y el personal involucrado.
+              </h4>
+            </div>
             <div className="lenguajesprj1">
             <Image src="/icons/reactn.png" width={200} height={200} alt="" />
             </div>
             <div className="photoprj1">
-              <Image src={Spk1} alt="" width={"auto"} height={"auto"} />
+              <Image src={Spk3} alt="" width={"auto"} height={"auto"} />
             </div>
-
-            <div className="descriptionprj1">
-              <h4>Tienda de instrumentos con CRUD - Inventario y Punto de venta.</h4>
-            </div>
+            <br /><br />
             <div className='descriptionprj2'>
-              <p>Harmony &amp; Heaven se desarrollo como un inventario para una tienda de instrumentos donde se registrarán los productos con &quot;unidades a la venta&quot;, &quot;precio del producto&quot; y &quot;categoria&quot;, ademas se creo el punto de venta para el cliente donde podra añadir al carrito cualquier producto disponible de la tienda.</p>
-              <p>En el apartado de Vendedor, Harmony &amp; Heaven cuenta con un motor de busqueda y filtrado de los datos para facilitar la recoleccion de productos, tambien cuenta con un gestor de pedidos al Provedor de productos donde se registraran cuando se soliciten y cuando se reciban para estar en stock añadiendose automaticamente las cantidades recibidas en el inventario, asi como un dashboard para ver resumenes de ventas, empleados y demas cosas.</p>
-              <p>Los productos se pueden editar o eliminar de ser necesario.</p>
-
-              <p>En el apartado de cliente &quot;Punto de venta&quot;, el cliente podra unicamente ver los productos en stock y añadirlos al carrito para su compra, el precio total por los productos a comprar se mostrara siempre hasta realizar la compra.</p>
-            </div>
+              CARACTERISTICAS PRINCIPALES DEL SISTEMA:
+              <ul>
+                  <li>ADMINISTRADOR PRINCIPAL: Gestión de todo el sistema con acceso a todas las funcionalidades.</li>
+                  <br /><li>REGISTRO DE CLIENTE Y MASCOTAS: Almacenamiento seguro e información organizada sobre los clientes y sus mascotas.</li>
+                  <br /><li>GESTION DE SERVICIOS: Creación, consulta, modificación y Eliminación de servicios, clientes y mascotas.</li>
+                  <br /><li>ROLES DE USUARIOS: Diferenciación de accesos y funcionalidades según el rol del usuario: usuario (administrador, veterinario, personal de soporte, cliente).</li>
+                  <li> <br />GENERACION DE INFORMES: Creación de informes detallados sobre el uso de los servicios, la salud de las mascotas y la gestión interna del personal y los clientes.</li>
+              </ul>
+          </div>
+          <div className='descriptionprj2'>
+              IMPACTO:
+              <br />El desarrollo de esta aplicación tendrá un impacto positivo al facilitar la comunicación. veterinarios y propietarios de animales de compañía, así como mejorando la gestión interna de los clínicas veterinarias, contribuyendo a un mejor cuidado y bienestar animal.
+          </div>
+          <br /><br />
             <div className="photoprj1">
               <Image src={Spk2} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <div className="photoprj1">
+              <Image src={Spk5} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <div className="photoprj1">
+              <Image src={Spk6} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <div className="photoprj1">
+              <Image src={Spk7} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <div className="photoprj1">
+              <Image src={Spk8} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <div className="photoprj1">
+              <Image src={Spk9} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <div className="photoprj1">
+              <Image src={Spk10} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <div className="photoprj1">
+              <Image src={Spk11} alt="" width={"auto"} height={"auto"} />
             </div>
             <button className='btngithublink'>
               <a href="https://github.com/byquesters/Pet-Care.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>Ver en GitHub</a>
@@ -426,7 +457,7 @@ const Proyectos = () => {
         </div>
       )}
 
-      {modalOpen && selectedProject === "BugB" && (
+      {modalOpen && selectedProject === "STJohns" && (
         <div className='modalprj1' onClick={closeModal}>
           <div className='modalcontent1' onClick={(e) => e.stopPropagation()}>
 
@@ -434,33 +465,40 @@ const Proyectos = () => {
               <X size={24} />
             </button>
 
-            <div className="nameprj1">BuggBlock</div>
-            <div className="categorie1">Grupal</div>
+            <div className="nameprj1">St. Johns Gym</div>
+            <div className="categorie1">Personal</div>
             <div className="lenguajesprj1">
-            <Image src="/icons/php.png" width={200} height={200} alt="" />
+            <Image src="/icons/nextjs.png" width={200} height={200} alt="" />
             <Image src="/icons/css3.png" width={200} height={200} alt="" />
-            <Image src="/icons/mysql.png" width={200} height={200} alt="" />
+            <Image src="/icons/js.png" width={200} height={200} alt="" />
             </div>
-            <div className="photoprj1">
-              <Image src={BB} alt="" width={"auto"} height={"auto"} />
-            </div>
-
             <div className="descriptionprj1">
-              <h4>Un web blog para amantes de la tecnologia.</h4>
+              <h4>Pagina Web St. Johns <br /> (Todos los derechos reservados)</h4>
             </div>
             <div className='descriptionprj3'>
-              <p>BuggBlock es una pagina web tipo Blog con enfoque a informacion tecnologica donde los usuarios registrados podran realizar publicaciones con texto y fotos para despues verlas en el Main</p>
+              <p>Landing Page Responsive desarrollado para mostrar la informacion de interes publico de un gimnasio.</p>
             </div>
             <div className="photoprj1">
-              <Image src={BB1} alt="" width={"auto"} height={"auto"} />
+              <Image src={StJ2} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <div className="photoprj1">
+              <Image src={StJ3} alt="" width={"auto"} height={"auto"} />
             </div>
             <br />
             <br />
             <div className='descriptionprj3'>
-              BuggBlock fue desarrollado con php para el manejo de datos de usuarios y publicaciones por el lado del Backend, y el diseño realizado con iconos de Bootstrap y CSS puro. 
+              <p>La pagina web presenta 2 vistas, el home con informacion detallada y la pagina de contacto donde se presenta informacion de contacto y ubicacion del gimnasio</p>
+            </div>
+            <div className="photoprj1">
+              <Image src={StJ4} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <div>
+              <button className='btngithublink'>
+                <a href="https://st-johns-gym.vercel.app/"><i className="bi bi-eye" style={{ marginRight: '5px' }}></i>Ver en Produccion</a>
+              </button>
             </div>
             <button className='btngithublink'> 
-              <a href="https://github.com/byquesters/BuggBlock.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>Ver en GitHub</a>
+              <a href="https://github.com/byQuesters/St-Johns-Gym"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>Ver en GitHub</a>
             </button>
 
           </div>

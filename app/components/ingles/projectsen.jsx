@@ -22,7 +22,18 @@ import SMMain from "../../images/SMMain.png"
 import SMDb from "../../images/SMDb.png"
 import SMLg from "../../images/SMLg.png"
 import SM from "../../images/SM.png"
-
+import Spk1 from "../../images/Spk1.jpeg"
+import Spk2 from "../../images/Spk2.jpeg"
+import Spk3 from "../../images/Spk3.jpeg"
+import Spk4 from "../../images/Spk4.jpeg"
+import Spk5 from "../../images/Spk5.jpeg"
+import Spk6 from "../../images/Spk6.jpeg"
+import Spk7 from "../../images/Spk7.jpeg"
+import Spk8 from "../../images/Spk8.jpeg"
+import Spk9 from "../../images/Spk9.jpeg"
+import Spk10 from "../../images/Spk10.jpeg"
+import Spk11 from "../../images/Spk11.jpeg"
+import Spk12 from "../../images/Spk12.jpeg"
 
 import "../../css/modal.css";
 import "../../css/project.css";
@@ -54,6 +65,25 @@ const ProyectosEN = () => {
       <h2>PROJECTS</h2>
       <div className="grid-containerprj">
 
+        <button className="container-project" onClick={() => openModalForProject("STJohns")}>
+          <div className="nameprj">St. John's Gym</div>
+          <div className="categorie">Group</div>
+          <div className="photoprj">
+            <Image src={StJ1} alt="" width={"auto"} height={"auto"} />
+          </div>
+          <div className="descriptionprj">
+            <h4>Responsive landing page website for a gym.</h4>
+          </div>
+          <div className="lenguajesprj">
+            <Image src="/icons/nextjs.png" width={200} height={200} alt="" />
+            <Image src="/icons/css3.png" width={200} height={200} alt="" />
+            <Image src="/icons/js.png" width={200} height={200} alt="" />
+          </div>
+          <div className="github">
+            <i className="bi bi-eye-fill"></i>View Project
+          </div>
+        </button>
+
         <button className="container-project" onClick={() => openModalForProject("SMatiz")}>
           <div className="nameprj">Appointment Manager - Salon Matiz</div>
           <div className="categorie">Personal</div>
@@ -73,6 +103,76 @@ const ProyectosEN = () => {
           <br />
           <div className="github">
             <i className="bi bi-eye-fill"></i>See project
+          </div>
+        </button>
+
+        <button className="container-project" onClick={() => openModalForProject("Spike")}>
+          <div className="nameprj">Spike - Pet Care</div>
+          <div className="categorie">Group</div>
+          <div className="photoprj">
+            <Image src={Spk12} alt="" width={"auto"} height={"auto"} />
+          </div>
+          <div className="descriptionprj">
+            <h4>Mobile application for centralized management of veterinary appointments and services.</h4>
+          </div>
+          <div className="lenguajesprj">
+            <Image src="/icons/reactn.png" width={200} height={200} alt="" />
+          </div>
+          <div className="github">
+            <i className="bi bi-eye-fill"></i>View Project
+          </div>
+        </button>
+
+        <button className="container-project" onClick={() => openModalForProject("harmony_heaven")}>
+            <div className="nameprj">Harmony &amp; Heaven</div>
+            <div className="categorie">Group</div>
+            <div className="photoprj">
+              <Image src={HyH} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <div className="descriptionprj">
+              <h4>Instrument Store with CRUD, Login and Point of Sale.</h4>
+            </div>
+            <div className="lenguajesprj">
+              <Image src="https://cdn.iconscout.com/icon/free/png-256/free-node-js-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-company-brand-vol-5-pack-logos-icons-2945054.png?f=webp&w=256" width={40} height={40} alt="" />
+              <Image src="https://cdn-icons-png.flaticon.com/512/5968/5968313.png" width={40} height={40} alt="" />
+              <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/2048px-CSS3_logo.svg.png" width={200} height={200} alt="" />
+            </div>
+            <div className="github">
+            <i class="bi bi-eye-fill"></i>See project
+            </div>
+        </button>
+        
+        <button className="container-project" onClick={() => openModalForProject("CarRecognition")}>
+            <div className="nameprj">Car Recognition</div>
+            <div className="categorie">Personal</div>
+            <div className="photoprj">
+              <Image src={CR} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <div className="descriptionprj">
+              <h4>Car recognition in videos with Python</h4>
+            </div>
+            <div className="lenguajesprj">
+              <Image src="https://cdn.iconscout.com/icon/free/png-256/free-python-3521655-2945099.png?f=webp" width={200} height={200} alt="" />
+            </div>
+            <div className="github">
+              <i className="bi bi-eye-fill"></i>See project
+            </div>
+        </button>
+
+        <button className="container-project" onClick={() => openModalForProject("PickEmE")}>
+          <div className="nameprj">Pick Em&apos; Everithing</div>
+          <div className="categorie">Group</div>
+          <div className="photoprj">
+            <Image src={PEE} alt="" width={"auto"} height={"auto"} />
+          </div>
+          <div className="descriptionprj">
+            <h4>Video game developed with the Pygame Python library</h4>
+          </div>
+          <div className="lenguajesprj">
+            <Image src="https://cdn.iconscout.com/icon/free/png-256/free-python-3521655-2945099.png?f=webp" width={200} height={200} alt="" />
+          </div>
+          <div className="github">
+            <i class="bi bi-eye-fill"></i>See project
           </div>
         </button>
 
@@ -97,78 +197,6 @@ const ProyectosEN = () => {
           <div className="github">
             <i className="bi bi-eye-fill"></i>See project
           </div>
-        </button>
-
-        <button className="container-project" onClick={() => openModalForProject("harmony_heaven")}>
-            <div className="nameprj">Harmony &amp; Heaven</div>
-            <div className="categorie">Group</div>
-            <div className="photoprj">
-              <Image src={HyH} alt="" width={"auto"} height={"auto"} />
-            </div>
-            <div className="descriptionprj">
-              <h4>Instrument Store with CRUD, Login and Point of Sale.</h4>
-            </div>
-            <div className="lenguajesprj">
-              <Image src="https://cdn.iconscout.com/icon/free/png-256/free-node-js-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-company-brand-vol-5-pack-logos-icons-2945054.png?f=webp&w=256" width={40} height={40} alt="" />
-              <Image src="https://cdn-icons-png.flaticon.com/512/5968/5968313.png" width={40} height={40} alt="" />
-              <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/2048px-CSS3_logo.svg.png" width={200} height={200} alt="" />
-            </div>
-            <div className="github">
-            <i class="bi bi-eye-fill"></i>See project
-            </div>
-        </button>
-
-        <button className="container-project" onClick={() => openModalForProject("PickEmE")}>
-          <div className="nameprj">Pick Em&apos; Everithing</div>
-          <div className="categorie">Group</div>
-          <div className="photoprj">
-            <Image src={PEE} alt="" width={"auto"} height={"auto"} />
-          </div>
-          <div className="descriptionprj">
-            <h4>Video game developed with the Pygame Python library</h4>
-          </div>
-          <div className="lenguajesprj">
-            <Image src="https://cdn.iconscout.com/icon/free/png-256/free-python-3521655-2945099.png?f=webp" width={200} height={200} alt="" />
-          </div>
-          <div className="github">
-            <i class="bi bi-eye-fill"></i>See project
-          </div>
-        </button>
-
-        <button className="container-project" onClick={() => openModalForProject("BugB")}>
-          <div className="nameprj">St. John's Gym</div>
-          <div className="categorie">Group</div>
-          <div className="photoprj">
-            <Image src={StJ1} alt="" width={"auto"} height={"auto"} />
-          </div>
-          <div className="descriptionprj">
-            <h4>Web Computer blog focused on Gym</h4>
-          </div>
-          <div className="lenguajesprj">
-            <Image src="/icons/nextjs.png" width={200} height={200} alt="" />
-            <Image src="/icons/css3.png" width={200} height={200} alt="" />
-            <Image src="/icons/js.png" width={40} height={40} alt="" />
-          </div>
-          <div className="github">
-            <i class="bi bi-eye-fill"></i>See project
-          </div>
-        </button>
-
-        <button className="container-project" onClick={() => openModalForProject("CarRecognition")}>
-            <div className="nameprj">Car Recognition</div>
-            <div className="categorie">Personal</div>
-            <div className="photoprj">
-              <Image src={CR} alt="" width={"auto"} height={"auto"} />
-            </div>
-            <div className="descriptionprj">
-              <h4>Car recognition in videos with Python</h4>
-            </div>
-            <div className="lenguajesprj">
-              <Image src="https://cdn.iconscout.com/icon/free/png-256/free-python-3521655-2945099.png?f=webp" width={200} height={200} alt="" />
-            </div>
-            <div className="github">
-              <i className="bi bi-eye-fill"></i>See project
-            </div>
         </button>
 
       </div>
@@ -218,6 +246,121 @@ const ProyectosEN = () => {
                 <a href="https://github.com/AmbrizAlberto/ControlOfBarberShop"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>View on GitHub</a>
               </button>
             </div>
+          </div>
+        </div>
+      )}
+
+      {modalOpen && selectedProject === "Spike" && (
+        <div className='modalprj1' onClick={closeModal}>
+          <div className='modalcontent1' onClick={(e) => e.stopPropagation()}>
+
+            <button className="close-modal" onClick={closeModal}>
+              <X size={24} />
+            </button>
+
+            <div className="nameprj1">Spike</div>
+            <div className="categorie1">Group</div>
+            <div className="descriptionprj1">
+              <h4>
+                "Spike" is a mobile application that serves as a comprehensive management system for veterinary clinics and domestic animal care services. It solves the problem of lacking a centralized and accessible system for pet owners to manage appointments, maintain medical records, and efficiently book additional services. This platform also enables veterinarians and clinic staff to effectively manage their services, clients, and involved personnel.
+              </h4>
+            </div>
+            <div className="lenguajesprj1">
+              <Image src="/icons/reactn.png" width={200} height={200} alt="" />
+            </div>
+            <div className="photoprj1">
+              <Image src={Spk3} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <br /><br />
+            <div className='descriptionprj2'>
+              MAIN SYSTEM FEATURES:
+              <ul>
+                  <li>MAIN ADMINISTRATOR: Management of the entire system with access to all functionalities.</li>
+                  <br /><li>CLIENT AND PET REGISTRATION: Secure storage and organized information about clients and their pets.</li>
+                  <br /><li>SERVICE MANAGEMENT: Creation, consultation, modification and deletion of services, clients and pets.</li>
+                  <br /><li>USER ROLES: Differentiated access and functionalities based on user role (administrator, veterinarian, support staff, client).</li>
+                  <br /><li>REPORT GENERATION: Creation of detailed reports on service usage, pet health, and internal management of staff and clients.</li>
+              </ul>
+            </div>
+            <div className='descriptionprj2'>
+              IMPACT:
+              <br />The development of this application will have a positive impact by facilitating communication between veterinarians and pet owners, as well as improving the internal management of veterinary clinics, contributing to better animal care and welfare.
+            </div>
+            <br /><br />
+            <div className="photoprj1">
+              <Image src={Spk2} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <div className="photoprj1">
+              <Image src={Spk5} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <div className="photoprj1">
+              <Image src={Spk6} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <div className="photoprj1">
+              <Image src={Spk7} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <div className="photoprj1">
+              <Image src={Spk8} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <div className="photoprj1">
+              <Image src={Spk9} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <div className="photoprj1">
+              <Image src={Spk10} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <div className="photoprj1">
+              <Image src={Spk11} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <button className='btngithublink'>
+              <a href="https://github.com/byquesters/Pet-Care.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>View on GitHub</a>
+            </button>
+          </div>
+        </div>
+      )}
+
+      {modalOpen && selectedProject === "STJohns" && (
+        <div className='modalprj1' onClick={closeModal}>
+          <div className='modalcontent1' onClick={(e) => e.stopPropagation()}>
+
+            <button className="close-modal" onClick={closeModal}>
+              <X size={24} />
+            </button>
+
+            <div className="nameprj1">St. John's Gym</div>
+            <div className="categorie1">Personal</div>
+            <div className="lenguajesprj1">
+              <Image src="/icons/nextjs.png" width={200} height={200} alt="" />
+              <Image src="/icons/css3.png" width={200} height={200} alt="" />
+              <Image src="/icons/js.png" width={200} height={200} alt="" />
+            </div>
+            <div className="descriptionprj1">
+              <h4>St. Johns Website <br /> (All rights reserved)</h4>
+            </div>
+            <div className='descriptionprj3'>
+              <p>Responsive Landing Page developed to display public interest information for a gym.</p>
+            </div>
+            <div className="photoprj1">
+              <Image src={StJ2} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <div className="photoprj1">
+              <Image src={StJ3} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <br />
+            <br />
+            <div className='descriptionprj3'>
+              <p>The website features 2 views: the home page with detailed information and the contact page showing the gym's contact information and location.</p>
+            </div>
+            <div className="photoprj1">
+              <Image src={StJ4} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <div>
+              <button className='btngithublink'>
+                <a href="https://st-johns-gym.vercel.app/"><i className="bi bi-eye" style={{ marginRight: '5px' }}></i>View in Production</a>
+              </button>
+            </div>
+            <button className='btngithublink'> 
+              <a href="https://github.com/byQuesters/St-Johns-Gym"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>View on GitHub</a>
+            </button>
           </div>
         </div>
       )}
@@ -355,46 +498,6 @@ const ProyectosEN = () => {
             </div>
             <button className='btngithublink'> 
               <a href="https://github.com/AmbrizAlberto/PICK-EM-EVERITHING---PYGAME-PROJECT.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>See on GitHub</a>
-            </button>
-          </div>
-        </div>
-      )}
-
-      {modalOpen && selectedProject === "BugB" && (
-        <div className='modalprj1' onClick={closeModal}>
-          <div className='modalcontent1' onClick={(e) => e.stopPropagation()}>
-
-            <button className="close-modal" onClick={closeModal}>
-              <X size={24} />
-            </button>
-
-            <div className="nameprj1">BuggBlock</div>
-            <div className="categorie1">Group</div>
-            <div className="lenguajesprj1">
-              <Image src="https://cdn-icons-png.flaticon.com/512/5968/5968332.png" width={200} height={200} alt="" />
-              <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/2048px-CSS3_logo.svg.png" width={200} height={200} alt="" />
-              <Image src="https://cdn-icons-png.flaticon.com/512/5968/5968313.png" width={40} height={40} alt="" />
-            </div>
-            <div className="photoprj1">
-              <Image src={BB} alt="" width={"auto"} height={"auto"} />
-            </div>
-
-            <div className="descriptionprj1">
-              <h4>A web blog for technology lovers.</h4>
-            </div>
-            <div className='descriptionprj3'>
-              <p>BuggBlock is a Blog-type website focused on technological information where registered users can make publications with text and photos to later see them in the Main</p>
-            </div>
-            <div className="photoprj1">
-              <Image src={BB1} alt="" width={"auto"} height={"auto"} />
-            </div>
-            <br />
-            <br />
-            <div className='descriptionprj3'>
-              BuggBlock was developed with PHP to manage user data and posts on the Backend side, and the design was made with Bootstrap icons and pure CSS.            
-            </div>
-            <button className='btngithublink'> 
-              <a href="https://github.com/AmbrizAlberto/BuggBlock.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>See on GitHub</a>
             </button>
           </div>
         </div>
