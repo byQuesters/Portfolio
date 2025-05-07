@@ -2,6 +2,24 @@ import Image from 'next/image';
 import { X } from 'react-feather';
 import React, { useState } from 'react';
 
+// ICONS TECNOLOGIES
+import htmlpng from '../../../public/icons/html5.png';
+import csspng from '../../../public/icons/css3.png';
+import jspng from '../../../public/icons/js.png';
+import reactpng from '../../../public/icons/reactn.png';
+import nextpng from '../../../public/icons/nextjs.png';
+import mysqlpng from '../../../public/icons/mysql.png';
+import nodepng from '../../../public/icons/nodejs.png';
+import gitpng from '../../../public/icons/git.png';
+import githubpng from '../../../public/icons/github.png';
+import terminalpng from '../../../public/icons/terminal.png';
+import npm from '../../../public/icons/npm.png';
+import swiftpng from '../../../public/icons/swift.png';
+import pythonpng from '../../../public/icons/python.png';
+import phppng from '../../../public/icons/php.png';
+import prismapng from '../../../public/icons/prisma.png';
+import vscodepng from '../../../public/icons/vscode.png';
+
 import CR from '../../images/CR.png';
 import CR1 from '../../images/CR1.png';
 import CR2 from '../../images/CR2.png';
@@ -62,9 +80,9 @@ const Proyectos = () => {
             <h4>Pagina web landing page responsive para un gimnasio.</h4>
           </div>
           <div className="lenguajesprj">
-          <Image src="/icons/nextjs.png" width={200} height={200} alt="" />
-          <Image src="/icons/css3.png" width={200} height={200} alt="" />
-          <Image src="/icons/js.png" width={200} height={200} alt="" />
+          <Image src={nextpng} width={200} height={200} alt="" />
+          <Image src={csspng} width={200} height={200} alt="" />
+          <Image src={jspng} width={200} height={200} alt="" />
           </div>
           <div className="github">
             <i className="bi bi-eye-fill"></i>Ver proyecto
@@ -81,11 +99,11 @@ const Proyectos = () => {
             <h4>Website for scheduling appointments and managing the schedule of a barbershop</h4>
           </div>
           <div className="lenguajesprj">
-            <Image src="/icons/js.png" width={200} height={200} alt="" />
-            <Image src="/icons/nextjs.png" width={200} height={200} alt="" />
-            <Image src="/icons/css3.png" width={200} height={200} alt="" />
-            <Image src="/icons/prisma.png" width={200} height={200} alt="" />
-            <Image src="/icons/nodejs.png" width={200} height={200} alt="" />
+            <Image src={jspng} width={200} height={200} alt="" />
+            <Image src={nextpng} width={200} height={200} alt="" />
+            <Image src={csspng} width={200} height={200} alt="" />
+            <Image src={prismapng} width={200} height={200} alt="" />
+            <Image src={nodepng} width={200} height={200} alt="" />
           </div>
           <br />
           <div className="github">
@@ -103,10 +121,10 @@ const Proyectos = () => {
             <h4>Social Network for Photographers</h4>
           </div>
           <div className="lenguajesprj">
-            <Image src="/icons/js.png" width={200} height={200} alt="" />
-            <Image src="/icons/nextjs.png" width={200} height={200} alt="" />
-            <Image src="/icons/prisma.png" width={200} height={200} alt="" />
-            <Image src="/icons/nodejs.png" width={200} height={200} alt="" />
+            <Image src={jspng} width={200} height={200} alt="" />
+            <Image src={nextpng} width={200} height={200} alt="" />
+            <Image src={prismapng} width={200} height={200} alt="" />
+            <Image src={nodepng} width={200} height={200} alt="" />
           </div>
           <div className="categorie" style={{ color: 'yellow' }}>In development</div>
           <br />
@@ -142,7 +160,7 @@ const Proyectos = () => {
               <h4>Car recognition in videos with Python</h4>
             </div>
             <div className="lenguajesprj">
-            <Image src="/icons/python.png" width={200} height={200} alt="" />
+            <Image src={pythonpng} width={200} height={200} alt="" />
             </div>
             <div className="github">
               <i className="bi bi-eye-fill"></i>View project
@@ -159,7 +177,7 @@ const Proyectos = () => {
             <h4>Digit recognition program drawn by the user</h4>
           </div>
           <div className="lenguajesprj">
-          <Image src="/icons/python.png" width={200} height={200} alt="" />
+          <Image src={pythonpng} width={200} height={200} alt="" />
           </div>
           <div className="github">
             <i className="bi bi-eye-fill"></i>View project
@@ -180,11 +198,11 @@ const Proyectos = () => {
             <div className="nameprj1">Appointment Manager for Barbershop</div>
             <div className="categorie1">Personal</div>
             <div className="lenguajesprj1">
-            <Image src="/icons/js.png" width={200} height={200} alt="" />
-            <Image src="/icons/nextjs.png" width={200} height={200} alt="" />
-            <Image src="/icons/css3.png" width={200} height={200} alt="" />
-            <Image src="/icons/prisma.png" width={200} height={200} alt="" />
-            <Image src="/icons/nodejs.png" width={200} height={200} alt="" />
+            <Image src={jspng} width={200} height={200} alt="" />
+            <Image src={nextpng} width={200} height={200} alt="" />
+            <Image src={csspng} width={200} height={200} alt="" />
+            <Image src={prismapng} width={200} height={200} alt="" />
+            <Image src={nodepng} width={200} height={200} alt="" />
             </div>
             <div className="descriptionprj1">
               <h4>Public web application for people to schedule appointments at a barbershop.</h4>
@@ -229,9 +247,9 @@ const Proyectos = () => {
             <div className="nameprj1">St. John&apos;s Gym</div>
             <div className="categorie1">Personal</div>
             <div className="lenguajesprj1">
-              <Image src="/icons/nextjs.png" width={200} height={200} alt="" />
-              <Image src="/icons/css3.png" width={200} height={200} alt="" />
-              <Image src="/icons/js.png" width={200} height={200} alt="" />
+              <Image src={nextpng} width={200} height={200} alt="" />
+              <Image src={csspng} width={200} height={200} alt="" />
+              <Image src={jspng} width={200} height={200} alt="" />
             </div>
             <div className="descriptionprj1">
               <h4>St. Johns Website <br /> (All rights reserved)</h4>
@@ -276,10 +294,10 @@ const Proyectos = () => {
             <div className="nameprj1">Pixels</div>
             <div className="categorie1">Personal</div>
             <div className="lenguajesprj1">
-            <Image src="/icons/js.png" width={200} height={200} alt="" />
-            <Image src="/icons/nextjs.png" width={200} height={200} alt="" />
-            <Image src="/icons/prisma.png" width={200} height={200} alt="" />
-            <Image src="/icons/nodejs.png" width={200} height={200} alt="" />
+            <Image src={jspng} width={200} height={200} alt="" />
+            <Image src={nextpng} width={200} height={200} alt="" />
+            <Image src={prismapng} width={200} height={200} alt="" />
+            <Image src={nodepng} width={200} height={200} alt="" />
             </div>
             <div className="photoprj1">
               <Image src={PX1} alt="" width={"auto"} height={"auto"} />
@@ -324,7 +342,7 @@ const Proyectos = () => {
             <div className="nameprj1">Car Recognition</div>
             <div className="categorie1">Personal</div>
             <div className="lenguajesprj1">
-            <Image src="/icons/python.png" width={200} height={200} alt="" />
+            <Image src={pythonpng} width={200} height={200} alt="" />
             </div>
             <div className="photoprj1">
               <Image src={CR1} alt="" width={"auto"} height={"auto"} />
@@ -406,7 +424,7 @@ const Proyectos = () => {
             <div className="nameprj1">Number Recognition</div>
             <div className="categorie1">Personal</div>
             <div className="lenguajesprj1">
-            <Image src="/icons/python.png" width={200} height={200} alt="" />
+            <Image src={pythonpng} width={200} height={200} alt="" />
             </div>
             <div className="descriptionprj1">
               <h4>SubTitle Soon...</h4>
