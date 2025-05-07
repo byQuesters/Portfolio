@@ -66,7 +66,7 @@ const ProyectosEN = () => {
       <div className="grid-containerprj">
 
         <button className="container-project" onClick={() => openModalForProject("STJohns")}>
-          <div className="nameprj">St. John's Gym</div>
+          <div className="nameprj">St. John&apos;s Gym</div>
           <div className="categorie">Group</div>
           <div className="photoprj">
             <Image src={StJ1} alt="" width={"auto"} height={"auto"} />
@@ -262,7 +262,7 @@ const ProyectosEN = () => {
             <div className="categorie1">Group</div>
             <div className="descriptionprj1">
               <h4>
-                "Spike" is a mobile application that serves as a comprehensive management system for veterinary clinics and domestic animal care services. It solves the problem of lacking a centralized and accessible system for pet owners to manage appointments, maintain medical records, and efficiently book additional services. This platform also enables veterinarians and clinic staff to effectively manage their services, clients, and involved personnel.
+              &quot;Spike&quot; is a mobile application that serves as a comprehensive management system for veterinary clinics and domestic animal care services. It solves the problem of lacking a centralized and accessible system for pet owners to manage appointments, maintain medical records, and efficiently book additional services. This platform also enables veterinarians and clinic staff to effectively manage their services, clients, and involved personnel.
               </h4>
             </div>
             <div className="lenguajesprj1">
@@ -326,7 +326,7 @@ const ProyectosEN = () => {
               <X size={24} />
             </button>
 
-            <div className="nameprj1">St. John's Gym</div>
+            <div className="nameprj1">St. John&apos;s Gym</div>
             <div className="categorie1">Personal</div>
             <div className="lenguajesprj1">
               <Image src="/icons/nextjs.png" width={200} height={200} alt="" />

@@ -66,7 +66,7 @@ const Proyectos = () => {
       <div className="grid-containerprj">
 
         <button className="container-project" onClick={() => openModalForProject("STJohns")}>
-          <div className="nameprj">Gimnasio St. John's</div>
+          <div className="nameprj">Gimnasio St. John&apos;s</div>
           <div className="categorie">Grupal</div>
           <div className="photoprj">
             <Image src={StJ1} alt="" width={"auto"} height={"auto"} />
@@ -262,7 +262,7 @@ const Proyectos = () => {
             <div className="categorie1">Grupal</div>
             <div className="descriptionprj1">
               <h4>
-                "Spike" es una aplicación Móvil que actúa como gestor integral de clínicas veterinarias y servicios asistenciales de animales domésticos. El problema que resuelve es la falta de un sistema centralizado y accesible para que los dueños de mascotas administren citas, mantengan un historial médico, y contratar servicios adicionales de manera eficiente. Esta plataforma también permitirá a los veterinarios y al personal de la clínica gestionar eficazmente su servicios, clientes y el personal involucrado.
+              &quot;Spike&quot; es una aplicación Móvil que actúa como gestor integral de clínicas veterinarias y servicios asistenciales de animales domésticos. El problema que resuelve es la falta de un sistema centralizado y accesible para que los dueños de mascotas administren citas, mantengan un historial médico, y contratar servicios adicionales de manera eficiente. Esta plataforma también permitirá a los veterinarios y al personal de la clínica gestionar eficazmente su servicios, clientes y el personal involucrado.
               </h4>
             </div>
             <div className="lenguajesprj1">
@@ -279,7 +279,7 @@ const Proyectos = () => {
                   <br /><li>REGISTRO DE CLIENTE Y MASCOTAS: Almacenamiento seguro e información organizada sobre los clientes y sus mascotas.</li>
                   <br /><li>GESTION DE SERVICIOS: Creación, consulta, modificación y Eliminación de servicios, clientes y mascotas.</li>
                   <br /><li>ROLES DE USUARIOS: Diferenciación de accesos y funcionalidades según el rol del usuario: usuario (administrador, veterinario, personal de soporte, cliente).</li>
-                  <li> <br />GENERACION DE INFORMES: Creación de informes detallados sobre el uso de los servicios, la salud de las mascotas y la gestión interna del personal y los clientes.</li>
+                  <br /><li>GENERACION DE INFORMES: Creación de informes detallados sobre el uso de los servicios, la salud de las mascotas y la gestión interna del personal y los clientes.</li>
               </ul>
           </div>
           <div className='descriptionprj2'>
@@ -465,7 +465,7 @@ const Proyectos = () => {
               <X size={24} />
             </button>
 
-            <div className="nameprj1">St. Johns Gym</div>
+            <div className="nameprj1">St. John&apos;s Gym</div>
             <div className="categorie1">Personal</div>
             <div className="lenguajesprj1">
             <Image src="/icons/nextjs.png" width={200} height={200} alt="" />
@@ -473,7 +473,7 @@ const Proyectos = () => {
             <Image src="/icons/js.png" width={200} height={200} alt="" />
             </div>
             <div className="descriptionprj1">
-              <h4>Pagina Web St. Johns <br /> (Todos los derechos reservados)</h4>
+              <h4>Pagina Web St. John&apos;s <br /> (Todos los derechos reservados)</h4>
             </div>
             <div className='descriptionprj3'>
               <p>Landing Page Responsive desarrollado para mostrar la informacion de interes publico de un gimnasio.</p>
