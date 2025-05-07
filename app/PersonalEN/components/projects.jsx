@@ -52,6 +52,25 @@ const Proyectos = () => {
 
       <div className="grid-containerprj">
 
+        <button className="container-project" onClick={() => openModalForProject("STJohns")}>
+          <div className="nameprj">Gimnasio St. John&apos;s</div>
+          <div className="categorie">Grupal</div>
+          <div className="photoprj">
+            <Image src={StJ1} alt="" width={"auto"} height={"auto"} />
+          </div>
+          <div className="descriptionprj">
+            <h4>Pagina web landing page responsive para un gimnasio.</h4>
+          </div>
+          <div className="lenguajesprj">
+          <Image src="/icons/nextjs.png" width={200} height={200} alt="" />
+          <Image src="/icons/css3.png" width={200} height={200} alt="" />
+          <Image src="/icons/js.png" width={200} height={200} alt="" />
+          </div>
+          <div className="github">
+            <i className="bi bi-eye-fill"></i>Ver proyecto
+          </div>
+        </button>
+
         <button className="container-project" onClick={() => openModalForProject("SMatiz")}>
           <div className="nameprj">Appointment Manager - Salon Matiz</div>
           <div className="categorie">Personal</div>
@@ -70,7 +89,7 @@ const Proyectos = () => {
           </div>
           <br />
           <div className="github">
-            <i className="bi bi-eye-fill"></i>See project
+            <i className="bi bi-eye-fill"></i>View project
           </div>
         </button>
 
@@ -92,7 +111,7 @@ const Proyectos = () => {
           <div className="categorie" style={{ color: 'yellow' }}>In development</div>
           <br />
           <div className="github">
-            <i className="bi bi-eye-fill"></i>See project
+            <i className="bi bi-eye-fill"></i>View project
           </div>
         </button>
 
@@ -199,6 +218,52 @@ const Proyectos = () => {
         </div>
       )}
 
+      {modalOpen && selectedProject === "STJohns" && (
+        <div className='modalprj1' onClick={closeModal}>
+          <div className='modalcontent1' onClick={(e) => e.stopPropagation()}>
+
+            <button className="close-modal" onClick={closeModal}>
+              <X size={24} />
+            </button>
+
+            <div className="nameprj1">St. John&apos;s Gym</div>
+            <div className="categorie1">Personal</div>
+            <div className="lenguajesprj1">
+              <Image src="/icons/nextjs.png" width={200} height={200} alt="" />
+              <Image src="/icons/css3.png" width={200} height={200} alt="" />
+              <Image src="/icons/js.png" width={200} height={200} alt="" />
+            </div>
+            <div className="descriptionprj1">
+              <h4>St. Johns Website <br /> (All rights reserved)</h4>
+            </div>
+            <div className='descriptionprj3'>
+              <p>Responsive Landing Page developed to display public interest information for a gym.</p>
+            </div>
+            <div className="photoprj1">
+              <Image src={StJ2} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <div className="photoprj1">
+              <Image src={StJ3} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <br />
+            <br />
+            <div className='descriptionprj3'>
+              <p>The website features 2 views: the home page with detailed information and the contact page showing the gym&apos;s contact information and location.</p>
+            </div>
+            <div className="photoprj1">
+              <Image src={StJ4} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <div>
+              <button className='btngithublink'>
+                <a href="https://st-johns-gym.vercel.app/"><i className="bi bi-eye" style={{ marginRight: '5px' }}></i>View in Production</a>
+              </button>
+            </div>
+            <button className='btngithublink'> 
+              <a href="https://github.com/byQuesters/St-Johns-Gym"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>View on GitHub</a>
+            </button>
+          </div>
+        </div>
+      )}
 
       {modalOpen && selectedProject === "Pixels" && (
         <div className='modalprj1' onClick={closeModal}>

@@ -9,6 +9,19 @@ import PEE1 from '../../images/PickEm1.jpg';
 import PEE2 from '../../images/PickEm2.jpg';
 import BB from '../../images/BB1.jpg';
 import BB1 from "../../images/BB2.jpeg";
+import Spk1 from "../../images/Spk1.jpeg"
+import Spk2 from "../../images/Spk2.jpeg"
+import Spk3 from "../../images/Spk3.jpeg"
+import Spk4 from "../../images/Spk4.jpeg"
+import Spk5 from "../../images/Spk5.jpeg"
+import Spk6 from "../../images/Spk6.jpeg"
+import Spk7 from "../../images/Spk7.jpeg"
+import Spk8 from "../../images/Spk8.jpeg"
+import Spk9 from "../../images/Spk9.jpeg"
+import Spk10 from "../../images/Spk10.jpeg"
+import Spk11 from "../../images/Spk11.jpeg"
+import Spk12 from "../../images/Spk12.jpeg"
+
 
 import "../../css/modal.css";
 import "../../css/project.css";
@@ -40,6 +53,23 @@ const Proyectos = () => {
       <h2 id='proyecto'>PROYECTOS</h2>
 
       <div className="grid-containerprj">
+
+        <button className="container-project" onClick={() => openModalForProject("Spike")}>
+          <div className="nameprj">Spike - Cuidado de Mascotas</div>
+          <div className="categorie">Grupal</div>
+          <div className="photoprj">
+            <Image src={Spk12} alt="" width={"auto"} height={"auto"} />
+          </div>
+          <div className="descriptionprj">
+            <h4>Aplicación movil para gestión de citas y servicios veterinarios de forma centralizada.</h4>
+          </div>
+          <div className="lenguajesprj">
+          <Image src="/icons/reactn.png" width={200} height={200} alt="" />
+          </div>
+          <div className="github">
+            <i className="bi bi-eye-fill"></i>Ver proyecto
+          </div>
+        </button>
 
         <button className="container-project" onClick={() => openModalForProject("harmony_heaven")}>
           <div className="nameprj">Harmony &amp; Heaven</div>
@@ -98,6 +128,74 @@ const Proyectos = () => {
 
       </div>
       <br/><br/><br/><br/>
+
+      {modalOpen && selectedProject === "Spike" && (
+        <div className='modalprj1' onClick={closeModal}>
+          <div className='modalcontent1' onClick={(e) => e.stopPropagation()}>
+
+            <button className="close-modal" onClick={closeModal}>
+              <X size={24} />
+            </button>
+
+            <div className="nameprj1">Spike</div>
+            <div className="categorie1">Grupal</div>
+            <div className="descriptionprj1">
+              <h4>
+              &quot;Spike&quot; es una aplicación Móvil que actúa como gestor integral de clínicas veterinarias y servicios asistenciales de animales domésticos. El problema que resuelve es la falta de un sistema centralizado y accesible para que los dueños de mascotas administren citas, mantengan un historial médico, y contratar servicios adicionales de manera eficiente. Esta plataforma también permitirá a los veterinarios y al personal de la clínica gestionar eficazmente su servicios, clientes y el personal involucrado.
+              </h4>
+            </div>
+            <div className="lenguajesprj1">
+            <Image src="/icons/reactn.png" width={200} height={200} alt="" />
+            </div>
+            <div className="photoprj1">
+              <Image src={Spk3} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <br /><br />
+            <div className='descriptionprj2'>
+              CARACTERISTICAS PRINCIPALES DEL SISTEMA:
+              <ul>
+                  <li>ADMINISTRADOR PRINCIPAL: Gestión de todo el sistema con acceso a todas las funcionalidades.</li>
+                  <br /><li>REGISTRO DE CLIENTE Y MASCOTAS: Almacenamiento seguro e información organizada sobre los clientes y sus mascotas.</li>
+                  <br /><li>GESTION DE SERVICIOS: Creación, consulta, modificación y Eliminación de servicios, clientes y mascotas.</li>
+                  <br /><li>ROLES DE USUARIOS: Diferenciación de accesos y funcionalidades según el rol del usuario: usuario (administrador, veterinario, personal de soporte, cliente).</li>
+                  <br /><li>GENERACION DE INFORMES: Creación de informes detallados sobre el uso de los servicios, la salud de las mascotas y la gestión interna del personal y los clientes.</li>
+              </ul>
+          </div>
+          <div className='descriptionprj2'>
+              IMPACTO:
+              <br />El desarrollo de esta aplicación tendrá un impacto positivo al facilitar la comunicación. veterinarios y propietarios de animales de compañía, así como mejorando la gestión interna de los clínicas veterinarias, contribuyendo a un mejor cuidado y bienestar animal.
+          </div>
+          <br /><br />
+            <div className="photoprj1">
+              <Image src={Spk2} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <div className="photoprj1">
+              <Image src={Spk5} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <div className="photoprj1">
+              <Image src={Spk6} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <div className="photoprj1">
+              <Image src={Spk7} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <div className="photoprj1">
+              <Image src={Spk8} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <div className="photoprj1">
+              <Image src={Spk9} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <div className="photoprj1">
+              <Image src={Spk10} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <div className="photoprj1">
+              <Image src={Spk11} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <button className='btngithublink'>
+              <a href="https://github.com/byquesters/Pet-Care.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>Ver en GitHub</a>
+            </button>
+          </div>
+        </div>
+      )}
 
       {modalOpen && selectedProject === "harmony_heaven" && (
         <div className='modalprj1' onClick={closeModal}>

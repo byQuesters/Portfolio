@@ -20,9 +20,10 @@ import SMLg from "../../images/SMLg.png"
 import SM from "../../images/SM.png"
 import EQA1 from "../../images/EQA1.png"
 import EQAP from "../../images/EQAP.png"
-
-
-
+import StJ1 from '../../images/StJ1.png';
+import StJ2 from '../../images/StJ2.png';
+import StJ3 from '../../images/StJ3.png';
+import StJ4 from '../../images/StJ4.png';
 
 import "../../css/modal.css";
 import "../../css/project.css";
@@ -55,23 +56,20 @@ const Proyectos = () => {
 
       <div className="grid-containerprj">
 
-      <button className="container-project" onClick={() => openModalForProject("StJohns")}>
-        <div className="nameprj">St John's Gym</div>
-        <div className="categorie">Personal</div>
+      <button className="container-project" onClick={() => openModalForProject("STJohns")}>
+        <div className="nameprj">Gimnasio St. John&apos;s</div>
+        <div className="categorie">Grupal</div>
         <div className="photoprj">
-          <Image src={SMMain} alt="" width={"auto"} height={"auto"} />
+          <Image src={StJ1} alt="" width={"auto"} height={"auto"} />
         </div>
         <div className="descriptionprj">
-          <h4>Pagina web landing page responsivo para un gimnasio</h4>
+          <h4>Pagina web landing page responsive para un gimnasio.</h4>
         </div>
         <div className="lenguajesprj">
-          <Image src="/icons/js.png" width={200} height={200} alt="" />
-          <Image src="/icons/nextjs.png" width={200} height={200} alt="" />
-          <Image src="/icons/css3.png" width={200} height={200} alt="" />
-          <Image src="/icons/prisma.png" width={200} height={200} alt="" />
-          <Image src="/icons/nodejs.png" width={200} height={200} alt="" />
+        <Image src="/icons/nextjs.png" width={200} height={200} alt="" />
+        <Image src="/icons/css3.png" width={200} height={200} alt="" />
+        <Image src="/icons/js.png" width={200} height={200} alt="" />
         </div>
-        <br />
         <div className="github">
           <i className="bi bi-eye-fill"></i>Ver proyecto
         </div>
@@ -197,6 +195,54 @@ const Proyectos = () => {
 
       </div>
       <br/><br/><br/><br/>
+
+      {modalOpen && selectedProject === "STJohns" && (
+        <div className='modalprj1' onClick={closeModal}>
+          <div className='modalcontent1' onClick={(e) => e.stopPropagation()}>
+
+            <button className="close-modal" onClick={closeModal}>
+              <X size={24} />
+            </button>
+
+            <div className="nameprj1">St. John&apos;s Gym</div>
+            <div className="categorie1">Personal</div>
+            <div className="lenguajesprj1">
+            <Image src="/icons/nextjs.png" width={200} height={200} alt="" />
+            <Image src="/icons/css3.png" width={200} height={200} alt="" />
+            <Image src="/icons/js.png" width={200} height={200} alt="" />
+            </div>
+            <div className="descriptionprj1">
+              <h4>Pagina Web St. John&apos;s <br /> (Todos los derechos reservados)</h4>
+            </div>
+            <div className='descriptionprj3'>
+              <p>Landing Page Responsive desarrollado para mostrar la informacion de interes publico de un gimnasio.</p>
+            </div>
+            <div className="photoprj1">
+              <Image src={StJ2} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <div className="photoprj1">
+              <Image src={StJ3} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <br />
+            <br />
+            <div className='descriptionprj3'>
+              <p>La pagina web presenta 2 vistas, el home con informacion detallada y la pagina de contacto donde se presenta informacion de contacto y ubicacion del gimnasio</p>
+            </div>
+            <div className="photoprj1">
+              <Image src={StJ4} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <div>
+              <button className='btngithublink'>
+                <a href="https://st-johns-gym.vercel.app/"><i className="bi bi-eye" style={{ marginRight: '5px' }}></i>Ver en Produccion</a>
+              </button>
+            </div>
+            <button className='btngithublink'> 
+              <a href="https://github.com/byQuesters/St-Johns-Gym"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>Ver en GitHub</a>
+            </button>
+
+          </div>
+        </div>
+      )}
 
       {modalOpen && selectedProject === "EQAP" && (
         <div className='modalprj1' onClick={closeModal}>
