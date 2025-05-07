@@ -180,7 +180,6 @@
     .btnlinks1 button{
         font-size: .9rem;
     }
-
 }
 
 
@@ -276,7 +275,7 @@
 
     .contactme{
         font-size: 90%;
-        margin-top: 27rem;
+        margin-top: 30vh;
         margin-bottom: 5%;
     }
     .modalprj1{
@@ -377,7 +376,7 @@
     
         .contactme{
             font-size: 90%;
-            margin-top: 30vh;
+            margin-top: 25rem;
             margin-bottom: 5%;
         }
         .modalprj1{
