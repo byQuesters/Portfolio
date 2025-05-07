@@ -1,5 +1,6 @@
 import Image from 'next/image';
 
+// ICONS TECNOLOGIES
 import htmlpng from '../../../public/icons/html5.png';
 import csspng from '../../../public/icons/css3.png';
 import jspng from '../../../public/icons/js.png';
@@ -25,21 +26,21 @@ const TecnologiasEN = () => {
         <div className="grid-containertec">
           <div className="grid-itemtec">
             <h2>Frontend</h2>
-             <div className="tecnologias">
+              <div className="tecnologias">
               <div className="image-with-text">
-              <Image src={htmlpng} width={200} height={200} alt="HTML5" />                
-              <p>HTML</p>
+                <Image src="/icons/html5.png" width={200} height={200} alt="HTML5" />                
+                <p>HTML</p>
               </div>
               <div className="image-with-text">
-              <Image src={csspng} width={200} height={200} alt="HTML5" />                
-              <p>CSS</p>
+                <Image src="/icons/css3.png" width={200} height={200} alt="" />
+                <p>CSS</p>
               </div>
               <div className="image-with-text">
-                <Image src={jspng} width={200} height={200} alt="HTML5" />                
+                <Image src="/icons/js.png" width={200} height={200} alt="" />
                 <p>JavaScript</p>
               </div>
               <div className="image-with-text">
-                <Image src={reactpng} width={200} height={200} alt="HTML5" />                
+                <Image src="/icons/reactn.png" width={200} height={200} alt="HTML5" />                
                 <p>React</p>
               </div>
             </div>
@@ -48,66 +49,67 @@ const TecnologiasEN = () => {
             <h2>Backend</h2>
             <div className="tecnologias">
               <div className="image-with-text">
-              <Image src={prismapng} width={200} height={200} alt="HTML5" />                
-              <p>Prisma</p>
+                <Image src="/icons/prisma.png" width={200} height={200} alt="" />
+                <p>Prisma</p>
               </div>
               <div className="image-with-text">
-              <Image src={phppng} width={200} height={200} alt="HTML5" />                
-              <p>PHP</p>
+                <Image src="/icons/php.png" width={200} height={200} alt="" />
+                <p>PHP</p>
               </div>
               <div className="image-with-text">
-              <Image src={nextpng} width={200} height={200} alt="HTML5" />                
-              <p>NextJS</p>
+                <Image src="/icons/nextjs.png" width={200} height={200} alt="" />
+                <p>NextJS</p>
               </div>
               <div className="image-with-text">
-              <Image src={mysqlpng} width={200} height={200} alt="HTML5" />                
-              <p>MySQL</p>
+                <Image src="/icons/mysql.png" width={200} height={200} alt="" />
+                <p>MySQL</p>
               </div>
               <div className="image-with-text">
-              <Image src={nodepng} width={200} height={200} alt="HTML5" />                
-              <p>NodeJS</p>
+                <Image src="/icons/nodejs.png" width={200} height={200} alt="" />
+                <p>NodeJS</p>
               </div>
             </div>
 
           </div>
           <div className="grid-itemtec">
-            <h2>Extra</h2>
+            <h2>Extras</h2>
             <div className="tecnologias">
               <div className="image-with-text">
-              <Image src={swiftpng} width={200} height={200} alt="HTML5" />                
-              <p>Swift</p>
+                <Image src="/icons/swift.png" width={200} height={200} alt="" />
+                <p>Swift</p>
               </div>
               <div className="image-with-text">
-              <Image src={pythonpng} width={200} height={200} alt="HTML5" />                
-              <p>Python</p>
+                <Image src="/icons/python.png" width={200} height={200} alt="" />
+                <p>Python</p>
               </div>
             </div>
 
           </div>
           <div className="grid-itemtec">
-            <h2>Tools</h2>
+            <h2>Herramientas</h2>
             <div className="tecnologias">
               <div className="image-with-text">
-              <Image src={terminalpng} width={200} height={200} alt="HTML5" />                
-              <p>Terminal</p>
+                <Image src="/icons/terminal.png" width={200} height={200} alt="" />
+                <p>Terminal</p>
               </div>
               <div className="image-with-text">
-              <Image src={vscodepng} width={200} height={200} alt="HTML5" />                
-              <p>VS Code</p>
+                <Image src="/icons/vscode.png" width={200} height={200} alt="" />
+                <p>VS Code</p>
               </div>
               <div className="image-with-text">
-              <Image src={gitpng} width={200} height={200} alt="HTML5" />                
-              <p>Git</p>
+                <Image src="/icons/git.png" width={200} height={200} alt="" />
+                <p>Git</p>
               </div>
               <div className="image-with-text">
-              <Image src={githubpng} width={200} height={200} alt="HTML5" />                
-              <p>GitHub</p>
+                <Image src="/icons/github.png" width={200} height={200} alt="" />
+                <p>GitHub</p>
               </div>
               <div className="image-with-text">
-              <Image src={npm} width={200} height={200} alt="HTML5" />                
-              <p>npm</p>
+                <Image src="/icons/npm.png" width={200} height={200} alt="" />
+                <p>npm</p>
               </div>
             </div>
+
           </div>
 
         </div>

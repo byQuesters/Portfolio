@@ -1,5 +1,23 @@
 import Image from 'next/image';
 
+// ICONS TECNOLOGIES
+import htmlpng from '../../../public/icons/html5.png';
+import csspng from '../../../public/icons/css3.png';
+import jspng from '../../../public/icons/js.png';
+import reactpng from '../../../public/icons/reactn.png';
+import nextpng from '../../../public/icons/nextjs.png';
+import mysqlpng from '../../../public/icons/mysql.png';
+import nodepng from '../../../public/icons/nodejs.png';
+import gitpng from '../../../public/icons/git.png';
+import githubpng from '../../../public/icons/github.png';
+import terminalpng from '../../../public/icons/terminal.png';
+import npm from '../../../public/icons/npm.png';
+import swiftpng from '../../../public/icons/swift.png';
+import pythonpng from '../../../public/icons/python.png';
+import phppng from '../../../public/icons/php.png';
+import prismapng from '../../../public/icons/prisma.png';
+import vscodepng from '../../../public/icons/vscode.png';
+
 const Tecnologias = () => {
   return (
     <div className="lenguajes">
