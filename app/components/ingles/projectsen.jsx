@@ -348,7 +348,7 @@ const ProyectosEN = () => {
             <br />
             <br />
             <div className='descriptionprj3'>
-              <p>The website features 2 views: the home page with detailed information and the contact page showing the gym's contact information and location.</p>
+              <p>The website features 2 views: the home page with detailed information and the contact page showing the gym&apos;s contact information and location.</p>
             </div>
             <div className="photoprj1">
               <Image src={StJ4} alt="" width={"auto"} height={"auto"} />
