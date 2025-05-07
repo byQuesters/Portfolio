@@ -10,19 +10,19 @@ const TecnologiasEN = () => {
             <h2>Frontend</h2>
              <div className="tecnologias">
               <div className="image-with-text">
-              <Image src="/icons/html5.png" width={200} height={200} alt="HTML5" />                
+              <Image src="./icons/html5.png" width={200} height={200} alt="HTML5" />                
               <p>HTML</p>
               </div>
               <div className="image-with-text">
-              <Image src="/icons/css3.png" width={200} height={200} alt="HTML5" />                
+              <Image src="./icons/css3.png" width={200} height={200} alt="HTML5" />                
               <p>CSS</p>
               </div>
               <div className="image-with-text">
-                <Image src="/icons/js.png" width={200} height={200} alt="HTML5" />                
+                <Image src="./icons/js.png" width={200} height={200} alt="HTML5" />                
                 <p>JavaScript</p>
               </div>
               <div className="image-with-text">
-                <Image src="/icons/reactn.png" width={200} height={200} alt="HTML5" />                
+                <Image src="./icons/reactn.png" width={200} height={200} alt="HTML5" />                
                 <p>React</p>
               </div>
             </div>
