@@ -124,7 +124,7 @@ button {
   
   .btnlinks {
     text-decoration: none; /* Not needed here, inherits from button */
-    margin-top: 2%;
+    margin-top: -1%;
     width: 100%;
     color: rgb(0, 35, 60);
   }
@@ -154,7 +154,7 @@ button {
 
 .btnlinks1 {
     position: absolute;
-    top: 90vh;
+    top: 87vh;
     left: 0;
     margin: auto;
     text-decoration: none; /* Not needed here, inherits from button */

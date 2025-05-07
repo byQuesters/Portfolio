@@ -138,8 +138,14 @@
 
 /* iPmini */
 @media screen and (max-width: 768px) {
+    body{
+        margin-left: 0;
+    }
     .datos1{
         margin-top: 10vh;
+    }
+    .datos2{
+        margin-top: -4%;
     }
     .personaldata{
         font-size: 80%;
@@ -147,11 +153,32 @@
     .modalprj1{
         height: 50%;
     }
+    .grid-containertec{
+        grid-template-columns: repeat(auto-fill, minmax(50vh, 0fr));
+    }
+    .grid-itemtec {
+        margin-top: 2vh;
+        width: 90%;
+        height: 40vh;
+    }
+    .image-with-text img {
+        width: 9vh;
+        height: 9vh;
+    }
     .grid-itemtec h2{
         margin-bottom: -4%;
     }
     .btnlinks1{
         margin-top: 2vh;
+    }
+    .descriptionprj{
+        font-size: 1.5rem;
+    }
+    .btnlinks i{
+        font-size: 2.5rem;
+    }
+    .btnlinks1 button{
+        font-size: .9rem;
     }
 }
 
@@ -363,7 +390,7 @@
     html{
         background-image: linear-gradient(to bottom, #ff7e5f 15%, #ff7f5f 14%, #31405f 28%, #31405f 84%, #000000 95%,  #000000 100%);
         overflow-x: hidden;
-        font-size: 80%;
+        font-size: 1rem;
     }
     body{
         margin-left: 0;
@@ -374,7 +401,7 @@
     }.personaldata{
         width: 90%;
         height: 80vh;
-        font-size: 90%;
+        font-size: .7rem;
         margin-top: 15%;
         flex-wrap: wrap;
         text-align: center;
@@ -390,7 +417,7 @@
         margin: auto;
     }
     .datos2{
-        font-size: 1.1vh;
+        font-size: .5rem;
         margin-top: 5%;
         margin-left: 2%;
         width: 90%;
@@ -406,6 +433,8 @@
     }
 
     .lenguajes h2{
+        font-size: 2rem;
+        border: 1px solid red;
         margin-bottom: -15%;
     }
     .grid-containertec{

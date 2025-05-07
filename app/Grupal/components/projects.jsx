@@ -165,8 +165,8 @@ const Proyectos = () => {
               </h4>
             </div>
             <div className="lenguajesprj1">
-            <Image src={reactpng} width={200} height={200} alt="" />
-            <Image src={prismapng} width={200} height={200} alt="" />
+              <Image src={reactpng} width={200} height={200} alt="" />
+              <Image src={prismapng} width={200} height={200} alt="" />
             </div>
             <div className="photoprj1">
               <Image src={Spk3} alt="" width={"auto"} height={"auto"} />
