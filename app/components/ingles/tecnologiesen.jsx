@@ -28,7 +28,7 @@ const TecnologiasEN = () => {
             <h2>Frontend</h2>
               <div className="tecnologias">
               <div className="image-with-text">
-                <Image src="/icons/html5.png" width={200} height={200} alt="HTML5" />                
+                <Image src="/icons/html5.png" width={""} height={""} alt="HTML5" />                
                 <p>HTML</p>
               </div>
               <div className="image-with-text">
