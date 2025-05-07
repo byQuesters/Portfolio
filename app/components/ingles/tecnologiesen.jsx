@@ -27,19 +27,19 @@ const TecnologiasEN = () => {
             <h2>Frontend</h2>
              <div className="tecnologias">
               <div className="image-with-text">
-              <Image src={htmlpng} width={1000} height={1000} alt="HTML5" />                
+              <Image src={htmlpng} width={200} height={200} alt="HTML5" />                
               <p>HTML</p>
               </div>
               <div className="image-with-text">
-              <Image src={csspng} width={100} height={100} alt="HTML5" />                
+              <Image src={csspng} width={200} height={200} alt="HTML5" />                
               <p>CSS</p>
               </div>
               <div className="image-with-text">
-                <Image src={jspng} width={50} height={50} alt="HTML5" />                
+                <Image src={jspng} width={200} height={200} alt="HTML5" />                
                 <p>JavaScript</p>
               </div>
               <div className="image-with-text">
-                <Image src={reactpng} width={500} height={500} alt="HTML5" />                
+                <Image src={reactpng} width={200} height={200} alt="HTML5" />                
                 <p>React</p>
               </div>
             </div>
