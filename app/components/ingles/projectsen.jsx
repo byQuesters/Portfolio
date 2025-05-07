@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { X } from 'react-feather';
 import React, { useState } from 'react';
 
- // ICONS TECNOLOGIES
+// ICONS TECNOLOGIES
 import htmlpng from '../../../public/icons/html5.png';
 import csspng from '../../../public/icons/css3.png';
 import jspng from '../../../public/icons/js.png';
@@ -136,6 +136,7 @@ const ProyectosEN = () => {
           </div>
           <div className="lenguajesprj">
             <Image src={reactpng} width={200} height={200} alt="" />
+            <Image src={prismapng} width={200} height={200} alt="" />
           </div>
           <div className="github">
             <i className="bi bi-eye-fill"></i>View Project
@@ -286,6 +287,7 @@ const ProyectosEN = () => {
             </div>
             <div className="lenguajesprj1">
               <Image src={reactpng} width={200} height={200} alt="" />
+              <Image src={prismapng} width={200} height={200} alt="" />
             </div>
             <div className="photoprj1">
               <Image src={Spk3} alt="" width={"auto"} height={"auto"} />

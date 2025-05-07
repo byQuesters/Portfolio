@@ -136,6 +136,7 @@ const Proyectos = () => {
           </div>
           <div className="lenguajesprj">
             <Image src={reactpng} width={200} height={200} alt="" />
+            <Image src={prismapng} width={200} height={200} alt="" />
           </div>
           <div className="github">
             <i className="bi bi-eye-fill"></i>Ver proyecto
@@ -286,6 +287,7 @@ const Proyectos = () => {
             </div>
             <div className="lenguajesprj1">
               <Image src={reactpng} width={200} height={200} alt="" />
+              <Image src={prismapng} width={200} height={200} alt="" />
             </div>
             <div className="photoprj1">
               <Image src={Spk3} alt="" width={"auto"} height={"auto"} />

@@ -2,6 +2,25 @@ import Image from 'next/image';
 import { X } from 'react-feather';
 import React, { useState } from 'react';
 
+ // ICONS TECNOLOGIES
+ import htmlpng from '../../../public/icons/html5.png';
+ import csspng from '../../../public/icons/css3.png';
+ import jspng from '../../../public/icons/js.png';
+ import reactpng from '../../../public/icons/reactn.png';
+ import nextpng from '../../../public/icons/nextjs.png';
+ import mysqlpng from '../../../public/icons/mysql.png';
+ import nodepng from '../../../public/icons/nodejs.png';
+ import gitpng from '../../../public/icons/git.png';
+ import githubpng from '../../../public/icons/github.png';
+ import terminalpng from '../../../public/icons/terminal.png';
+ import npm from '../../../public/icons/npm.png';
+ import swiftpng from '../../../public/icons/swift.png';
+ import pythonpng from '../../../public/icons/python.png';
+ import phppng from '../../../public/icons/php.png';
+ import prismapng from '../../../public/icons/prisma.png';
+ import vscodepng from '../../../public/icons/vscode.png';
+ 
+ // IMAGES PROJECTS
 import CR from '../../images/CR.png';
 import CR1 from '../../images/CR1.png';
 import CR2 from '../../images/CR2.png';
@@ -66,9 +85,9 @@ const Proyectos = () => {
           <h4>Pagina web landing page responsive para un gimnasio.</h4>
         </div>
         <div className="lenguajesprj">
-        <Image src="/icons/nextjs.png" width={200} height={200} alt="" />
-        <Image src="/icons/css3.png" width={200} height={200} alt="" />
-        <Image src="/icons/js.png" width={200} height={200} alt="" />
+        <Image src={nextpng} width={200} height={200} alt="" />
+        <Image src={csspng} width={200} height={200} alt="" />
+        <Image src={jspng} width={200} height={200} alt="" />
         </div>
         <div className="github">
           <i className="bi bi-eye-fill"></i>Ver proyecto
@@ -85,11 +104,11 @@ const Proyectos = () => {
           <h4>Pagina web para agendar citas y gestionar horario de una barberia</h4>
         </div>
         <div className="lenguajesprj">
-          <Image src="/icons/js.png" width={200} height={200} alt="" />
-          <Image src="/icons/nextjs.png" width={200} height={200} alt="" />
-          <Image src="/icons/css3.png" width={200} height={200} alt="" />
-          <Image src="/icons/prisma.png" width={200} height={200} alt="" />
-          <Image src="/icons/nodejs.png" width={200} height={200} alt="" />
+          <Image src={jspng} width={200} height={200} alt="" />
+          <Image src={nextpng} width={200} height={200} alt="" />
+          <Image src={csspng} width={200} height={200} alt="" />
+          <Image src={prismapng} width={200} height={200} alt="" />
+          <Image src={nodepng} width={200} height={200} alt="" />
         </div>
         <br />
         <div className="github">
@@ -107,11 +126,11 @@ const Proyectos = () => {
             <h4>Aplicacion movil para Android para mostrar terremotos</h4>
           </div>
           <div className="lenguajesprj">
-          <Image src="/icons/js.png" width={200} height={200} alt="" />
-          <Image src="/icons/nextjs.png" width={200} height={200} alt="" />
-          <Image src="/icons/css3.png" width={200} height={200} alt="" />
-          <Image src="/icons/prisma.png" width={200} height={200} alt="" />
-          <Image src="/icons/nodejs.png" width={200} height={200} alt="" />
+          <Image src={jspng} width={200} height={200} alt="" />
+          <Image src={nextpng} width={200} height={200} alt="" />
+          <Image src={csspng} width={200} height={200} alt="" />
+          <Image src={prismapng} width={200} height={200} alt="" />
+          <Image src={nodepng} width={200} height={200} alt="" />
           </div>
           <br />
           <div className="github">
@@ -129,11 +148,11 @@ const Proyectos = () => {
             <h4>Red Social para Fotografos</h4>
           </div>
           <div className="lenguajesprj">
-            <Image src="/icons/js.png" width={200} height={200} alt="" />
-            <Image src="/icons/nextjs.png" width={200} height={200} alt="" />
-            <Image src="/icons/css3.png" width={200} height={200} alt="" />
-            <Image src="/icons/prisma.png" width={200} height={200} alt="" />
-            <Image src="/icons/nodejs.png" width={200} height={200} alt="" />          
+            <Image src={jspng} width={200} height={200} alt="" />
+            <Image src={nextpng} width={200} height={200} alt="" />
+            <Image src={csspng} width={200} height={200} alt="" />
+            <Image src={prismapng} width={200} height={200} alt="" />
+            <Image src={nodepng} width={200} height={200} alt="" />          
           </div>
           <div className="categorie" style={{ color: 'yellow' }}>En desarrollo</div>
           <br />
@@ -152,7 +171,7 @@ const Proyectos = () => {
             <h4>Aplicacion de Notas para iOS</h4>
           </div>
           <div className="lenguajesprj">
-          <Image src="/icons/swift.png" width={200} height={200} alt="" />
+          <Image src={swiftpng} width={200} height={200} alt="" />
           </div>
           <div className="github">
             <i className="bi bi-eye-fill"></i>Ver proyecto
@@ -169,7 +188,7 @@ const Proyectos = () => {
               <h4>Reconocimiento de carros en videos con Python</h4>
             </div>
             <div className="lenguajesprj">
-            <Image src="/icons/python.png" width={200} height={200} alt="" />
+            <Image src={pythonpng} width={200} height={200} alt="" />
             </div>
             <div className="github">
               <i className="bi bi-eye-fill"></i>Ver proyecto
@@ -186,7 +205,7 @@ const Proyectos = () => {
             <h4>Programa de reconocimiento de digitos dibujados por el usuario</h4>
           </div>
           <div className="lenguajesprj">
-          <Image src="/icons/python.png" width={200} height={200} alt="" />
+          <Image src={pythonpng} width={200} height={200} alt="" />
           </div>
           <div className="github">
             <i className="bi bi-eye-fill"></i>Ver proyecto
@@ -207,9 +226,9 @@ const Proyectos = () => {
             <div className="nameprj1">St. John&apos;s Gym</div>
             <div className="categorie1">Personal</div>
             <div className="lenguajesprj1">
-            <Image src="/icons/nextjs.png" width={200} height={200} alt="" />
-            <Image src="/icons/css3.png" width={200} height={200} alt="" />
-            <Image src="/icons/js.png" width={200} height={200} alt="" />
+            <Image src={nextpng} width={200} height={200} alt="" />
+            <Image src={csspng} width={200} height={200} alt="" />
+            <Image src={jspng} width={200} height={200} alt="" />
             </div>
             <div className="descriptionprj1">
               <h4>Pagina Web St. John&apos;s <br /> (Todos los derechos reservados)</h4>
@@ -255,11 +274,11 @@ const Proyectos = () => {
             <div className="nameprj1">Aplicacion de Alertas Sismicas para Android</div>
             <div className="categorie1">Personal</div>
             <div className="lenguajesprj1">
-            <Image src="/icons/js.png" width={200} height={200} alt="" />
-            <Image src="/icons/nextjs.png" width={200} height={200} alt="" />
-            <Image src="/icons/css3.png" width={200} height={200} alt="" />
-            <Image src="/icons/prisma.png" width={200} height={200} alt="" />
-            <Image src="/icons/nodejs.png" width={200} height={200} alt="" />
+            <Image src={jspng} width={200} height={200} alt="" />
+            <Image src={nextpng} width={200} height={200} alt="" />
+            <Image src={csspng} width={200} height={200} alt="" />
+            <Image src={prismapng} width={200} height={200} alt="" />
+            <Image src={nodepng} width={200} height={200} alt="" />
             </div>
             <div className="descriptionprj1">
               <h4>Aplicacion web publica para que las personas puedan agendar citas en una barberia.</h4>
@@ -304,11 +323,11 @@ const Proyectos = () => {
             <div className="nameprj1">Gestor de citas para Barberia</div>
             <div className="categorie1">Personal</div>
             <div className="lenguajesprj1">
-            <Image src="/icons/js.png" width={200} height={200} alt="" />
-            <Image src="/icons/nextjs.png" width={200} height={200} alt="" />
-            <Image src="/icons/css3.png" width={200} height={200} alt="" />
-            <Image src="/icons/prisma.png" width={200} height={200} alt="" />
-            <Image src="/icons/nodejs.png" width={200} height={200} alt="" />
+            <Image src={jspng} width={200} height={200} alt="" />
+            <Image src={nextpng} width={200} height={200} alt="" />
+            <Image src={csspng} width={200} height={200} alt="" />
+            <Image src={prismapng} width={200} height={200} alt="" />
+            <Image src={nodepng} width={200} height={200} alt="" />
             </div>
             <div className="descriptionprj1">
               <h4>Aplicacion web publica para que las personas puedan agendar citas en una barberia.</h4>
@@ -353,11 +372,11 @@ const Proyectos = () => {
             <div className="nameprj1">Pixels</div>
             <div className="categorie1">Personal</div>
             <div className="lenguajesprj1">
-            <Image src="/icons/js.png" width={200} height={200} alt="" />
-            <Image src="/icons/nextjs.png" width={200} height={200} alt="" />
-            <Image src="/icons/css3.png" width={200} height={200} alt="" />
-            <Image src="/icons/prisma.png" width={200} height={200} alt="" />
-            <Image src="/icons/nodejs.png" width={200} height={200} alt="" />            </div>
+            <Image src={jspng} width={200} height={200} alt="" />
+            <Image src={nextpng} width={200} height={200} alt="" />
+            <Image src={csspng} width={200} height={200} alt="" />
+            <Image src={prismapng} width={200} height={200} alt="" />
+            <Image src={nodepng} width={200} height={200} alt="" />            </div>
             <div className="photoprj1">
               <Image src={PX1} alt="" width={"auto"} height={"auto"} />
             </div>
@@ -401,7 +420,7 @@ const Proyectos = () => {
             <div className="nameprj1">Car Recognition</div>
             <div className="categorie1">Personal</div>
             <div className="lenguajesprj1">
-            <Image src="/icons/python.png" width={200} height={200} alt="" />
+            <Image src={pythonpng} width={200} height={200} alt="" />
             </div>
             <div className="photoprj1">
               <Image src={CR1} alt="" width={"auto"} height={"auto"} />
@@ -437,7 +456,7 @@ const Proyectos = () => {
             <div className="nameprj1">Notes APP</div>
             <div className="categorie1">Personal</div>
             <div className="lenguajesprj1">
-            <Image src="/icons/swift.png" width={200} height={200} alt="" />
+            <Image src={swiftpng} width={200} height={200} alt="" />
             </div>
             <div className="photoprj1">
               <Image src={Nte} alt="" width={"auto"} height={"auto"} />
@@ -484,7 +503,7 @@ const Proyectos = () => {
             <div className="nameprj1">Number Recognition</div>
             <div className="categorie1">Personal</div>
             <div className="lenguajesprj1">
-            <Image src="/icons/python.png" width={200} height={200} alt="" />
+            <Image src={pythonpng} width={200} height={200} alt="" />
             </div>
             {/* <div className="photoprj1">
               <Image src={BB} alt="" width={"auto"} height={"auto"} />

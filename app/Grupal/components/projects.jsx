@@ -2,6 +2,25 @@ import Image from 'next/image';
 import { X } from 'react-feather';
 import React, { useState } from 'react';
 
+ // ICONS TECNOLOGIES
+ import htmlpng from '../../../public/icons/html5.png';
+ import csspng from '../../../public/icons/css3.png';
+ import jspng from '../../../public/icons/js.png';
+ import reactpng from '../../../public/icons/reactn.png';
+ import nextpng from '../../../public/icons/nextjs.png';
+ import mysqlpng from '../../../public/icons/mysql.png';
+ import nodepng from '../../../public/icons/nodejs.png';
+ import gitpng from '../../../public/icons/git.png';
+ import githubpng from '../../../public/icons/github.png';
+ import terminalpng from '../../../public/icons/terminal.png';
+ import npm from '../../../public/icons/npm.png';
+ import swiftpng from '../../../public/icons/swift.png';
+ import pythonpng from '../../../public/icons/python.png';
+ import phppng from '../../../public/icons/php.png';
+ import prismapng from '../../../public/icons/prisma.png';
+ import vscodepng from '../../../public/icons/vscode.png';
+
+ // IMAGES PROJECTS
 import HyH from '../../images/HarmonyAndHeavenM.jpg';
 import HyH1 from '../../images/HarmonyAndHeavenL.jpg';
 import PEE from '../../images/PickEm.jpg';
@@ -64,7 +83,8 @@ const Proyectos = () => {
             <h4>Aplicación movil para gestión de citas y servicios veterinarios de forma centralizada.</h4>
           </div>
           <div className="lenguajesprj">
-          <Image src="/icons/reactn.png" width={200} height={200} alt="" />
+          <Image src={reactpng} width={200} height={200} alt="" />
+          <Image src={prismapng} width={200} height={200} alt="" />
           </div>
           <div className="github">
             <i className="bi bi-eye-fill"></i>Ver proyecto
@@ -81,9 +101,9 @@ const Proyectos = () => {
             <h4>Tienda de instrumentos con CRUD - Inventario y Punto de venta.</h4>
           </div>
           <div className="lenguajesprj">
-            <Image src="https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png" width={40} height={40} alt="" />
-            <Image src="https://cdn-icons-png.flaticon.com/512/5968/5968313.png" width={40} height={40} alt="" />
-            <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/2048px-CSS3_logo.svg.png" width={200} height={200} alt="" />
+            <Image src={nodepng} width={40} height={40} alt="" />
+            <Image src={mysqlpng} width={40} height={40} alt="" />
+            <Image src={csspng} width={200} height={200} alt="" />
           </div>
           <div className="github">
             <i className="bi bi-eye-fill"></i>Ver proyecto
@@ -100,7 +120,7 @@ const Proyectos = () => {
             <h4>Videojuego desarrollado con la libreria Pygame de Python</h4>
           </div>
           <div className="lenguajesprj">
-            <Image src="https://cdn.iconscout.com/icon/free/png-256/free-python-3521655-2945099.png?f=webp" width={200} height={200} alt="" />
+            <Image src={pythonpng} width={200} height={200} alt="" />
           </div>
           <div className="github">
             <i className="bi bi-eye-fill"></i>Ver proyecto
@@ -117,9 +137,9 @@ const Proyectos = () => {
             <h4>Web Blog informatico enfocado a la tecnologia y computadoras, los usuarios pueden hacer nuevas publicaciones y el admin borrarlas</h4>
           </div>
           <div className="lenguajesprj">
-            <Image src="https://static-00.iconduck.com/assets.00/php-icon-2048x2048-jyo8hbbt.png" width={200} height={200} alt="" />
-            <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/2048px-CSS3_logo.svg.png" width={200} height={200} alt="" />
-            <Image src="https://cdn-icons-png.flaticon.com/512/5968/5968313.png" width={40} height={40} alt="" />
+            <Image src={phppng} width={200} height={200} alt="" />
+            <Image src={csspng} width={200} height={200} alt="" />
+            <Image src={mysqlpng} width={40} height={40} alt="" />
           </div>
           <div className="github">
             <i className="bi bi-eye-fill"></i>Ver proyecto
@@ -145,7 +165,8 @@ const Proyectos = () => {
               </h4>
             </div>
             <div className="lenguajesprj1">
-            <Image src="/icons/reactn.png" width={200} height={200} alt="" />
+            <Image src={reactpng} width={200} height={200} alt="" />
+            <Image src={prismapng} width={200} height={200} alt="" />
             </div>
             <div className="photoprj1">
               <Image src={Spk3} alt="" width={"auto"} height={"auto"} />
@@ -208,8 +229,8 @@ const Proyectos = () => {
             <div className="nameprj1">Harmony &amp; Heaven</div>
             <div className="categorie1">Grupal</div>
             <div className="lenguajesprj1">
-              <Image src="https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png" width={40} height={40} alt="" />
-              <Image src="https://cdn-icons-png.flaticon.com/512/5968/5968313.png" width={40} height={40} alt="" />
+              <Image src={nodepng} width={40} height={40} alt="" />
+              <Image src={mysqlpng} width={40} height={40} alt="" />
             </div>
             <div className="photoprj1">
               <Image src={HyH1} alt="" width={"auto"} height={"auto"} />
@@ -246,7 +267,7 @@ const Proyectos = () => {
             <div className="nameprj1">Pick Em&apos; Everithing</div>
             <div className="categorie1">Grupal</div>
             <div className="lenguajesprj1">
-              <Image src="https://cdn.iconscout.com/icon/free/png-256/free-python-3521655-2945099.png?f=webp" width={40} height={40} alt="" />
+              <Image src={pythonpng} width={40} height={40} alt="" />
             </div>
             <div className="photoprj1">
               <Image src={PEE} alt="" width={"auto"} height={"auto"} />
@@ -297,9 +318,9 @@ const Proyectos = () => {
             <div className="nameprj1">BuggBlock</div>
             <div className="categorie1">Grupal</div>
             <div className="lenguajesprj1">
-              <Image src="https://static-00.iconduck.com/assets.00/php-icon-2048x2048-jyo8hbbt.png" width={200} height={200} alt="" />
-              <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/2048px-CSS3_logo.svg.png" width={200} height={200} alt="" />
-              <Image src="https://cdn-icons-png.flaticon.com/512/5968/5968313.png" width={40} height={40} alt="" />
+              <Image src={phppng} width={200} height={200} alt="" />
+              <Image src={csspng} width={200} height={200} alt="" />
+              <Image src={mysqlpng} width={40} height={40} alt="" />
             </div>
             <div className="photoprj1">
               <Image src={BB} alt="" width={"auto"} height={"auto"} />

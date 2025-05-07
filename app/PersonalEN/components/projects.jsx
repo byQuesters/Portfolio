@@ -20,6 +20,7 @@ import phppng from '../../../public/icons/php.png';
 import prismapng from '../../../public/icons/prisma.png';
 import vscodepng from '../../../public/icons/vscode.png';
 
+// IMAGES PROJECTS
 import CR from '../../images/CR.png';
 import CR1 from '../../images/CR1.png';
 import CR2 from '../../images/CR2.png';
@@ -143,7 +144,7 @@ const Proyectos = () => {
             <h4>Notes application for iOS</h4>
           </div>
           <div className="lenguajesprj">
-          <Image src="/icons/swift.png" width={200} height={200} alt="" />
+          <Image src={swiftpng} width={200} height={200} alt="" />
           </div>
           <div className="github">
             <i className="bi bi-eye-fill"></i>View project
@@ -377,7 +378,7 @@ const Proyectos = () => {
             <div className="nameprj1">Notes APP</div>
             <div className="categorie1">Personal</div>
             <div className="lenguajesprj1">
-            <Image src="/icons/swift.png" width={200} height={200} alt="" />
+            <Image src={swiftpng} width={200} height={200} alt="" />
             </div>
             <div className="photoprj1">
               <Image src={Nte} alt="" width={"auto"} height={"auto"} />
