@@ -102,7 +102,7 @@ const ProyectosEN = () => {
           </div>
           <br />
           <div className="github">
-            <i className="bi bi-eye-fill"></i>See project
+            <i className="bi bi-eye-fill"></i>View project
           </div>
         </button>
 
@@ -138,7 +138,7 @@ const ProyectosEN = () => {
               <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/2048px-CSS3_logo.svg.png" width={200} height={200} alt="" />
             </div>
             <div className="github">
-            <i class="bi bi-eye-fill"></i>See project
+            <i class="bi bi-eye-fill"></i>View project
             </div>
         </button>
         
@@ -155,7 +155,7 @@ const ProyectosEN = () => {
               <Image src="https://cdn.iconscout.com/icon/free/png-256/free-python-3521655-2945099.png?f=webp" width={200} height={200} alt="" />
             </div>
             <div className="github">
-              <i className="bi bi-eye-fill"></i>See project
+              <i className="bi bi-eye-fill"></i>View project
             </div>
         </button>
 
@@ -172,7 +172,7 @@ const ProyectosEN = () => {
             <Image src="https://cdn.iconscout.com/icon/free/png-256/free-python-3521655-2945099.png?f=webp" width={200} height={200} alt="" />
           </div>
           <div className="github">
-            <i class="bi bi-eye-fill"></i>See project
+            <i class="bi bi-eye-fill"></i>View project
           </div>
         </button>
 
@@ -195,7 +195,7 @@ const ProyectosEN = () => {
           <div className="categorie" style={{ color: 'yellow' }}>In development</div>
           <br />
           <div className="github">
-            <i className="bi bi-eye-fill"></i>See project
+            <i className="bi bi-eye-fill"></i>View project
           </div>
         </button>
 
@@ -447,7 +447,7 @@ const ProyectosEN = () => {
               <Image src={HyH} alt="" width={"auto"} height={"auto"} />
             </div>
             <button className='btngithublink'> 
-            <a href="https://github.com/AmbrizAlberto/HarmonyAndHeavenm.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>See on GitHub</a>
+            <a href="https://github.com/AmbrizAlberto/HarmonyAndHeavenm.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>View on GitHub</a>
             </button>
           </div>
         </div>
@@ -497,7 +497,7 @@ const ProyectosEN = () => {
               </p>
             </div>
             <button className='btngithublink'> 
-              <a href="https://github.com/AmbrizAlberto/PICK-EM-EVERITHING---PYGAME-PROJECT.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>See on GitHub</a>
+              <a href="https://github.com/AmbrizAlberto/PICK-EM-EVERITHING---PYGAME-PROJECT.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>View on GitHub</a>
             </button>
           </div>
         </div>
