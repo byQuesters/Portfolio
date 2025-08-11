@@ -199,8 +199,43 @@ button {
   .btnlinks i:hover {
     text-decoration: underline; /* Add underline on hover */
     cursor: pointer;
-    color: rgb(0, 0, 0);
+    color: #424242;
     transition: 500ms;
+    color: transparent;
+  }
+
+  .btnlinks button i:hover {
+    color: #424242;
+    animation: btnlinkshov 3s infinite alternate ease-in-out;
+    transition: 500ms;
+    color: transparent;
+  }
+@keyframes btnlinkshov {
+    0% {
+        color: #424242;
+        text-shadow: 0px 0px 20px rgb(63, 117, 225);
+        transition: 500ms;
+    }
+    25% {
+        color: #424242;
+        text-shadow: 0px 0px 20px rgb(235, 103, 51);
+        transition: 500ms;
+    }
+    50% {
+        color: #424242;
+        text-shadow: 0px 0px 20px rgb(123, 234, 82);
+        transition: 500ms;
+    }
+    75% {
+        color: #424242;
+        text-shadow: 0px 0px 20px rgb(178, 70, 250);
+        transition: 500ms;
+    }
+    100% {
+        color: #424242;
+        text-shadow: 0px 0px 20px rgb(235, 255, 9);
+        transition: 500ms;
+    }
   }
 
 
@@ -236,6 +271,12 @@ button {
     color: rgb(255, 255, 255);
     transition: 500ms;
   }
+    .btnlinks1 button i:hover {
+        color: #424242;
+        animation: btnlinkshov 3s infinite alternate ease-in-out;
+        transition: 500ms;
+        color: transparent;
+    }
 
 
 

@@ -1,100 +1,236 @@
 .navbar {
-    width: 6%;
-    height: 92vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 2%;
-    box-shadow: 0 0px 20px #42424256;
-    transition: width 0.5s;
-    margin-top: 1%;
-    margin-left: 1%;
-    margin-bottom: 3%;
-    border-radius: 20px;
-    font-size: 150%;
-    backdrop-filter: blur(20px);
-    border: .3vh solid #424242;
-    background-color: rgba(182, 182, 182, 0.099);
-    animation: sombraNav 5s infinite alternate ease-in-out;
+  width: 6%;
+  height: 92vh;
+  position: fixed;
+  top: 1%;
+  left: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2%;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-bottom: 3%;
+  border-radius: 20px;
+  font-size: 150%;
+  backdrop-filter: blur(20px);
+  background-color: rgba(182, 182, 182, 0.099);
+  animation: sombraNav 5s infinite alternate ease-in-out;
+  z-index: 1000;
+  
+  /* Transiciones para el fade */
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
+  transform: translateX(0) translateY(0);
+}
+
+/* Estilos para el navbar cuando se convierte en header */
+.navbar-header {
+  width: 94% !important;
+  height: 7vh !important;
+  top: 0 !important;
+  left: 50% !important;
+  transform: translateX(-50%) translateY(0) !important;
+  margin: calc(1% + 1vh) auto !important;
+  margin-top: 0 !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 1% 3% !important;
+  border-radius: 0 !important;
+  font-size: 120% !important;
+  gap: 2rem !important;
+  animation: none !important;
+  box-shadow: 0 0px 50px #000000;
+  border-bottom: .3vh solid #424242;
+  /* Mantener la transición suave */
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
+}
+
+/* Estados de transición para fade */
+.navbar-fade-out {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navbar-fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Ajustes para el logo en modo header */
+.navbar-header .logo {
+  margin-bottom: 0 !important;
+  font-size: 140% !important;
+  display: flex !important;
+  align-items: center !important;
+  line-height: 1 !important;
+  transition: all 0.3s ease;
+}
+
+/* Ajustes específicos para el link del logo en modo header */
+.navbar-header .logo .link {
+  margin-bottom: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  line-height: 1 !important;
+  animation: none !important;
+  transition: all 0.3s ease;
+}
+
+/* Ajustes para el access en modo header */
+.navbar-header .access {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  animation: none !important;
+  transition: all 0.3s ease;
+}
+
+.navbar-header .access .link {
+  margin-bottom: 0 !important;
+  margin-right: 0 !important;
+  animation: none !important;
+  transition: all 0.3s ease;
+}
+
+/* Si el padre (.link) o el icono está en hover, animar ambos */
+.navbar-header .access .link:hover,
+.navbar-header .access .link:hover i,
+.navbar-header .access i:hover,
+.navbar-header .access i:hover ~ span,
+.navbar-header .access i:hover,
+.navbar-header .access .link i:hover,
+.navbar-header .logo .link:hover {
+    animation: colorbtns 5s infinite alternate ease-in-out !important;
+}
+
+/* Ajustes para los iconos en modo header */
+.navbar-header .link i {
+  margin-left: 0 !important;
+  margin-right: 8px !important;
+  font-size: 3vh !important;
+  width: auto !important;
+  transition: all 0.3s ease;
+}
+
+/* Los spans siempre visibles en modo header */
+.navbar-header .link span {
+  visibility: visible !important;
+  opacity: 1;
+  transition: opacity 0.3s ease;
 }
 
 @keyframes sombraNav {
-    0% {
-        box-shadow: 0px 0px 15px rgb(60, 232, 34);
-    }
-    25% {
-        box-shadow: 0px 0px 15px rgb(255, 100, 39);
-    }
-    50% {
-        box-shadow: 0px 0px 15px rgb(62, 200, 255);
-    }
-    75% {
-        box-shadow: 0px 0px 15px rgb(255, 53, 228);
-    }
-    100% {
-        box-shadow: 0px 0px 15px rgb(255, 234, 46);
-    }
+  0% {
+    box-shadow: 0px 0px 15px rgb(60, 232, 34);
+  }
+  25% {
+    box-shadow: 0px 0px 15px rgb(255, 100, 39);
+  }
+  50% {
+    box-shadow: 0px 0px 15px rgb(62, 200, 255);
+  }
+  75% {
+    box-shadow: 0px 0px 15px rgb(255, 53, 228);
+  }
+  100% {
+    box-shadow: 0px 0px 15px rgb(255, 234, 46);
+  }
+}
+
+@keyframes colorbtns {
+  0% {
+    text-shadow: 0px 0px 15px rgb(60, 232, 34);
+    color: rgb(29, 107, 17);
+  }
+  25% {
+    text-shadow: 0px 0px 15px rgb(255, 100, 39);
+    color: rgb(106, 43, 17);
+  }
+  50% {
+    text-shadow: 0px 0px 15px rgb(62, 200, 255);
+    color: rgb(26, 94, 120);
+  }
+  75% {
+    text-shadow: 0px 0px 15px rgb(255, 53, 228);
+    color: rgb(116, 44, 107);
+  }
+  100% {
+    text-shadow: 0px 0px 15px rgb(255, 234, 46);
+    color: rgb(255, 234, 46);
+  }
 }
 
 .logo {
-    font-size: 200%;
-    margin-bottom: 5%;
+  font-size: 200%;
+  margin-bottom: 5%;
+  transition: all 0.3s ease;
 }
 
 .link {
-    position: relative;
-    overflow: hidden;
-    color: #424242;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-    font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  color: #424242;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
 
-.link span{
-    visibility: hidden;
+.link span {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
 }
 
 .link i {
-    color: #424242;
-    width: 10vh;
-    margin-left: 35%; /* Ajusta el margen izquierdo del icono cuando no se pasa el ratón */
-    margin-right: 2%;
-    font-size: 6vh;
-    transition: margin-left 0.5s; /* Agrega una transición suave para el cambio de margen izquierdo */
+  color: #424242;
+  width: 10vh;
+  margin-left: 35%;
+  margin-right: 2%;
+  font-size: 6vh;
+  transition: all 0.5s ease;
 }
 
-
-
-/* HOVERS */
-.navbar:hover {
-    width: auto;
-    padding: auto;
-    background-color: rgba(255, 255, 255, 0.768);
-    transition: 500ms;
-    animation: sombraNav 5s infinite alternate ease-in-out;
+/* HOVERS - Solo aplican en modo vertical */
+.navbar:not(.navbar-header):hover {
+  width: auto;
+  padding: auto;
+  background-color: rgba(255, 255, 255, 0.768);
+  transition: all 0.5s ease;
 }
 
-.link:hover i {
-    margin-left: 6%; /* Ajusta el margen izquierdo del icono cuando se pasa el ratón */
+.navbar:not(.navbar-header) .link:hover i {
+  margin-left: 6%;
 }
-.link:hover span {
-    visibility: visible;
+
+.navbar:not(.navbar-header) .link:hover span {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Hover effects para el modo header */
+.navbar-header .link:hover {
+  animation: sombraNav 5s infinite alternate ease-in-out;
+  transform: translateY(-2px);
+  transition: transform 0.3s ease;
 }
 
 @media screen and (max-width: 768px) {
-    /* Estilos para tabletas */
-    .navbar{
-        display: none;
-    }
+  .navbar {
+    display: none;
+  }
 }
 
-@media screen and (max-width: 480px){
-    .navbar{
-        display: none;
-    }
+@media screen and (max-width: 480px) {
+  .navbar {
+    display: none;
+  }
 }
