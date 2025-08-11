@@ -14,6 +14,7 @@
     overflow: hidden; /* Eliminado overflow-y y overflow-x */
     backdrop-filter: blur(30px); 
     transition: 1s;
+    background-color: rgba(255, 255, 255, 0.185);
     border: 1px solid black;
 }
 
@@ -23,9 +24,10 @@
     max-width: 70%;
     max-height: 60%;
     padding: 4%;
-    box-shadow: 0 0 100px rgb(0, 0, 0);
+    border: .3vh solid #424242;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
     overflow-y: auto;
-    background-color: #3e3e3e;
+    background-color: #ffffff45;
     border-radius: 20px;
     border: 2px solid #888;
     overflow-y: auto; /* Añadido para permitir el desplazamiento vertical del contenido */
@@ -33,7 +35,7 @@
     transition: 1s;
 }
 .close-modal {
-    color: #aaa;
+    color: #424242;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
@@ -48,7 +50,8 @@
 }
 
 .close-modal:hover {
-    color: #fff;
+    color: #424242;
+;
     transition: 1s;
 }
 
@@ -56,21 +59,21 @@
     text-decoration: none;
     color: black;
 }.btngithublink a:hover{
-    color: white;
+    color: 424242;
 }
 .btngithublink{
-    margin-top: 2%;
-    font-size: 3vh;
-    background-color: white;
+    margin-top: 4vh;
+    font-size: 2.5vh;
+    background-color: #ffffff23;
     color: black;
     border: none;
     padding: 10px 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 30px black;
+    border-radius: 20px;
+    box-shadow: 0 0 1vh black;
     transition: 500ms;
 }.btngithublink:hover{
-    color: white;
-    box-shadow: 0 0 30px white;
+    color: #424242;
+    box-shadow: 0 0 30px #424242;
     background-color: black;
     transition: 500ms;
     cursor: pointer;

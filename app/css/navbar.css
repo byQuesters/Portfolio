@@ -1,7 +1,6 @@
 .navbar {
     width: 6%;
     height: 92vh;
-    background-color: #817e7e4c;
     position: fixed;
     top: 0;
     left: 0;
@@ -9,13 +8,35 @@
     flex-direction: column;
     align-items: center;
     padding-top: 2%;
-    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.555);
+    box-shadow: 0 0px 20px #42424256;
     transition: width 0.5s;
     margin-top: 1%;
     margin-left: 1%;
     margin-bottom: 3%;
     border-radius: 20px;
     font-size: 150%;
+    backdrop-filter: blur(20px);
+    border: .3vh solid #424242;
+    background-color: rgba(182, 182, 182, 0.099);
+    animation: sombraNav 5s infinite alternate ease-in-out;
+}
+
+@keyframes sombraNav {
+    0% {
+        box-shadow: 0px 0px 15px rgb(60, 232, 34);
+    }
+    25% {
+        box-shadow: 0px 0px 15px rgb(255, 100, 39);
+    }
+    50% {
+        box-shadow: 0px 0px 15px rgb(62, 200, 255);
+    }
+    75% {
+        box-shadow: 0px 0px 15px rgb(255, 53, 228);
+    }
+    100% {
+        box-shadow: 0px 0px 15px rgb(255, 234, 46);
+    }
 }
 
 .logo {
@@ -26,7 +47,7 @@
 .link {
     position: relative;
     overflow: hidden;
-    color: rgb(0, 29, 44);
+    color: #424242;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -39,7 +60,7 @@
 }
 
 .link i {
-    color: rgb(0, 22, 34);
+    color: #424242;
     width: 10vh;
     margin-left: 35%; /* Ajusta el margen izquierdo del icono cuando no se pasa el ratón */
     margin-right: 2%;
@@ -51,7 +72,11 @@
 
 /* HOVERS */
 .navbar:hover {
-    width: 12%;
+    width: auto;
+    padding: auto;
+    background-color: rgba(255, 255, 255, 0.768);
+    transition: 500ms;
+    animation: sombraNav 5s infinite alternate ease-in-out;
 }
 
 .link:hover i {

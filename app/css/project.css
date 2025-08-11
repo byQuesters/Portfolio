@@ -1,5 +1,5 @@
 .nameprj1{
-    color: white;
+    color: 424242;
     font-size: 250%;
 }
 
@@ -13,9 +13,9 @@
     width: 90%;
     height: 1%;
     margin: auto;
-    margin-top: 1%;
-    border-radius: 4vh;
-    box-shadow: 1px 15px 30px rgba(0, 0, 0, 0.533);
+    margin-top: 10px;
+    border-radius: 3%;
+    box-shadow: 1px 15px 2vh rgba(0, 0, 0, 0.533);
 }
 
 .lenguajesprj1{
@@ -24,7 +24,7 @@
     width: 50%;
     height: auto;
     background-color: rgba(255, 255, 255, 0.827);
-    border-radius: 20px;
+    border-radius: 10px;
     margin-top: 2%;
     margin-bottom: 2%;
 }
@@ -40,11 +40,11 @@
     margin-top: 5%;
     font-size: 200%;
     text-align: center;
-    color: white;
+    color: 424242;
     width: 80%;
 }
 .descriptionprj2{
-    color: white;
+    color: 424242;
     text-align: left;
     font-weight: 600;
     font-size: 150%;
@@ -53,14 +53,14 @@
     margin-top: 1%;
     margin-bottom: 2%;
     text-align: center;
-    color: white;
+    color: 424242;
     font-weight: 600;
     font-size: 150%;
 }
 .descriptionprj4{
     margin-top: 4%;
     text-align: center;
-    color: white;
+    color: 424242;
     font-weight: 600;
     font-size: 150%;
 }
