@@ -1,11 +1,13 @@
 /* Estilos para tabletas */
 @media screen and (max-width: 820px) {
     html{
-        background-image: linear-gradient(to bottom, #ff7e5f 5%, #ff7f5f 14%, #31405fe7 22%, #31405f 87%, #000000 91%);
+        background-color: white;
+        background-image: linear-gradient(to bottom, #ffffff 0vh, #ffffff 80vh, #fff4db 110vh, #fff4db 200vh, #fff4db 230vh, #ffdcb8 34%, #ffdcb8 93%, #67d4ff50 96%, #67d4ff50 100%);
         overflow-y: auto
     }
     .main{
-        overflow-y: auto
+        overflow-y: auto;
+        margin-left: auto;
     }
     .personaldata{
         height: 85vh;
@@ -74,7 +76,7 @@
         font-size: 65%;
       }.grid-itemtec h2{
         height: 25%;
-        margin-bottom: 5%;
+        margin-bottom: %;
       }
       .grid-itemtec .tecnologias{
         font-size: 150%;
@@ -113,7 +115,7 @@
         margin-bottom: 5%;
     }
     .contactme .correotxt{
-        font-size: 170%;
+        font-size: 3vh;
     }
     .modalprj1{
         height: 50%;
@@ -125,6 +127,9 @@
 }
 
 @media screen and (max-width: 540px) {
+    .main{
+        margin-left: auto; 
+    }
     .datos2{
         font-size: 70%;
     }
@@ -135,6 +140,9 @@
 
 /* iPmini */
 @media screen and (max-width: 768px) {
+    .main{
+        margin-left: auto; 
+    }
     body{
         margin-left: 0;
     }
@@ -183,7 +191,8 @@
   /* i14PM */
   @media screen and (max-width: 431px) {
     html{
-        background-image: linear-gradient(to bottom, #ff7e5f 15%, #ff7f5f 14%, #31405f 28%, #31405f 84%, #000000 95%,  #000000 100%);
+        background-color: white;
+        background-image: linear-gradient(to bottom, #ffffff 0vh, #ffffff 80vh, #fff4db 110vh, #fff4db 200vh, #fff4db 230vh, #ffdcb8 34%, #ffdcb8 93%, #67d4ff50 96%, #67d4ff50 100%);
         overflow-x: hidden;
         font-size: 80%;
     }
@@ -193,7 +202,9 @@
     }
     .main{
         width: 90%;
-    }.personaldata{
+        margin-left: auto; 
+    }
+    .personaldata{
         width: 90%;
         height: 80vh;
         font-size: 90%;
@@ -221,10 +232,8 @@
         height: 40%;
     }
     .btnlinks1{
+        top: 93%;
         margin-top: -5vh;
-    }
-    .btnlinks i{
-        font-size: 250%;
     }
 
     .lenguajes h2{
@@ -272,7 +281,7 @@
 
     .contactme{
         font-size: 90%;
-        margin-top: 30vh;
+        margin-top: 60vh;
         margin-bottom: 5%;
     }
     .modalprj1{
@@ -284,7 +293,8 @@
     /* R6Pro, iPh12PM */
 @media screen and (max-width: 412px) {
 html{
-background-image: linear-gradient(to bottom, #ffffff 5%, #ffffff 10%, #fff4db 12%, #fff4db 20%, #fff4db 33%, #ffdcb8 36%, #fff4db 93%, #67d4ff50 96%, #67d4ff50 100%);
+background-color: white;
+background-image: linear-gradient(to bottom, #ffffff 0vh, #ffffff 80vh, #fff4db 110vh, #fff4db 200vh, #fff4db 230vh, #ffdcb8 34%, #ffdcb8 93%, #67d4ff50 96%, #67d4ff50 100%);
 overflow-x: hidden;
 font-size: 80%;
 }
@@ -294,6 +304,7 @@ width: 100%;
 }
 .main{
 width: 90%;
+margin-left: auto;
 }
 .personaldata{
 width: 90%;
@@ -303,6 +314,7 @@ margin-top: 15%;
 flex-wrap: wrap;
 text-align: center;
 margin: auto;
+
 }
 .datos1{
 text-align: center;
@@ -327,10 +339,11 @@ margin-top: 0;
 height: 40%;
 }
 .btnlinks1 {
-top: 85vh;
+    font-size: 2vh;
+top: 93%;
 }
 .btnlinks i{
-font-size: 250%;
+font-size: 220%;
 }
 .lenguajes h2{
 padding-top: 0%;
@@ -343,10 +356,10 @@ margin: auto;
 .grid-itemtec {
 margin: auto;
 width: 90%;
-height: 25vh;
+height: auto;
 }
 .grid-itemtec h2{
-margin-bottom: 0%;
+margin-bottom: 7%;
 }
 .image-with-text img {
 width: 40px; /* Ajusta el ancho según sea necesario */
@@ -382,13 +395,15 @@ border-radius: 0px;
 box-shadow: 1px 15px 30px rgba(0, 0, 0, 0.533);
 }
 .contactme{
-font-size: 90%;
-padding-top: 10h;
-margin-bottom: 5vh; /* Reducido de 100% a 10vh */
-font-weight: bold;
+    margin-top: 45vh;
+    font-size: 90%;
+    margin-bottom: 15%;
+}
+.contactme .contactmett{
+    font-size: 300%;
 }
 .modalprj1{
-height: 50%;
+    height: 50%;
 }
 }
 
@@ -396,20 +411,22 @@ height: 50%;
 /* iSE */
 @media screen and (max-width: 376px) {
     html{
-        background-image: linear-gradient(to bottom, #ffffff 5%, #ffffff 8%, #fff4db 11%, #fff4db 20%, #fff4db 28%, #ffdcb8 31%, #fff4db 93%, #67d4ff50 96%, #67d4ff50 100%);
+        background-color: white;
+        background-image: linear-gradient(to bottom, #ffffff 0vh, #ffffff 80vh, #fff4db 110vh, #fff4db 200vh, #fff4db 230vh, #ffdcb8 34%, #ffdcb8 93%, #67d4ff50 95%, #67d4ff50 100%);
         overflow-x: hidden;
-        font-size: 1rem;
+        font-size: 100%;
     }
     body{
         margin-left: 0;
         width: 100%;
     }
     .main{
+        margin-left: auto;
         width: 90%;
-    }.personaldata{
+    }
+    .personaldata{
         width: 90%;
         height: 80vh;
-        font-size: .7rem;
         margin-top: 15%;
         flex-wrap: wrap;
         text-align: center;
@@ -434,7 +451,7 @@ height: 50%;
         height: 40%;
     }
     .btnlinks1 {
-        margin-top: 0vh;
+        margin-top: -5vh;
     }
     .btnlinks i{
         font-size: 250%;
@@ -486,7 +503,7 @@ height: 50%;
     }
 
     .contactme{
-        margin-top: 60vh;
+        margin-top: 45vh;
         margin-bottom: 5%;
         font-size: 70%;
         margin-bottom: 15%;
@@ -502,7 +519,8 @@ height: 50%;
   /* R6Pro */
   @media screen and (max-width: 360px) {
     html{
-        background-image: linear-gradient(to bottom, #ff7e5f 15%, #ff7f5f 14%, #31405f 28%, #31405f 84%, #000000 95%,  #000000 100%);
+        background-color: white;
+        background-image: linear-gradient(to bottom, #ffffff 0vh, #ffffff 80vh, #fff4db 110vh, #fff4db 200vh, #fff4db 230vh, #ffdcb8 34%, #ffdcb8 93%, #67d4ff50 96%, #67d4ff50 100%);
         overflow-x: hidden;
         font-size: 80%;
     }
@@ -511,6 +529,7 @@ height: 50%;
         width: 100%;
     }
     .main{
+        margin-left: auto;
         width: 90%;
     }.personaldata{
         width: 90%;
@@ -577,8 +596,11 @@ height: 50%;
         padding: 0%;
     }
     .container-project{
-        margin: auto;
-        width: 90%;
+        margin-left: calc(5%);
+        width: 80%;
+    }
+    .descriptionprj{
+        font-size: 150%;
     }
     .photoprj1 img{
         width: 70%;
@@ -588,11 +610,14 @@ height: 50%;
         border-radius: 0px;
         box-shadow: 1px 15px 30px rgba(0, 0, 0, 0.533);
     }
-
     .contactme{
-        font-size: 90%;
-        margin-top: 30vh;
+        margin-top: 60vh;
         margin-bottom: 5%;
+        font-size: 70%;
+        margin-bottom: 15%;
+    }
+    .contactme .contactmett{
+        font-size: 300%;
     }
     .modalprj1{
         height: 50%;

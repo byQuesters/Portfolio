@@ -31,19 +31,20 @@ body{
 
 .main{
     overflow-y: hidden;
-    width: 85%;
+    width: 90%;
     height: 100%;
     color: rgb(255, 0, 0);
     padding: 2%;
     border-radius: 20px;
     margin: auto;
-    margin-left: auto;
+    margin-left: 0%;
 }
   
 
 /* DATOS PERSONALES */
 
 .personaldata {
+    margin-left: 2%;
     margin-top: 7%;
     display: flex;
     width: 100%;
@@ -114,15 +115,15 @@ body{
 
 @keyframes sombraColoresHov {
     0% {
-        box-shadow: 0px 0px 50px rgb(26, 50, 97);
+        box-shadow: 0px 0px 50px rgb(55, 109, 219);
         transition: 500ms;
     }
     25% {
-        box-shadow: 0px 0px 50px rgb(131, 52, 20);
+        box-shadow: 0px 0px 50px rgb(195, 77, 30);
         transition: 500ms;
     }
     50% {
-        box-shadow: 0px 0px 50px rgb(186, 144, 47);
+        box-shadow: 0px 0px 50px rgb(175, 143, 68);
         transition: 500ms;
     }
     75% {
@@ -156,8 +157,9 @@ body{
 .aboutme{
     margin-top: auto;
     font-weight: bold;
-    font-size: 200%;
+    font-size: 250%;
     transition: 500ms;
+    text-align: left;
 }.aboutme h2{
     color: #424242;
     margin-bottom: 0%;
@@ -283,10 +285,6 @@ button {
 
 
 
-
-
-
-
 /* SUBTITULOS */
 .lenguajes{
     padding-top: 10%;
@@ -329,7 +327,7 @@ button {
     margin: auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 0fr));
-    grid-gap: 30px;
+    grid-gap: 5vh;
     transition: 500ms;
     margin-bottom: 7%;
   }
@@ -456,7 +454,7 @@ button {
 .container-project .lenguajesprj img{
     margin: 1%;
     margin-bottom: -1%;
-    width: 10%;
+    width: 13%;
     height: 10%;
     transition: 500ms;
 }
@@ -526,12 +524,17 @@ button {
     background-color: #00000014;
     transition: 500ms;
     padding: auto;
+    margin-top: 1vh;
 }
 .contactme .correobtn:hover{
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.472);
+    padding: .5vh 1vh;
     font-weight: bold;
+    font-size: 3.8vh;
     box-shadow: 0 0 20px rgb(8, 8, 8);
     transition: 500ms;
+    animation: sombraColoresHov 2s infinite alternate ease-in-out;
+    border-radius: 2vh;
 }
 
 .creador{
