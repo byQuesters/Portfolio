@@ -2,7 +2,7 @@
 
 html{
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(0, 52, 84);
+    background-color: rgb(255, 255, 255);
     font-family: 'Roboto', sans-serif;
     height: auto;
     overflow-x: hidden;
@@ -67,21 +67,22 @@ body{
 }
 
 .container-project{
-    box-shadow: 1px 15px 30px rgba(0, 0, 0, 0.708);
+     box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.342);
     cursor: pointer;
     border-radius: 30px;
     border: 1px solid rgba(255, 255, 255, 0.343);
-    background-color: rgba(55, 55, 55, 0.243);
     padding: 10px;
     padding: 5%;
     transition: 1000ms;
-    color: rgba(255, 255, 255, 0.56);
+    color: #424242;
     font-size: 160%;
+    border: .3vh solid #424242;
+    background-color: rgba(182, 182, 182, 0.099);
     transition: 500ms;
 }
 .container-project:hover{
-    box-shadow: 0 0 30px rgb(0, 0, 0);
-    background-color: #ffffff25;
+    box-shadow: 0px 0px 30px rgb(0, 0, 0);
+    background-color: #ffffff84;
     transition: 500ms;
 }
 
@@ -175,9 +176,12 @@ body{
     .modalprj1{
         height: 50%;
         font-size: 40%;
+        color: #424242;
+
     }
     .modalcontent{
         font-size: 40%;
+        color: #424242;
     }
 }
 
