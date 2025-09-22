@@ -1,16 +1,26 @@
 html {
-  background-color: rgba(255, 255, 255, 0.152);
-  height: 100vh;
+  height: 100%;
   text-align: center;
   font-weight: bold;
-  /* Remover las propiedades de flexbox del html para evitar conflictos */
+  /* Remover background del html para evitar conflictos */
 }
 
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  min-height: 100vh;
   overflow-x: hidden;
+  /* Permitir que el body se expanda según el contenido */
+}
+
+/* Main content container - aquí va tu background degradado */
+.main-content {
+  min-height: 100vh;
+  width: 100%;
+  /* Agrega aquí tu background degradado original */
+  /* Ejemplo: */
+  /* background: linear-gradient(to bottom, #color1, #color2, #color3); */
+  /* O el que tenías antes */
 }
 
 /* Loading Screen específico */
