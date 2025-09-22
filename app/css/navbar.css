@@ -26,8 +26,8 @@
 
 /* Estilos para el navbar cuando se convierte en header */
 .navbar-header {
-  width: 94% !important;
-  height: 7vh !important;
+  width: 100% !important;
+  height: 8vh !important;
   top: 0 !important;
   left: 50% !important;
   transform: translateX(-50%) translateY(0) !important;

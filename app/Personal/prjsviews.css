@@ -86,6 +86,7 @@ body{
     transition: 500ms;
 }
 .container-project .nameprj{
+    font-family: 'Roboto', sans-serif;
     font-size: 27px;
     font-weight: bold;
     transition: 300ms;
@@ -170,6 +171,7 @@ body{
         font-size: 47%;
     }
     .container-project .nameprj{
+        font-family: 'Roboto', sans-serif;
         font-size: 200%;
     }
     .modalprj1{

@@ -1,13 +1,36 @@
 html {
   background-color: rgba(255, 255, 255, 0.152);
-  display: flex; /* Usar flexbox */
-  justify-content: center; /* Centrar horizontalmente */
-  align-items: center; /* Centrar verticalmente */
-  height: 100vh; /* Hacer que el html ocupe toda la altura de la pantalla */
+  height: 100vh;
   text-align: center;
-  transition: 500ms;
   font-weight: bold;
-  transition: 500ms;
+  /* Remover las propiedades de flexbox del html para evitar conflictos */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Loading Screen específico */
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+.loading-screen.fade-out {
+  opacity: 0;
 }
 
 .spinner {
@@ -15,37 +38,48 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px; /* Ajusta la altura según sea necesario */
-  transition: 500ms;
-  transition: 500ms;
+  height: 100px;
+  transition: all 0.5s ease;
 }
 
 .loaderspinner {
   width: 8px;
   height: 8px;
-  position: fixed;
+  position: relative; /* Cambiar de fixed a relative */
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.632);
   animation: wave 1s ease-in infinite;
-  transition: 500ms;
+  transition: all 0.5s ease;
 }
 
 @keyframes wave {
- 0% {  box-shadow:
-  0 0 0 0px rgba(255, 175, 63, 0.446),
-  0 0 0 20px rgba(255, 255, 107, 0.552),
-  0 0 0 40px rgba(78, 154, 82, 0.427),
-  0 0 0 60px rgba(255, 31, 31, 0.137),
-  0 0 0 80px rgba(154, 228, 255, 0.408)
+  0% {  
+    box-shadow:
+      0 0 0 0px rgba(255, 175, 63, 0.446),
+      0 0 0 20px rgba(255, 255, 107, 0.552),
+      0 0 0 40px rgba(78, 154, 82, 0.427),
+      0 0 0 60px rgba(255, 31, 31, 0.137),
+      0 0 0 80px rgba(154, 228, 255, 0.408);
   }
-  100% {  box-shadow:
-    0 0 0 80px rgba(255, 136, 0, 0),
-    0 0 0 60px rgba(0, 81, 255, 0.2),
-    0 0 0 40px rgba(255, 115, 0, 0.168),
-    0 0 0 20px rgba(0, 157, 255, 0.397),
-    0 0 0 0px rgba(255, 136, 0, 0.73)  
+  100% {  
+    box-shadow:
+      0 0 0 80px rgba(255, 136, 0, 0),
+      0 0 0 60px rgba(0, 81, 255, 0.2),
+      0 0 0 40px rgba(255, 115, 0, 0.168),
+      0 0 0 20px rgba(0, 157, 255, 0.397),
+      0 0 0 0px rgba(255, 136, 0, 0.73);
   }
 }
 
+/* Optimizaciones para mejor rendimiento */
+* {
+  box-sizing: border-box;
+}
 
-  
+/* Preload optimization */
+.preload-hidden {
+  visibility: hidden;
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
