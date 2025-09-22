@@ -1,12 +1,15 @@
 .nameprj1{
-    color: 424242;
+    color: #2da4f3;
     font-size: 250%;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 .categorie1{
     margin-top: 2%;
-    color: rgb(159, 241, 255);
+    color: black;
     font-size: 200%;
+    font-family: 'Roboto', sans-serif;
 }
 
 .photoprj1 img{
@@ -36,26 +39,30 @@
 }
 
 .descriptionprj1{
+    color: black;
     margin: auto;
     margin-top: 5%;
     font-size: 200%;
     text-align: center;
     color: 424242;
     width: 80%;
+    font-family: 'Roboto', sans-serif;
 }
 .descriptionprj2{
-    color: 424242;
+    color: black;
     text-align: left;
     font-weight: 600;
     font-size: 150%;
+    font-family: 'Roboto', sans-serif;
 }
 .descriptionprj3{
+    color: black;
     margin-top: 1%;
     margin-bottom: 2%;
     text-align: center;
-    color: 424242;
     font-weight: 600;
     font-size: 150%;
+    font-family: 'Roboto', sans-serif;
 }
 .descriptionprj4{
     margin-top: 4%;
@@ -63,5 +70,6 @@
     color: 424242;
     font-weight: 600;
     font-size: 150%;
+    font-family: 'Roboto', sans-serif;
 }
 

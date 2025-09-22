@@ -3,7 +3,9 @@
     html{
         background-color: white;
         background-image: linear-gradient(to bottom, #ffffff 0vh, #ffffff 80vh, #fff4db 110vh, #fff4db 200vh, #fff4db 230vh, #ffdcb8 34%, #ffdcb8 93%, #67d4ff50 96%, #67d4ff50 100%);
-        overflow-y: auto
+        overflow-y: auto;
+        font-family: 'Roboto', sans-serif;
+
     }
     .main{
         overflow-y: auto;
@@ -108,6 +110,7 @@
     }
     .container-project .nameprj{
         font-size: 200%;
+        font-family: 'Roboto', sans-serif;
     }
     .contactme{
         margin-top: 20%;
@@ -178,6 +181,7 @@
     }
     .descriptionprj{
         font-size: 1.5rem;
+        font-family: 'Roboto', sans-serif;
     }
     .btnlinks i{
         font-size: 2.5rem;
@@ -601,6 +605,7 @@ box-shadow: 1px 15px 30px rgba(0, 0, 0, 0.533);
     }
     .descriptionprj{
         font-size: 150%;
+        font-family: 'Roboto', sans-serif;
     }
     .photoprj1 img{
         width: 70%;

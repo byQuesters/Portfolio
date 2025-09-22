@@ -1,5 +1,5 @@
 html {
-  background-color: rgba(0, 0, 0, 0.152);
+  background-color: rgba(255, 255, 255, 0.152);
   display: flex; /* Usar flexbox */
   justify-content: center; /* Centrar horizontalmente */
   align-items: center; /* Centrar verticalmente */
@@ -25,18 +25,18 @@ html {
   height: 8px;
   position: fixed;
   border-radius: 50%;
-  background: rgba(227, 153, 73, 0.632);
+  background: rgba(255, 255, 255, 0.632);
   animation: wave 1s ease-in infinite;
   transition: 500ms;
 }
 
 @keyframes wave {
  0% {  box-shadow:
-  0 0 0 0px rgba(227, 153, 73, 0.632),
-  0 0 0 20px rgba(13, 0, 255, 0.066),
-  0 0 0 40px rgba(255, 170, 1, 0.36),
-  0 0 0 60px rgba(0, 81, 255, 0.244),
-  0 0 0 80px rgba(255, 0, 0, 0.034)
+  0 0 0 0px rgba(255, 175, 63, 0.446),
+  0 0 0 20px rgba(255, 255, 107, 0.552),
+  0 0 0 40px rgba(78, 154, 82, 0.427),
+  0 0 0 60px rgba(255, 31, 31, 0.137),
+  0 0 0 80px rgba(154, 228, 255, 0.408)
   }
   100% {  box-shadow:
     0 0 0 80px rgba(255, 136, 0, 0),

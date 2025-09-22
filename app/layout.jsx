@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
+    if (typeof window !== '') {
       // Simula un tiempo de carga utilizando un temporizador
       const timer = setTimeout(() => {
         setLoading(false);

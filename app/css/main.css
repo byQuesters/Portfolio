@@ -427,6 +427,7 @@ button {
     font-weight: bold;
     font-weight: bold;
     transition: 300ms;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container-project .categorie{

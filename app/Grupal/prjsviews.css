@@ -90,6 +90,7 @@ body{
     font-size: 27px;
     font-weight: bold;
     transition: 300ms;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container-project .categorie{
@@ -172,6 +173,7 @@ body{
     }
     .container-project .nameprj{
         font-size: 200%;
+        font-family: 'Roboto', sans-serif;
     }
     .modalprj1{
         height: 50%;
