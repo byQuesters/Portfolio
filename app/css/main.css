@@ -162,6 +162,7 @@ body{
     text-align: left;
 }.aboutme h2{
     color: #424242;
+    margin-top: 0;
     margin-bottom: 0%;
     font-size: 150%;
     transition: 500ms;
