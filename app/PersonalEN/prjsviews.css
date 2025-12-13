@@ -15,15 +15,19 @@ body{
     margin-left: 4%;
     overflow-y: auto;
     width: 100%;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 .main{
-    overflow-y: auto;
+    overflow-y: visible;
     width: 97%;
     height: auto;
     color: rgb(255, 255, 255);
     padding: 2%;
     border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 .main h2{
@@ -41,11 +45,14 @@ body{
     height: auto;
     color: #7ed1f4;
     transition: 500ms;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 5%;
 }
 .projects h2{
     font-weight: 600;
     font-size: 350%;
     transition: 500ms;
+    font-family: 'Roboto', sans-serif;
 }
 .photoprj img{
     width: 95%;
@@ -77,7 +84,13 @@ body{
     border: .3vh solid #424242;
     background-color: rgba(182, 182, 182, 0.099);
     transition: 500ms;
+    margin-bottom: 2%;
 }
+
+.container-project:last-child{
+    margin-bottom: 5%;
+}
+
 .container-project:hover{
     box-shadow: 0px 0px 30px rgb(0, 0, 0);
     background-color: #ffffff84;
@@ -163,13 +176,14 @@ body{
     
     .main{
         height: auto;
-        overflow-y: auto;
+        overflow-y: visible;
     }
     
     .projects{
         margin: auto;
         margin-top: 10%;
         font-size: 200%;
+        margin-bottom: 10%;
     }
     .projects h2{
         margin: auto;
@@ -184,6 +198,10 @@ body{
     .container-project{
         width:100%;
         font-size: 47%;
+        margin-bottom: 3%;
+    }
+    .container-project:last-child{
+        margin-bottom: 8%;
     }
     .container-project .nameprj{
         font-size: 200%;
@@ -204,13 +222,13 @@ body{
     }
     
     .main{
-        height: auto;
-        overflow-y: auto;
+        height: 100vh;
     }
     
     .projects{
         margin: auto;
         width: 90%;
+        margin-bottom: 100%;
     }
     .grid-containerprj{
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -222,6 +240,10 @@ body{
     .container-project{
         margin: auto;
         width: 90%;
+        margin-bottom: 5%;
+    }
+    .container-project:last-child{
+        margin-bottom: 10%;
     }
     .photoprj1 img{
         width: 70%;
