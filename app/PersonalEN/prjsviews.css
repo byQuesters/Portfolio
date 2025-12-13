@@ -34,6 +34,9 @@ body{
     font-size: 400%;
 }
 
+.creador{
+   color: #424242;
+}
 
 
 /* PROYECTOS */
@@ -228,7 +231,7 @@ body{
     .projects{
         margin: auto;
         width: 90%;
-        margin-bottom: 100%;
+        margin-bottom: 33dvh;
     }
     .grid-containerprj{
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
