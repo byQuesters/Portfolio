@@ -127,7 +127,7 @@ const Proyectos = () => {
             <Image src={prismapng} width={200} height={200} alt="" />
             <Image src={nodepng} width={200} height={200} alt="" />
           </div>
-          <div className="categorie" style={{ color: 'yellow' }}>In development</div>
+          <div className="categorie" style={{ color: 'red' }}>In development</div>
           <br />
           <div className="github">
             <i className="bi bi-eye-fill"></i>View project

@@ -24,7 +24,7 @@ const Aboutme = () => {
                 </div>
             </div>
             <div className="datos2">
-                <div className="available-work-wrapper">
+                {/* <div className="available-work-wrapper">
                     <div className="available-work-container">
                         <div className="border-animation-top"></div>
                         <div className="border-animation-bottom"></div>
@@ -32,7 +32,7 @@ const Aboutme = () => {
                             DISPONIBLE PARA TRABAJO
                         </span>
                     </div>
-                </div>
+                </div> */}
                 <div className="aboutme">
                     <h2>SOBRE MI...</h2>
                     <div className='descriptionme'>

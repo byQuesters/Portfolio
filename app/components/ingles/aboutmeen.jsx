@@ -31,7 +31,7 @@ const AboutmeEN = () => {
                 </div>
             </div>
             <div className="datos2">
-                <div className="available-work-wrapper">
+                {/* <div className="available-work-wrapper">
                     <div className="available-work-container">
                         <div className="border-animation-top"></div>
                         <div className="border-animation-bottom"></div>
@@ -39,7 +39,7 @@ const AboutmeEN = () => {
                             AVAILABLE TO WORK
                         </span>
                     </div>
-                </div>
+                </div> */}
                 <div className="aboutme">
                     <h2>ABOUT ME...</h2>
                     <div className="descriptionme">
