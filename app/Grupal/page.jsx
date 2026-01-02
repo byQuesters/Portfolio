@@ -8,7 +8,6 @@ import styles from "./prjsviews.css"
 
 import Navbar from '../components/español/navbar';
 import Proyectos from './components/projects';
-import Creador from '../components/español/creator';
 
 export default function Grupalprjs() {
     const [english, setEnglish] = useState(true); // Set initial state to true for English version
@@ -17,8 +16,6 @@ export default function Grupalprjs() {
         <div className='main'>
             <Navbar />
             <Proyectos/>
-            <Creador/>
-            <br /><br /><br />
 
         <Head>
             <script src="https://platform.linkedin.com/badges/js/profile.js" async defer />

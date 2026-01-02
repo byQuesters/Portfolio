@@ -8,7 +8,6 @@ import styles from "./prjsviews.css"
 
 import NavbarEN from '../components/ingles/navbaren';
 import Proyectos from './components/projects';
-import CreadorEN from '../components/ingles/creatoren';
 
 
 export default function Personalprjs() {
@@ -18,8 +17,6 @@ export default function Personalprjs() {
         <div className='main'>
             <NavbarEN />
             <Proyectos/>
-            <CreadorEN/>
-            <br /><br /><br />
 
         <Head>
             <script src="https://platform.linkedin.com/badges/js/profile.js" async defer />

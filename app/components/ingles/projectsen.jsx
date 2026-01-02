@@ -52,6 +52,17 @@ import Spk9 from "../../images/Spk9.jpeg"
 import Spk10 from "../../images/Spk10.jpeg"
 import Spk11 from "../../images/Spk11.jpeg"
 import Spk12 from "../../images/Spk12.jpeg"
+import EF1 from "../../images/EF1.PNG"
+import EF2 from "../../images/EF2.PNG"
+import EF3 from "../../images/EF3.PNG"
+import EF4 from "../../images/EF4.PNG"
+import EF5 from "../../images/EF5.PNG"
+import EF6 from "../../images/EF6.PNG"
+import EF7 from "../../images/EF7.PNG"
+import EF8 from "../../images/EF8.PNG"
+import EF9 from "../../images/EF9.PNG"
+import EF10 from "../../images/EF10.jpeg"
+import EF11 from "../../images/EF11.jpeg"
 
 import "../../css/modal.css";
 import "../../css/project.css";
@@ -83,6 +94,26 @@ const ProyectosEN = () => {
     <div className='projects' id='proyecto'>
       <h2>PROJECTS</h2>
       <div className="grid-containerprj">
+
+      <button className="container-project" onClick={() => openModalForProject("EnergyFlow")}>
+          <div className="nameprj">Energy Flow</div>
+          <div className="categorie">Group</div>
+          <div className="photoprj">
+            <Image src={EF11} alt="" width={"auto"} height={"auto"} />
+          </div>
+          <div className="descriptionprj">
+            <h4>Electrical consumption monitoring interface application for buildings with IoT sensors.</h4>
+          </div>
+          <div className="lenguajesprj">
+            <Image src={reactpng} width={200} height={200} alt="" />
+            <Image src={prismapng} width={200} height={200} alt="" />
+            <Image src={jspng} width={200} height={200} alt="" />
+            <Image src={nodepng} width={200} height={200} alt="" />
+          </div>
+          <div className="github">
+            <i className="bi bi-eye-fill"></i>View project
+          </div>
+        </button>
 
         <button className="container-project" onClick={() => openModalForProject("STJohns")}>
           <div className="nameprj">St. John&apos;s Gym</div>
@@ -220,6 +251,116 @@ const ProyectosEN = () => {
         </button>
 
       </div>
+
+      {modalOpen && selectedProject === "EnergyFlow" && (
+        <div className='modalprj1' onClick={closeModal}>
+          <div className='modalcontent1' onClick={(e) => e.stopPropagation()}>
+
+            <button className="close-modal" onClick={closeModal}>
+              <X size={24} />
+            </button>
+
+            <div className="nameprj1">EnergyFlow</div>
+            <div className="categorie1">Group</div>
+            <div className="lenguajesprj1">
+              <Image src={reactpng} width={200} height={200} alt="" />
+              <Image src={prismapng} width={200} height={200} alt="" />
+              <Image src={jspng} width={200} height={200} alt="" />
+              <Image src={nodepng} width={200} height={200} alt="" />
+              
+            </div>
+            <div className="descriptionprj1">
+              <h4>Multiplatform Digital Twin (Web / iOS / Android) for energy monitoring interface for buildings in a university integrated with Particle IoT sensors.</h4>
+            </div>
+            <div className="photoprj1">
+              <Image src={EF3} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <div className="descriptionprj1">
+              <p>EnergyFlow is a complete digital system for monitoring and analyzing electrical consumption designed for a university faculty. The project implements a digital twin that integrates IoT hardware, cloud storage, and an interactive web/mobile interface to visualize energy data in real time and store historical data for analysis and reporting.</p>
+            </div>
+            <div className='descriptionprj3'>
+              MAIN OBJECTIVES: 
+                <br />  - Real-time monitoring of electrical variables such as voltage, current, and power in each building.
+                <br />  - Reliable data storage for subsequent analysis and trend detection.
+                <br />  - Interactive dashboard to visualize real-time information.
+                <br />  - Detection of irregular consumption patterns and early identification of anomalies (planned).
+                <br />  - Historical analysis and reports with future forecasting capabilities.
+                <br />  - User management and security with authentication via Supabase Auth for secure access.
+            </div>
+            <br />
+            <div className="descriptionprj1">
+              <h4>Login</h4>
+            </div>
+            <div className="photoprj1">
+              <Image src={EF1} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <br />
+            <div className="descriptionprj1">
+              <h4>Configuration</h4>
+            </div>
+            <div className="photoprj1">
+              <Image src={EF2} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <br />
+            <div className="descriptionprj1">
+              <h4>Main View - Interactive Map</h4>
+            </div>
+            <div className="photoprj1">
+              <Image src={EF3} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <br />
+            <div className="descriptionprj1">
+              <h4>Building Information - Dashboard</h4>
+            </div>
+            <div className="photoprj1">
+              <Image src={EF5} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <br />
+            <div className="photoprj1">
+              <Image src={EF6} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <br />
+            <div className="descriptionprj1">
+              <h4>Historical RT - Dashboard</h4>
+            </div>
+            <div className="photoprj1">
+              <Image src={EF7} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <br />
+            <div className="photoprj1">
+              <Image src={EF8} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <br />
+            <div className="descriptionprj1">
+              <h4>Predictions</h4>
+            </div>
+            <div className="photoprj1">
+              <Image src={EF9} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <br /><br /><br />
+            <div className='descriptionprj3'>
+              The project is structured into several components that work in an integrated manner:
+
+              <br /><br />Particle Photon Sensors (IoT) 
+                    <br />↓
+              <br />MQTT Broker (Linux Server)
+                    <br />↓
+              <br />Supabase PostgreSQL Database (Persistence)
+                    <br />↓
+              <br />React Native Web App / Mobile App (Visualization)
+
+
+              <br /><br />Photon Sensors collect voltage, current and power data in real time and MQTT is used as a lightweight communication protocol to transmit the data to the PostgreSQL database, which stores historical data in a structured way, and the web/mobile application built with React/Expo displays dynamic dashboards and graphs with that data.
+            
+            </div>
+            <div>
+              <button className='btngithublink'>
+                <a href="https://github.com/byQuesters/FIE-EnergyFlow"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>View on GitHub</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {modalOpen && selectedProject === "SMatiz" && (
         <div className='modalprj1' onClick={closeModal}>
