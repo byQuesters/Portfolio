@@ -62,7 +62,7 @@ import EF7 from "../../images/EF7.PNG"
 import EF8 from "../../images/EF8.PNG"
 import EF9 from "../../images/EF9.PNG"
 import EF10 from "../../images/EF10.jpeg"
-import EF11 from "../../images/EF11.jpeg"
+
 
 
 
@@ -100,7 +100,7 @@ const Proyectos = () => {
           <div className="nameprj">Energy Flow</div>
           <div className="categorie">Grupal</div>
           <div className="photoprj">
-            <Image src={EF11} alt="" width={"auto"} height={"auto"} />
+
           </div>
           <div className="descriptionprj">
             <h4>Aplicación de interfaz de monitoreo de consumo eléctrico para edificios con sensores IOT.</h4>
