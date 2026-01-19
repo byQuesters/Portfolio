@@ -120,22 +120,22 @@ export default function Portafolio() {
             <i className="bi bi-translate"></i>
         </button>
         <button>
-          <a href="https://www.linkedin.com/in/alberto-ambriz-chavez/" target="_blank">
+          <a href="https://www.linkedin.com/in/albertoambriz/" target="_blank">
             <i className="bi bi-linkedin"></i>
           </a>
         </button>
         <button>
-          <a href="https://github.com/ambrizalberto/" target="_blank">
+          <a href="https://github.com/byQuesters/" target="_blank">
             <i className="bi bi-github"></i>
           </a>
         </button>
         <button>
-          <a href={downloadCV} download="CV ESP - Alberto Ambriz.pdf">
+          <a href={downloadCV} download="CV ESPAÑOL 2026 - Alberto Ambriz.pdf">
             <i className="bi bi-file-earmark-person-fill"></i>
           </a>
         </button>
         <button>
-          <a href={downloadCVEN} download="CV ENG - Alberto Ambriz.pdf">
+          <a href={downloadCVEN} download="CV ENGLISH 2026 - Alberto Ambriz.pdf">
             <i className="bi bi-file-earmark-person"></i>
           </a>
         </button>
