@@ -100,7 +100,7 @@ const Proyectos = () => {
           <div className="nameprj">Energy Flow</div>
           <div className="categorie">Grupal</div>
           <div className="photoprj">
-
+            <Image src={EF10} alt="" width={"auto"} height={"auto"} />
           </div>
           <div className="descriptionprj">
             <h4>Aplicación de interfaz de monitoreo de consumo eléctrico para edificios con sensores IOT.</h4>

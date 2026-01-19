@@ -99,7 +99,7 @@ const ProyectosEN = () => {
           <div className="nameprj">Energy Flow</div>
           <div className="categorie">Group</div>
           <div className="photoprj">
-
+            <Image src={EF10} alt="" width={"auto"} height={"auto"} />
           </div>
           <div className="descriptionprj">
             <h4>Electrical consumption monitoring interface application for buildings with IoT sensors.</h4>
