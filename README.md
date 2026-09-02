@@ -1,48 +1,44 @@
-# 💻 Portafolio Web - Alberto Ambriz (Al Dev) 
+# Web Portfolio - byQuesters
 
-¡Bienvenido a mi portafolio web! Aquí encontrarás una colección de mis proyectos destacados y un poco sobre mí. Este portafolio está desarrollado con React y Next.js, utilizando componentes modernos y librerías especializadas para ofrecer una experiencia de usuario dinámica y responsiva.
+Welcome to my web portfolio. Here you will find a collection of my featured projects and a little bit about me. This portfolio is built with Next.js, utilizing modern components and specialized libraries to deliver a dynamic and responsive user experience.
 
-## 🚀 Tecnologías Utilizadas
+## Technologies Used
 
-- **React**
 - **Next.js**
 - **JavaScript (ES6+)**
 - **CSS3 & Tailwind CSS**
-- **Node.js**
 - **Vercel (Hosting)**
 
-## 📂 Contenido
+## Content
 
-- **Sobre mí**: Una breve introducción a mi experiencia y habilidades.
-- **Tecnologías**: Las herramientas y tecnologías que uso en mi trabajo.
-- **Proyectos**:
-  - **En solitario**: Proyectos personales que muestran mi desarrollo y creatividad.
-  - **En grupo**: Colaboraciones que destacan mi capacidad de trabajar en equipo.
-- **Contáctame**:
-  - **Correo**: [albertpoambez@icloud.com](mailto:albertpoambez@icloud.com)
-  - **Teléfono**
+- **About Me**: A brief introduction to my experience and skills.
+- **Technologies**: The tools and technologies I use in my work.
+- **Projects**:
+- **Solo**: Personal projects showcasing my development skills and creativity. 
+- **Group**: Collaborations highlighting my teamwork abilities.
+- **Contact Me**:
+- **Email**: [albertpoambez@icloud.com](mailto:albertpoambez@icloud.com)
 
-## 🛠️ Instalación y Uso
+## 🛠️ Installation and Usage
 
-Para iniciar el proyecto en local, sigue estos pasos:
+To run the project locally, follow these steps:
 
 ```bash
 npm run dev
-# o
+# or
 yarn dev
-# o
+# or
 pnpm dev
-# o
+# or
 bun dev
 ```
 
-Luego, abre http://localhost:3000 en tu navegador para verlo en acción. Puedes comenzar a explorar la estructura en el archivo app/page.js.
+Then, open http://localhost:3000 in your browser to see it in action. You can start exploring the structure in the `app/page.js` file.
 
-## 📜 Licencia
-Este proyecto es de uso libre, pero si decides reutilizarlo, por favor da créditos mencionando al autor original, Alberto Ambriz (Al Dev).
+## License
+This project is free to use, but if you decide to reuse it, please give credit by mentioning the original author, Alberto Ambriz (Al Dev).
 
-## 🎯 Objetivo
-Este portafolio tiene como objetivo no solo mostrar mis habilidades y proyectos, sino también inspirar a otros desarrolladores a crear algo increíble. ¡Gracias por visitar y no dudes en contactarme para cualquier colaboración!
+## Goal
+The goal of this portfolio is not only to showcase my skills and projects but also to inspire other developers to create something amazing. Thanks for visiting, and feel free to contact me for any collaborations!
 
-
-## ⭐ Si te gusta este proyecto, no olvides darle una estrella en GitHub! ⭐
+## If you like this project, don't forget to star it on GitHub! ⭐
