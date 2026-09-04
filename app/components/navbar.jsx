@@ -47,10 +47,7 @@ export default function Navbar() {
   return (
     <div className={getNavbarClasses()}>
       <div className="access">
-        <a className="link" href="/">
-          <i className="bi bi-house-fill"></i>
-          <span>{t.navbar.home}</span>
-        </a>
+        <Link className="link" href="/"> <i className="bi bi-house-fill"></i>{t.navbar.home}</Link>
         <a className="link" href="./Personal">
           <i className="bi bi-person-raised-hand"></i>
           <span>{t.navbar.solo}</span>
