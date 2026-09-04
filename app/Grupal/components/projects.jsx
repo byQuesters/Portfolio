@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { X } from 'react-feather';
 import React, { useState } from 'react';
+import { useLanguage } from '../../context/LanguageContext';
 
  // ICONS TECNOLOGIES
  import htmlpng from '../../../public/icons/html5.png';
@@ -57,6 +58,7 @@ import "../../css/modal.css";
 import "../../css/project.css";
 
 const Proyectos = () => {
+  const { t } = useLanguage();
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
 
@@ -80,18 +82,18 @@ const Proyectos = () => {
 
   return (
     <div className='projects' >
-      <h2 id='proyecto'>PROYECTOS</h2>
+      <h2 id='proyecto'>{t.projects.title}</h2>
 
       <div className="grid-containerprj">
 
         <button className="container-project" onClick={() => openModalForProject("EnergyFlow")}>
-          <div className="nameprj">Energy Flow</div>
-          <div className="categorie">Grupal</div>
+          <div className="nameprj">{t.projects.list.energyflow.name}</div>
+          <div className="categorie">{t.projects.categories.grupal}</div>
           <div className="photoprj">
-
+            <Image src={EF10} alt="" width={"auto"} height={"auto"} />
           </div>
           <div className="descriptionprj">
-            <h4>Aplicación de interfaz de monitoreo de consumo eléctrico para edificios con sensores IOT.</h4>
+            <h4>{t.projects.list.energyflow.shortDesc}</h4>
           </div>
           <div className="lenguajesprj">
             <Image src={reactpng} width={200} height={200} alt="" />
@@ -100,72 +102,72 @@ const Proyectos = () => {
             <Image src={nodepng} width={200} height={200} alt="" />
           </div>
           <div className="github">
-            <i className="bi bi-eye-fill"></i>Ver proyecto
+            <i className="bi bi-eye-fill"></i>{t.projects.viewProject}
           </div>
         </button>
 
         <button className="container-project" onClick={() => openModalForProject("Spike")}>
-          <div className="nameprj">Spike - Cuidado de Mascotas</div>
-          <div className="categorie">Grupal</div>
+          <div className="nameprj">{t.projects.list.spike.name}</div>
+          <div className="categorie">{t.projects.categories.grupal}</div>
           <div className="photoprj">
             <Image src={Spk12} alt="" width={"auto"} height={"auto"} />
           </div>
           <div className="descriptionprj">
-            <h4>Aplicación movil para gestión de citas y servicios veterinarios de forma centralizada.</h4>
+            <h4>{t.projects.list.spike.shortDesc}</h4>
           </div>
           <div className="lenguajesprj">
           <Image src={reactpng} width={200} height={200} alt="" />
           <Image src={prismapng} width={200} height={200} alt="" />
           </div>
           <div className="github">
-            <i className="bi bi-eye-fill"></i>Ver proyecto
+            <i className="bi bi-eye-fill"></i>{t.projects.viewProject}
           </div>
         </button>
 
         <button className="container-project" onClick={() => openModalForProject("harmony_heaven")}>
-          <div className="nameprj">Harmony &amp; Heaven</div>
-          <div className="categorie">Grupal</div>
+          <div className="nameprj">{t.projects.list.harmony.name}</div>
+          <div className="categorie">{t.projects.categories.grupal}</div>
           <div className="photoprj">
             <Image src={HyH} alt="" width={"auto"} height={"auto"} />
           </div>
           <div className="descriptionprj">
-            <h4>Tienda de instrumentos con CRUD - Inventario y Punto de venta.</h4>
+            <h4>{t.projects.list.harmony.shortDesc}</h4>
           </div>
           <div className="lenguajesprj">
             <Image src={nodepng} width={40} height={40} alt="" />
-            <Image src={mysqlpng} width={40} height={40} alt="" />
+            <Image src={reactpng} width={40} height={40} alt="" />
             <Image src={csspng} width={200} height={200} alt="" />
           </div>
           <div className="github">
-            <i className="bi bi-eye-fill"></i>Ver proyecto
+            <i className="bi bi-eye-fill"></i>{t.projects.viewProject}
           </div>
         </button>
 
         <button className="container-project" onClick={() => openModalForProject("PickEmE")}>
-          <div className="nameprj">Pick Em&apos; Everithimg</div>
-          <div className="categorie">Grupal</div>
+          <div className="nameprj">{t.projects.list.pickeme.name}</div>
+          <div className="categorie">{t.projects.categories.grupal}</div>
           <div className="photoprj">
             <Image src={PEE} alt="" width={"auto"} height={"auto"} />
           </div>
           <div className="descriptionprj">
-            <h4>Videojuego desarrollado con la libreria Pygame de Python</h4>
+            <h4>{t.projects.list.pickeme.shortDesc}</h4>
           </div>
           <div className="lenguajesprj">
             <Image src={pythonpng} width={200} height={200} alt="" />
           </div>
           <div className="github">
-            <i className="bi bi-eye-fill"></i>Ver proyecto
+            <i className="bi bi-eye-fill"></i>{t.projects.viewProject}
           </div>
         </button>
 
         <button className="container-project" onClick={() => openModalForProject("BugB")}>
-          <div className="nameprj">BuggBlock</div>
-          <div className="categorie">Grupal</div>
+          <div className="nameprj">{t.projects.list.buggblock.name}</div>
+          <div className="categorie">{t.projects.categories.grupal}</div>
           <div className="photoprj">
             <Image src={BB} alt="" width={"auto"} height={"auto"} />
           </div>
           <div className="descriptionprj">
-            <h4>Web Blog informatico enfocado a la tecnologia y computadoras, los usuarios pueden hacer nuevas publicaciones y el admin borrarlas</h4>
+            <h4>{t.projects.list.buggblock.shortDesc}</h4>
           </div>
           <div className="lenguajesprj">
             <Image src={phppng} width={200} height={200} alt="" />
@@ -173,7 +175,7 @@ const Proyectos = () => {
             <Image src={mysqlpng} width={40} height={40} alt="" />
           </div>
           <div className="github">
-            <i className="bi bi-eye-fill"></i>Ver proyecto
+            <i className="bi bi-eye-fill"></i>{t.projects.viewProject}
           </div>
         </button>
 
@@ -188,8 +190,8 @@ const Proyectos = () => {
               <X size={24} />
             </button>
 
-            <div className="nameprj1">EnergyFlow</div>
-            <div className="categorie1">Grupal</div>
+            <div className="nameprj1">{t.projects.list.energyflow.modal.title}</div>
+            <div className="categorie1">{t.projects.categories.grupal}</div>
             <div className="lenguajesprj1">
               <Image src={reactpng} width={200} height={200} alt="" />
               <Image src={prismapng} width={200} height={200} alt="" />
@@ -198,47 +200,41 @@ const Proyectos = () => {
               
             </div>
             <div className="descriptionprj1">
-              <h4>Gemelo Digital multiplataforma ( Web / iOS / Android ) de interfaz de monitoreo energetico para edificios de una universidad integrado con sensores IoT de Particle.</h4>
+              <h4>{t.projects.list.energyflow.modal.desc1}</h4>
             </div>
             <div className="photoprj1">
               <Image src={EF3} alt="" width={"auto"} height={"auto"} />
             </div>
             <div className="descriptionprj1">
-              <p>EnergyFlow es un sistema digital completo de monitoreo y análisis de consumo eléctrico diseñado para una facultad universitaria. El proyecto implementa un gemelo digital que integra hardware IoT, almacenamiento en la nube y una interfaz web/móvil interactiva para visualizar datos energéticos en tiempo real y almacenar históricos para análisis y reportes. </p>
+              <p>{t.projects.list.energyflow.modal.desc2}</p>
             </div>
             <div className='descriptionprj3'>
-              OBJETIVOS PRINCIPALES: 
-                <br />  - Monitoreo en tiempo real de variables eléctricas como voltaje, corriente y potencia en cada edificio.
-                <br />  - Almacenamiento confiable de datos para análisis posteriores y detección de tendencias.
-                <br />  - Dashboard interactivo para visualizar información en tiempo real.
-                <br />  - Detección de patrones irregulares de consumo e identificación temprana de anomalías (planificado).
-                <br />  - Análisis histórico y reportes con futuras capacidades de proyección.
-                <br />  -  Gestión de usuarios y seguridad con Autenticación mediante Supabase Auth para acceso seguro.
+              <p dangerouslySetInnerHTML={{ __html: t.projects.list.energyflow.modal.desc3 }} />
             </div>
             <br />
             <div className="descriptionprj1">
-              <h4>Login</h4>
+              <h4>{t.projects.list.energyflow.modal.desc4}</h4>
             </div>
             <div className="photoprj1">
               <Image src={EF1} alt="" width={"auto"} height={"auto"} />
             </div>
             <br />
             <div className="descriptionprj1">
-              <h4>Configuración</h4>
+              <h4>{t.projects.list.energyflow.modal.desc5}</h4>
             </div>
             <div className="photoprj1">
               <Image src={EF2} alt="" width={"auto"} height={"auto"} />
             </div>
             <br />
             <div className="descriptionprj1">
-              <h4>Vista Principal - Mapa Interactivo</h4>
+              <h4>{t.projects.list.energyflow.modal.desc6}</h4>
             </div>
             <div className="photoprj1">
               <Image src={EF3} alt="" width={"auto"} height={"auto"} />
             </div>
             <br />
             <div className="descriptionprj1">
-              <h4>Informacion de Edificio - Dashboard</h4>
+              <h4>{t.projects.list.energyflow.modal.desc7}</h4>
             </div>
             <div className="photoprj1">
               <Image src={EF5} alt="" width={"auto"} height={"auto"} />
@@ -249,7 +245,7 @@ const Proyectos = () => {
             </div>
             <br />
             <div className="descriptionprj1">
-              <h4>Historico TR - Dashboard</h4>
+              <h4>{t.projects.list.energyflow.modal.desc8}</h4>
             </div>
             <div className="photoprj1">
               <Image src={EF7} alt="" width={"auto"} height={"auto"} />
@@ -260,30 +256,18 @@ const Proyectos = () => {
             </div>
             <br />
             <div className="descriptionprj1">
-              <h4>Predicciones</h4>
+              <h4>{t.projects.list.energyflow.modal.desc9}</h4>
             </div>
             <div className="photoprj1">
               <Image src={EF9} alt="" width={"auto"} height={"auto"} />
             </div>
             <br /><br /><br />
             <div className='descriptionprj3'>
-              El proyecto está estructurado en varios componentes que trabajan de forma integrada:
-
-              <br /><br />Particle Photon Sensors (IoT) 
-                    <br />↓
-              <br />MQTT Broker (Linux Server)
-                    <br />↓
-              <br />Supabase PostgreSQL Database (Persistencia)
-                    <br />↓
-              <br />React Native Web App / Mobile App (Visualización)
-
-
-              <br /><br />Los Sensores Photon recopilan datos de voltaje, corriente y potencia en tiempo real y MQTT se utiliza como protocolo de comunicación ligero para transmitir los datos a la Base de datos PostgreSQL, que guarda los datos históricos de forma estructurada y la Aplicación web/móvil construida con React/Expo muestra dashboards y gráficos dinámicos con esos datos.
-            
+              <p dangerouslySetInnerHTML={{ __html: t.projects.list.energyflow.modal.desc10 }} />
             </div>
             <div>
               <button className='btngithublink'>
-                <a href="https://github.com/byQuesters/FIE-EnergyFlow"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>Ver en GitHub</a>
+                <a href="https://github.com/byQuesters/FIE-EnergyFlow"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>{t.projects.viewGitHub}</a>
               </button>
             </div>
           </div>
@@ -298,12 +282,10 @@ const Proyectos = () => {
               <X size={24} />
             </button>
 
-            <div className="nameprj1">Spike</div>
-            <div className="categorie1">Grupal</div>
+            <div className="nameprj1">{t.projects.list.spike.modal.title}</div>
+            <div className="categorie1">{t.projects.categories.grupal}</div>
             <div className="descriptionprj1">
-              <h4>
-              &quot;Spike&quot; es una aplicación Móvil que actúa como gestor integral de clínicas veterinarias y servicios asistenciales de animales domésticos. El problema que resuelve es la falta de un sistema centralizado y accesible para que los dueños de mascotas administren citas, mantengan un historial médico, y contratar servicios adicionales de manera eficiente. Esta plataforma también permitirá a los veterinarios y al personal de la clínica gestionar eficazmente su servicios, clientes y el personal involucrado.
-              </h4>
+              <h4>{t.projects.list.spike.modal.desc1}</h4>
             </div>
             <div className="lenguajesprj1">
               <Image src={reactpng} width={200} height={200} alt="" />
@@ -314,20 +296,12 @@ const Proyectos = () => {
             </div>
             <br /><br />
             <div className='descriptionprj2'>
-              CARACTERISTICAS PRINCIPALES DEL SISTEMA:
-              <ul>
-                  <li>ADMINISTRADOR PRINCIPAL: Gestión de todo el sistema con acceso a todas las funcionalidades.</li>
-                  <br /><li>REGISTRO DE CLIENTE Y MASCOTAS: Almacenamiento seguro e información organizada sobre los clientes y sus mascotas.</li>
-                  <br /><li>GESTION DE SERVICIOS: Creación, consulta, modificación y Eliminación de servicios, clientes y mascotas.</li>
-                  <br /><li>ROLES DE USUARIOS: Diferenciación de accesos y funcionalidades según el rol del usuario: usuario (administrador, veterinario, personal de soporte, cliente).</li>
-                  <br /><li>GENERACION DE INFORMES: Creación de informes detallados sobre el uso de los servicios, la salud de las mascotas y la gestión interna del personal y los clientes.</li>
-              </ul>
-          </div>
-          <div className='descriptionprj2'>
-              IMPACTO:
-              <br />El desarrollo de esta aplicación tendrá un impacto positivo al facilitar la comunicación. veterinarios y propietarios de animales de compañía, así como mejorando la gestión interna de los clínicas veterinarias, contribuyendo a un mejor cuidado y bienestar animal.
-          </div>
-          <br /><br />
+              <p dangerouslySetInnerHTML={{ __html: t.projects.list.spike.modal.desc2 }} />
+            </div>
+            <div className='descriptionprj2'>
+              <p dangerouslySetInnerHTML={{ __html: t.projects.list.spike.modal.desc3 }} />
+            </div>
+            <br /><br />
             <div className="photoprj1">
               <Image src={Spk2} alt="" width={"auto"} height={"auto"} />
             </div>
@@ -353,7 +327,7 @@ const Proyectos = () => {
               <Image src={Spk11} alt="" width={"auto"} height={"auto"} />
             </div>
             <button className='btngithublink'>
-              <a href="https://github.com/byquesters/Pet-Care.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>Ver en GitHub</a>
+              <a href="https://github.com/byquesters/Pet-Care.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>{t.projects.viewGitHub}</a>
             </button>
           </div>
         </div>
@@ -367,31 +341,28 @@ const Proyectos = () => {
               <X size={24} />
             </button>
 
-            <div className="nameprj1">Harmony &amp; Heaven</div>
-            <div className="categorie1">Grupal</div>
+            <div className="nameprj1">{t.projects.list.harmony.modal.title}</div>
+            <div className="categorie1">{t.projects.categories.grupal}</div>
             <div className="lenguajesprj1">
               <Image src={nodepng} width={40} height={40} alt="" />
-              <Image src={mysqlpng} width={40} height={40} alt="" />
+              <Image src={reactpng} width={40} height={40} alt="" />
+              <Image src={csspng} width={200} height={200} alt="" />
             </div>
             <div className="photoprj1">
               <Image src={HyH1} alt="" width={"auto"} height={"auto"} />
             </div>
 
             <div className="descriptionprj1">
-              <h4>Tienda de instrumentos con CRUD - Inventario y Punto de venta.</h4>
+              <h4>{t.projects.list.harmony.modal.desc1}</h4>
             </div>
             <div className='descriptionprj2'>
-              <p>Harmony &amp; Heaven se desarrollo como un inventario para una tienda de instrumentos donde se registrarán los productos con &quot;unidades a la venta&quot;, &quot;precio del producto&quot; y &quot;categoria&quot;, ademas se creo el punto de venta para el cliente donde podra añadir al carrito cualquier producto disponible de la tienda.</p>
-              <p>En el apartado de Vendedor, Harmony &amp; Heaven cuenta con un motor de busqueda y filtrado de los datos para facilitar la recoleccion de productos, tambien cuenta con un gestor de pedidos al Provedor de productos donde se registraran cuando se soliciten y cuando se reciban para estar en stock añadiendose automaticamente las cantidades recibidas en el inventario, asi como un dashboard para ver resumenes de ventas, empleados y demas cosas.</p>
-              <p>Los productos se pueden editar o eliminar de ser necesario.</p>
-
-              <p>En el apartado de cliente &quot;Punto de venta&quot;, el cliente podra unicamente ver los productos en stock y añadirlos al carrito para su compra, el precio total por los productos a comprar se mostrara siempre hasta realizar la compra.</p>
+              <p dangerouslySetInnerHTML={{ __html: t.projects.list.harmony.modal.desc2 }} />
             </div>
             <div className="photoprj1">
               <Image src={HyH} alt="" width={"auto"} height={"auto"} />
             </div>
             <button className='btngithublink'>
-              <a href="https://github.com/AmbrizAlberto/HarmonyAndHeavenm.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>Ver en GitHub</a>
+              <a href="https://github.com/byquesters/HarmonyAndHeavenm.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>{t.projects.viewGitHub}</a>
             </button>
           </div>
         </div>
@@ -405,20 +376,20 @@ const Proyectos = () => {
               <X size={24} />
             </button>
 
-            <div className="nameprj1">Pick Em&apos; Everithing</div>
-            <div className="categorie1">Grupal</div>
+            <div className="nameprj1">{t.projects.list.pickeme.modal.title}</div>
+            <div className="categorie1">{t.projects.categories.grupal}</div>
             <div className="lenguajesprj1">
-              <Image src={pythonpng} width={40} height={40} alt="" />
+              <Image src={pythonpng} width={200} height={200} alt="" />
             </div>
             <div className="photoprj1">
               <Image src={PEE} alt="" width={"auto"} height={"auto"} />
             </div>
 
             <div className="descriptionprj1">
-              <h4>Videojuego desarrollado 100% con Python con la libreria Pygame</h4>
+              <h4>{t.projects.list.pickeme.modal.desc1}</h4>
             </div>
             <div className='descriptionprj2'>
-              <p>Pick Em&amp;apos; Everithing es un videojuego dedicado para niños con el enfoque del cuidado del medio ambiente, Arthur &quot;el personaje principal del juego&quot; ira recogiendo basura a lo largo de su aventura para llevarla al camion recolector, haciendo referencia a la responsabilidad de mantener limpio un lugar.</p>
+              <p>{t.projects.list.pickeme.modal.desc2}</p>
             </div>
             <div className="photoprj1">
               <Image src={PEE1} alt="" width={"auto"} height={"auto"} />
@@ -426,22 +397,18 @@ const Proyectos = () => {
             <br />
             <br />
             <div className='descriptionprj3'>
-              Pick Em&amp;apos; Everithing cuenta con: 
-                <br />| MENU PRINCIPAL -- Español / Ingles |
-                <br />| MENU DE NIVELES -- 3 Niveles |
-                <br />| MUSICA DENTRO DEL PROGRAMA |
-                <br />| CONFIGURACION -- Quitar musica, cambiar idioma |
+              <p dangerouslySetInnerHTML={{ __html: t.projects.list.pickeme.modal.desc3 }} />
             </div>
             <div className="photoprj1">
               <Image src={PEE2} alt="" width={"auto"} height={"auto"} />
             </div>
             <div className='descriptionprj4' id='1'>
               <p>
-                Todos los elementos del videojuego son originales y completamente creados desde 0 por los desarroladores, desde botones hasta objetos incluso el mismo personaje. 
+                {t.projects.list.pickeme.modal.desc4}
               </p>
             </div>
             <button className='btngithublink'> 
-              <a href="https://github.com/AmbrizAlberto/PICK-EM-EVERITHING---PYGAME-PROJECT.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>Ver en GitHub</a>
+              <a href="https://github.com/byquesters/PICK-EM-EVERITHING---PYGAME-PROJECT.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>{t.projects.viewGitHub}</a>
             </button>
 
           </div>
@@ -456,8 +423,8 @@ const Proyectos = () => {
               <X size={24} />
             </button>
 
-            <div className="nameprj1">BuggBlock</div>
-            <div className="categorie1">Grupal</div>
+            <div className="nameprj1">{t.projects.list.buggblock.modal.title}</div>
+            <div className="categorie1">{t.projects.categories.grupal}</div>
             <div className="lenguajesprj1">
               <Image src={phppng} width={200} height={200} alt="" />
               <Image src={csspng} width={200} height={200} alt="" />
@@ -468,10 +435,10 @@ const Proyectos = () => {
             </div>
 
             <div className="descriptionprj1">
-              <h4>Un web blog para amantes de la tecnologia.</h4>
+              <h4>{t.projects.list.buggblock.modal.desc1}</h4>
             </div>
             <div className='descriptionprj3'>
-              <p>BuggBlock es una pagina web tipo Blog con enfoque a informacion tecnologica donde los usuarios registrados podran realizar publicaciones con texto y fotos para despues verlas en el Main</p>
+              <p>{t.projects.list.buggblock.modal.desc2}</p>
             </div>
             <div className="photoprj1">
               <Image src={BB1} alt="" width={"auto"} height={"auto"} />
@@ -479,10 +446,10 @@ const Proyectos = () => {
             <br />
             <br />
             <div className='descriptionprj3'>
-              BuggBlock fue desarrollado con php para el manejo de datos de usuarios y publicaciones por el lado del Backend, y el diseño realizado con iconos de Bootstrap y CSS puro. 
+              <p>{t.projects.list.buggblock.modal.desc3}</p>
             </div>
             <button className='btngithublink'> 
-              <a href="https://github.com/AmbrizAlberto/BuggBlock.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>Ver en GitHub</a>
+              <a href="https://github.com/byquesters/BuggBlock.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>{t.projects.viewGitHub}</a>
             </button>
 
           </div>

@@ -1,11 +1,12 @@
 'use client'
 import { useState } from 'react';
 import Image from 'next/image';
-import miImagen from '../../images/1mb.jpeg';
-import miImagen2 from '../../images/1mb2.jpeg';
+import miImagen from '../images/1mb.jpeg';
+import miImagen2 from '../images/1mb2.jpeg';
+import { useLanguage } from '../context/LanguageContext';
 
 const Aboutme = () => {
-
+    const { t } = useLanguage();
     const downloadCV = "./CVES.pdf";
     const [hovered, setHovered] = useState(false);
 
@@ -24,19 +25,10 @@ const Aboutme = () => {
                 </div>
             </div>
             <div className="datos2">
-                {/* <div className="available-work-wrapper">
-                    <div className="available-work-container">
-                        <div className="border-animation-top"></div>
-                        <div className="border-animation-bottom"></div>
-                        <span className="available-work-text">
-                            DISPONIBLE PARA TRABAJO
-                        </span>
-                    </div>
-                </div> */}
                 <div className="aboutme">
-                    <h2>SOBRE MI...</h2>
+                    <h2>{t.aboutme.title}</h2>
                     <div className='descriptionme'>
-                        ¡Hola! Soy un desarrollador FullStack Ingeniero de Software con más de 4 años de experiencia en el ámbito de la programación. ¡Espero con entusiasmo la oportunidad de formar parte de su equipo de desarrollo!.
+                        {t.aboutme.description}
                     </div>
                 </div>
             </div>
@@ -49,7 +41,6 @@ const Aboutme = () => {
                     margin-bottom: 1rem !important;
                     text-align: left !important;
                     width: auto !important;
-                    
                 }
 
                 .available-work-container {
@@ -127,7 +118,6 @@ const Aboutme = () => {
                     }
                 }
 
-                /* Responsive adjustments */
                 @media (max-width: 640px) {
                     .section {
                         padding-left: 1rem;
@@ -140,5 +130,3 @@ const Aboutme = () => {
 }
 
 export default Aboutme;
-
-

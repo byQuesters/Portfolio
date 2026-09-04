@@ -1,5 +1,5 @@
 .navbar {
-  width: 6%;
+  width: 10vh;
   height: 91vh;
   position: fixed;
   top: 1%;
@@ -7,169 +7,134 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 2%;
-  margin-top: 1%;
-  margin-left: 1%;
-  margin-bottom: 3%;
+  padding: 2% 0.5%;
+  margin: 1%;
   border-radius: 20px;
   font-size: 150%;
   backdrop-filter: blur(20px);
   background-color: rgba(182, 182, 182, 0.099);
   animation: sombraNav 5s infinite alternate ease-in-out;
   z-index: 1000;
-  
-  /* Transiciones para el fade */
-  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 1;
   transform: translateX(0) translateY(0);
+  overflow: visible;
+  transition: 500ms;
 }
 
-/* Estilos para el navbar cuando se convierte en header */
+.navbar:hover {
+  width: 0%;
+  transition: 500ms;
+}
+
 .navbar-header {
   width: 100% !important;
   height: 8vh !important;
   top: 0 !important;
   left: 50% !important;
   transform: translateX(-50%) translateY(0) !important;
-  margin: calc(1% + 1vh) auto !important;
-  margin-top: 0 !important;
+  margin: 0 !important;
   flex-direction: row !important;
   justify-content: center !important;
   align-items: center !important;
-  padding: 1% 3% !important;
+  padding: 0 10% !important;
   border-radius: 0 !important;
   font-size: 120% !important;
   gap: 2rem !important;
   animation: none !important;
   box-shadow: 0 0px 50px #000000;
-  border-bottom: .3vh solid #424242;
-  /* Mantener la transición suave */
-  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  border-bottom: 0.3vh solid #424242;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 1;
+  overflow: visible;
 }
 
-/* Estados de transición para fade */
 .navbar-fade-out {
   opacity: 0;
-  transform: translateY(-20px);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(-20px) scale(0.95);
+  transition: 500ms;
 }
 
 .navbar-fade-in {
   opacity: 1;
-  transform: translateY(0);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0) scale(1);
+  transition: 500ms;
 }
 
-/* Ajustes para el logo en modo header */
 .navbar-header .logo {
-  margin-bottom: 0 !important;
+  margin: 0 !important;
   font-size: 140% !important;
   display: flex !important;
   align-items: center !important;
   line-height: 1 !important;
-  transition: all 0.3s ease;
+  transition: 500ms;
 }
 
-/* Ajustes específicos para el link del logo en modo header */
 .navbar-header .logo .link {
-  margin-bottom: 0 !important;
+  margin: 0 !important;
   display: flex !important;
   align-items: center !important;
   line-height: 1 !important;
   animation: none !important;
-  transition: all 0.3s ease;
+  transition: 500ms;
 }
 
-/* Ajustes para el access en modo header */
 .navbar-header .access {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 2rem;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 2rem !important;
   animation: none !important;
-  transition: all 0.3s ease;
+  transition: 500ms;
 }
 
 .navbar-header .access .link {
-  margin-bottom: 0 !important;
-  margin-right: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
   animation: none !important;
-  transition: all 0.3s ease;
+  transition: 500ms;
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.5rem;
 }
 
-/* Si el padre (.link) o el icono está en hover, animar ambos */
-.navbar-header .access .link:hover,
-.navbar-header .access .link:hover i,
-.navbar-header .access i:hover,
-.navbar-header .access i:hover ~ span,
-.navbar-header .access i:hover,
-.navbar-header .access .link i:hover,
-.navbar-header .logo .link:hover {
-    animation: colorbtns 5s infinite alternate ease-in-out !important;
-}
-
-/* Ajustes para los iconos en modo header */
-.navbar-header .link i {
-  margin-left: 0 !important;
-  margin-right: 8px !important;
+.navbar-header .access .link i {
+  margin: 0 !important;
   font-size: 3vh !important;
   width: auto !important;
-  transition: all 0.3s ease;
+  transition: 500ms;
 }
 
-/* Los spans siempre visibles en modo header */
-.navbar-header .link span {
+.navbar-header .access .link span {
   visibility: visible !important;
-  opacity: 1;
-  transition: opacity 0.3s ease;
+  opacity: 1 !important;
+  margin: 0 !important;
+  font-size: 1.2rem;
+  transform: translateX(0) !important;
 }
 
-@keyframes sombraNav {
-  0% {
-    box-shadow: 0px 0px 15px rgb(60, 232, 34);
-  }
-  25% {
-    box-shadow: 0px 0px 15px rgb(255, 100, 39);
-  }
-  50% {
-    box-shadow: 0px 0px 15px rgb(62, 200, 255);
-  }
-  75% {
-    box-shadow: 0px 0px 15px rgb(255, 53, 228);
-  }
-  100% {
-    box-shadow: 0px 0px 15px rgb(255, 234, 46);
-  }
+.navbar-header .link:hover {
+  animation: sombraNav 5s infinite alternate ease-in-out;
+  transform: translateY(-2px);
+  transition: 500ms;
 }
 
-@keyframes colorbtns {
-  0% {
-    text-shadow: 0px 0px 15px rgb(60, 232, 34);
-    color: rgb(29, 107, 17);
-  }
-  25% {
-    text-shadow: 0px 0px 15px rgb(255, 100, 39);
-    color: rgb(106, 43, 17);
-  }
-  50% {
-    text-shadow: 0px 0px 15px rgb(62, 200, 255);
-    color: rgb(26, 94, 120);
-  }
-  75% {
-    text-shadow: 0px 0px 15px rgb(255, 53, 228);
-    color: rgb(116, 44, 107);
-  }
-  100% {
-    text-shadow: 0px 0px 15px rgb(255, 234, 46);
-    color: rgb(255, 234, 46);
-  }
+.navbar-header .link:hover i,
+.navbar-header .link:hover span {
+  animation: colorbtns 5s infinite alternate ease-in-out;
 }
 
 .logo {
   font-size: 200%;
-  margin-bottom: 5%;
-  transition: all 0.3s ease;
+  margin-bottom: 10%;
+  transition: 500ms;
+}
+
+.access {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 0.5rem;
 }
 
 .link {
@@ -179,58 +144,86 @@
   text-decoration: none;
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0.5rem 1rem;
   font-weight: bold;
-  transition: all 0.3s ease;
+  transition: 500ms;
+  white-space: nowrap;
+}
+
+.link i {
+  color: #424242;
+  font-size: 5vh;
+  width: 4rem;
+  margin-right: 0.5rem;
+  text-align: center;
+  transition: 500ms;
 }
 
 .link span {
   visibility: hidden;
   opacity: 0;
-  transition: all 0.3s ease;
+  transform: translateX(-10px);
+  transition: 500ms;
+  font-size: 1.2rem;
+  margin-left: 0.2rem;
+  white-space: nowrap;
 }
 
-.link i {
-  color: #424242;
-  width: 10vh;
-  margin-left: 35%;
-  margin-right: 2%;
-  font-size: 6vh;
-  transition: all 0.5s ease;
-}
-
-/* HOVERS - Solo aplican en modo vertical */
+/* Efecto hover en modo vertical */
 .navbar:not(.navbar-header):hover {
-  width: auto;
-  padding: auto;
-  background-color: rgba(255, 255, 255, 0.768);
-  transition: all 0.5s ease;
+  width: 25vh;
+  min-width: 10vh;
+  padding: 2% 1.5%;
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 0 30px rgba(0,0,0,0.2);
+  transition: 500ms;
 }
 
 .navbar:not(.navbar-header) .link:hover i {
-  margin-left: 6%;
+  transform: scale(1.1);
+  color: #000;
 }
 
 .navbar:not(.navbar-header) .link:hover span {
   visibility: visible;
   opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0s;
 }
 
-/* Hover effects para el modo header */
-.navbar-header .link:hover {
-  animation: sombraNav 5s infinite alternate ease-in-out;
-  transform: translateY(-2px);
-  transition: transform 0.3s ease;
+.navbar:not(.navbar-header) .link:hover {
+  background: rgba(255,255,255,0.3);
+  border-radius: 10px;
+}
+
+/* En modo header los spans siempre visibles */
+.navbar-header .link span {
+  visibility: visible !important;
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+}
+
+@keyframes sombraNav {
+  0% { box-shadow: 0px 0px 15px rgb(60, 232, 34); }
+  25% { box-shadow: 0px 0px 15px rgb(255, 100, 39); }
+  50% { box-shadow: 0px 0px 15px rgb(62, 200, 255); }
+  75% { box-shadow: 0px 0px 15px rgb(255, 53, 228); }
+  100% { box-shadow: 0px 0px 15px rgb(255, 234, 46); }
+}
+
+@keyframes colorbtns {
+  0% { text-shadow: 0px 0px 15px rgb(60, 232, 34); color: rgb(29, 107, 17); }
+  25% { text-shadow: 0px 0px 15px rgb(255, 100, 39); color: rgb(106, 43, 17); }
+  50% { text-shadow: 0px 0px 15px rgb(62, 200, 255); color: rgb(26, 94, 120); }
+  75% { text-shadow: 0px 0px 15px rgb(255, 53, 228); color: rgb(116, 44, 107); }
+  100% { text-shadow: 0px 0px 15px rgb(255, 234, 46); color: rgb(255, 234, 46); }
 }
 
 @media screen and (max-width: 768px) {
-  .navbar {
-    display: none;
-  }
+  .navbar { display: none; }
 }
-
 @media screen and (max-width: 480px) {
-  .navbar {
-    display: none;
-  }
+  .navbar { display: none; }
 }

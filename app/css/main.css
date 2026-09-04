@@ -296,7 +296,6 @@ button {
     height: auto;
     color: #424242;
     transition: 500ms;
-    border-top: 1vh dotted #42424249;
 }.lenguajes h2{
     margin: auto;
     margin-bottom: 5%;
@@ -311,7 +310,6 @@ button {
     width: 100%;
     height: auto;
     color: #424242;
-    border-top: 1vh dotted #42424249;
     transition: 500ms;
 }.projects h2{
     font-weight: 600;
@@ -495,7 +493,6 @@ button {
     margin-top: 20%;
     color: #424242;
     padding-top: 6%;
-    border-top: 1vh dotted #42424249;
 
 }
 .contactme h1{
