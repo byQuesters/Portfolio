@@ -3,12 +3,14 @@
     html{
         background-color: white;
         background-image: linear-gradient(to bottom, #ffffff 0vh, #ffffff 80vh, #fff4db 110vh, #fff4db 200vh, #fff4db 230vh, #ffdcb8 34%, #ffdcb8 93%, #67d4ff50 96%, #67d4ff50 100%);
-        overflow-y: auto;
         font-family: 'Roboto', sans-serif;
 
     }
+    body{
+        margin-left: 0;
+        width: 100%;
+    }
     .main{
-        overflow-y: auto;
         margin-left: auto;
     }
     .personaldata{
@@ -24,7 +26,7 @@
     }
     .datos1{
         margin: auto;
-        margin-top: 25%;
+        margin-top: 15%;
         align-items: center;
         text-align: center;
         width: 90%;
@@ -58,6 +60,7 @@
         margin: auto;
         margin-top: 10%;
         font-size: 200%;
+        overflow: visible;
     }
     .projects h2{
         margin: auto;
@@ -78,7 +81,6 @@
         font-size: 65%;
       }.grid-itemtec h2{
         height: 25%;
-        margin-bottom: %;
       }
       .grid-itemtec .tecnologias{
         font-size: 150%;
@@ -102,18 +104,22 @@
       }
 
     .grid-containerprj{
-        grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+        grid-template-columns: 1fr;
+        gap: 5vh 0%;
+        width: 100%;
     }
     .container-project{
-        width:100%;
+        width: 92%;
+        margin: 0 auto;
         font-size: 55%;
+        box-sizing: border-box;
     }
     .container-project .nameprj{
         font-size: 200%;
         font-family: 'Roboto', sans-serif;
     }
     .contactme{
-        margin-top: 20%;
+        margin-top: 10%;
         font-size: 55%;
         margin-bottom: 5%;
     }
@@ -126,6 +132,9 @@
     }
     .modalcontent{
         font-size: 40%;
+    }
+    .btnlinks{
+        margin-top: 10vh;
     }
 }
 
@@ -147,7 +156,7 @@
         margin-left: auto; 
     }
     body{
-        margin-left: 0;
+        margin-left: 0 !important;
     }
     .datos1{
         margin-top: 10vh;
@@ -189,117 +198,134 @@
     .btnlinks1 button{
         font-size: .9rem;
     }
+    .grid-containerprj{
+        grid-template-columns: 1fr;
+        gap: 5vh 0%;
+        width: 100%;
+    }
+    .container-project{
+        width: 92%;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    .projects{
+        overflow: visible;
+    }
 }
 
 
-  /* i14PM */
-  @media screen and (max-width: 431px) {
-    html{
-        background-color: white;
-        background-image: linear-gradient(to bottom, #ffffff 0vh, #ffffff 80vh, #fff4db 110vh, #fff4db 200vh, #fff4db 230vh, #ffdcb8 34%, #ffdcb8 93%, #67d4ff50 96%, #67d4ff50 100%);
-        overflow-x: hidden;
-        font-size: 80%;
-    }
-    body{
-        margin-left: 0;
-        width: 100%;
-    }
-    .main{
-        width: 90%;
-        margin-left: auto; 
-    }
-    .personaldata{
-        width: 90%;
-        height: 80vh;
-        font-size: 90%;
-        margin-top: 15%;
-        flex-wrap: wrap;
-        text-align: center;
-        margin: auto;
-    }
-    .datos1{
-        text-align: center;
-        padding-top: 10%;
-        margin: auto;
-        width: 100%;
-    }
-    .datos1 img{
-        margin: auto;
-    }
-    .datos2{
-        font-size: 1.1vh;
-        margin-top: 5%;
-        margin-left: 2%;
-        width: 90%;
-        height: auto;
-    }.descriptionme{
-        height: 40%;
-    }
-    .btnlinks1{
-        top: 100%;
-        margin-top: -1%;
-    }
+/* i14PM */
+@media screen and (max-width: 431px) {
+html{
+    background-color: white;
+    background-image: linear-gradient(to bottom, #ffffff 0vh, #ffffff 80vh, #fff4db 110vh, #fff4db 200vh, #fff4db 230vh, #ffdcb8 34%, #ffdcb8 93%, #67d4ff50 96%, #67d4ff50 100%);
+    font-size: 80%;
+}
+body{
+    margin-left: 0;
+    width: 100%;
+}
+.main{
+    width: 90%;
+    margin-left: auto; 
+}
+.personaldata{
+    width: 90%;
+    height: 80vh;
+    font-size: 90%;
+    margin-top: 15%;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: auto;
+}
+.datos1{
+    text-align: center;
+    padding-top: 10%;
+    margin: auto;
+    width: 100%;
+}
+.datos1 img{
+    margin: auto;
+}
+.datos2{
+    font-size: 1.1vh;
+    margin-top: 5%;
+    margin-left: 2%;
+    width: 90%;
+    height: auto;
+}.descriptionme{
+    height: 40%;
+}
+.btnlinks1{
+    top: 100%;
+    margin-top: -1%;
+}
 
-    .lenguajes h2{
-        margin-bottom: -15%;
-    }
-    .grid-containertec{
-        grid-template-columns: repeat(auto-fill, minmax(250px, 0fr));
-        margin: auto;
-    }
-    .grid-itemtec {
-        margin: auto;
-        width: 90%;
-        height: 200px;
-    }
-    .grid-itemtec h2{
-        margin-bottom: 0%;
-    }
-    .image-with-text img {
-        width: 40px; /* Ajusta el ancho según sea necesario */
-        height: 40px; /* Esto permite que la imagen se ajuste proporcionalmente */
-    }
-    .projects{
-        margin: auto;
-        width: 90%;
-        margin-top: 5vh;
-    }
-    .grid-containerprj{
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Establece columnas con un mínimo de 200px y se ajustan automáticamente */
-        gap: 1.5% 0%; /* Espacio entre los elementos */
-        margin: auto;
-        padding: 0%;
-    }
-    .container-project{
-        margin: auto;
-        width: 90%;
-    }
-    .photoprj1 img{
-        width: 70%;
-        height: 1%;
-        margin: auto;
-        margin-top: 1%;
-        border-radius: 0px;
-        box-shadow: 1px 15px 30px rgba(0, 0, 0, 0.533);
-    }
+.lenguajes h2{
+    margin-bottom: -15%;
+}
+.grid-containertec{
+    grid-template-columns: repeat(auto-fill, minmax(250px, 0fr));
+    margin: auto;
+}
+.grid-itemtec {
+    margin: auto;
+    width: 90%;
+    height: auto;
+}
+.grid-itemtec h2{
+    margin-bottom: 0%;
+}
+.image-with-text img {
+    width: 40px;
+    height: 40px;
+}
+.projects{
+    margin: auto;
+    width: 90%;
+    margin-top: 5vh;
+    padding-bottom: 4vh;
+    overflow: visible;
+    height: auto;
+}
+.grid-containerprj{
+    grid-template-columns: 1fr;
+    gap: 6vh 0%;
+    margin: auto;
+    padding: 0%;
+    width: 100%;
+}
+.container-project{
+    height: auto;
+    margin: 0 auto 4vh auto;
+    width: 92%;
+    box-sizing: border-box;
+}
+.photoprj1 img{
+    width: 70%;
+    height: 1%;
+    margin: auto;
+    margin-top: 1%;
+    border-radius: 0px;
+    box-shadow: 1px 15px 30px rgba(0, 0, 0, 0.533);
+}
 
-    .contactme{
-        font-size: 90%;
-        margin-top: 60vh;
-        margin-bottom: 5%;
-    }
-    .modalprj1{
-        height: 50%;
-    }
-  }
+.contactme{
+    font-size: 90%;
+    margin-top: 8vh;
+    margin-bottom: 5%;
+}
+.modalprj1{
+    height: 50%;
+}
+}
 
 
-    /* R6Pro, iPh12PM */
+/* R6Pro, iPh12PM */
 @media screen and (max-width: 412px) {
 html{
 background-color: white;
 background-image: linear-gradient(to bottom, #ffffff 0vh, #ffffff 80vh, #fff4db 110vh, #fff4db 200vh, #fff4db 230vh, #ffdcb8 34%, #ffdcb8 93%, #67d4ff50 96%, #67d4ff50 100%);
-overflow-x: hidden;
 font-size: 80%;
 }
 body{
@@ -366,29 +392,31 @@ height: auto;
 margin-bottom: 7%;
 }
 .image-with-text img {
-width: 40px; /* Ajusta el ancho según sea necesario */
-height: 40px; /* Esto permite que la imagen se ajuste proporcionalmente */
+width: 40px;
+height: 40px;
 }
 .projects{
 margin: auto;
 width: 90%;
 margin-top: 10vh;
-margin-bottom: 45vh;
+padding-bottom: 4vh;
+overflow: visible;
 height: auto;
 }
 .projects h2{
 margin-top: 6vh;
 }
 .grid-containerprj{
-grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Establece columnas con un mínimo de 200px y se ajustan automáticamente */
-gap: 1.5% 0%; /* Espacio entre los elementos */
+grid-template-columns: 1fr;
+gap: 6vh 0%;
 margin: auto;
 padding: 0%;
-margin-bottom: 10vh; /* Añadido espacio inferior para separar de contactme */
+width: 100%;
 }
 .container-project{
-margin: auto;
-width: 90%;
+margin: 0 auto 4vh auto;
+width: 92%;
+box-sizing: border-box;
 }
 .photoprj1 img{
 width: 70%;
@@ -399,7 +427,7 @@ border-radius: 0px;
 box-shadow: 1px 15px 30px rgba(0, 0, 0, 0.533);
 }
 .contactme{
-    margin-top: 45vh;
+    margin-top: 8vh;
     font-size: 90%;
     margin-bottom: 15%;
 }
@@ -417,7 +445,6 @@ box-shadow: 1px 15px 30px rgba(0, 0, 0, 0.533);
     html{
         background-color: white;
         background-image: linear-gradient(to bottom, #ffffff 0vh, #ffffff 80vh, #fff4db 110vh, #fff4db 200vh, #fff4db 230vh, #ffdcb8 34%, #ffdcb8 93%, #67d4ff50 95%, #67d4ff50 100%);
-        overflow-x: hidden;
         font-size: 100%;
     }
     body{
@@ -478,24 +505,29 @@ box-shadow: 1px 15px 30px rgba(0, 0, 0, 0.533);
         margin-bottom: 2vh;
     }
     .image-with-text img {
-        width: 40px; /* Ajusta el ancho según sea necesario */
-        height: 40px; /* Esto permite que la imagen se ajuste proporcionalmente */
+        width: 40px;
+        height: 40px;
     }
     .projects{
         margin: auto;
         width: 90%;
         margin-top: 5vh;
         font-size: 150%;
+        padding-bottom: 4vh;
+        overflow: visible;
+        height: auto;
     }
     .grid-containerprj{
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Establece columnas con un mínimo de 200px y se ajustan automáticamente */
-        gap: 1.5% 0%; /* Espacio entre los elementos */
+        grid-template-columns: 1fr;
+        gap: 6vh 0%;
         margin: auto;
         padding: 0%;
+        width: 100%;
     }
     .container-project{
-        margin: auto;
-        width: 90%;
+        margin: 0 auto 4vh auto;
+        width: 92%;
+        box-sizing: border-box;
     }
     .photoprj1 img{
         width: 70%;
@@ -507,10 +539,9 @@ box-shadow: 1px 15px 30px rgba(0, 0, 0, 0.533);
     }
 
     .contactme{
-        margin-top: 45vh;
-        margin-bottom: 5%;
-        font-size: 70%;
+        margin-top: 8vh;
         margin-bottom: 15%;
+        font-size: 70%;
     }
     .contactme .contactmett{
         font-size: 300%;
@@ -525,7 +556,6 @@ box-shadow: 1px 15px 30px rgba(0, 0, 0, 0.533);
     html{
         background-color: white;
         background-image: linear-gradient(to bottom, #ffffff 0vh, #ffffff 80vh, #fff4db 110vh, #fff4db 200vh, #fff4db 230vh, #ffdcb8 34%, #ffdcb8 93%, #67d4ff50 96%, #67d4ff50 100%);
-        overflow-x: hidden;
         font-size: 80%;
     }
     body{
@@ -592,16 +622,21 @@ box-shadow: 1px 15px 30px rgba(0, 0, 0, 0.533);
         margin: auto;
         width: 90%;
         margin-top: 5vh;
+        padding-bottom: 4vh;
+        overflow: visible;
+        height: auto;
     }
     .grid-containerprj{
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Establece columnas con un mínimo de 200px y se ajustan automáticamente */
-        gap: 1.5% 0%; /* Espacio entre los elementos */
+        grid-template-columns: 1fr;
+        gap: 6vh 0%;
         margin: auto;
         padding: 0%;
+        width: 100%;
     }
     .container-project{
-        margin-left: calc(5%);
-        width: 80%;
+        margin: 0 auto 4vh auto;
+        width: 92%;
+        box-sizing: border-box;
     }
     .descriptionprj{
         font-size: 150%;
@@ -616,10 +651,9 @@ box-shadow: 1px 15px 30px rgba(0, 0, 0, 0.533);
         box-shadow: 1px 15px 30px rgba(0, 0, 0, 0.533);
     }
     .contactme{
-        margin-top: 60vh;
-        margin-bottom: 5%;
-        font-size: 70%;
+        margin-top: 8vh;
         margin-bottom: 15%;
+        font-size: 70%;
     }
     .contactme .contactmett{
         font-size: 300%;

@@ -17,7 +17,6 @@ html{
     background-image: linear-gradient(to bottom, #ffffff 5%, #ffffff 10%, #fff4db 15%, #fff4db 20%,  #fff4db 30%, #ffdcb8 37%,  #fff4db 89%, #67d4ff50 92%,  #67d4ff50 100%);
     font-family: 'Roboto', sans-serif;
     height: auto;
-    overflow-x: hidden;
     width: 100%;
     transition: 700ms;
     font-size: 2vh;
@@ -25,12 +24,10 @@ html{
 
 body{
     margin-left: 4%;
-    overflow-y: hidden;
     width: 100%;
 }
 
 .main{
-    overflow-y: hidden;
     width: 90%;
     height: 100%;
     color: rgb(255, 0, 0);
@@ -164,7 +161,7 @@ body{
     color: #424242;
     margin-top: 0;
     margin-bottom: 0%;
-    font-size: 150%;
+    font-size: 150% !important;
     transition: 500ms;
 
 }.descriptionme{

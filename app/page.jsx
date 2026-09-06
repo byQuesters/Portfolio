@@ -1,4 +1,3 @@
-// con sistema de traducción de idiomas
 'use client'
 
 import { useState, useEffect } from 'react';
@@ -105,9 +104,6 @@ export default function Portafolio() {
   return (
     <div className='main'>
       <div className='btnlinks'>
-        <button onClick={toggleLanguage}>
-            <i className="bi bi-translate"></i>
-        </button>
         <button>
           <a href="https://www.linkedin.com/in/albertoambriz/" target="_blank">
             <i className="bi bi-linkedin"></i>
@@ -118,21 +114,14 @@ export default function Portafolio() {
             <i className="bi bi-github"></i>
           </a>
         </button>
+        <button>
+          <a href="https://www.instagram.com/byquesters?stkn=MTRiZ3N2OXp2NjNxbA%3D%3D&utm_source=qr/" target="_blank">
+            <i className="bi bi-instagram"></i>
+          </a>
+        </button>
       </div>
   
       <>
-        <div className='btnlinks1'>
-          <button>
-            <a href="./Personal">
-              <i className="bi bi-person-raised-hand"></i>
-            </a>
-          </button>
-          <button>
-            <a href="./Grupal">
-              <i className="bi bi-people-fill"></i>
-            </a>
-          </button>
-        </div>
         <Navbar/>
         <Aboutme/>        
         <Tecnologias />

@@ -116,7 +116,7 @@ const es = {
           title: "Number Recognition",
           category: "Personal",
           desc1: "Reconocimiento de numeros dibujados en el programa",
-          desc2: "Programa con inteligencia artificial entrenada àra el reconocimiento de digitos numericos dibujados por el usuario."
+          desc2: "Programa con inteligencia artificial entrenada para el reconocimiento de digitos numericos dibujados por el usuario."
         }
       },
       energyflow: {
@@ -185,7 +185,7 @@ const es = {
   },
   contactme: {
     title: "CONTACTAME",
-    email: "CORREO",
+    email: "CORREO:",
     copy: "Copiar",
     copied: "Copiado",
     phone: "TELEFONO"

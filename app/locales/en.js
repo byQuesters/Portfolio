@@ -185,7 +185,7 @@ const en = {
   },
   contactme: {
     title: "CONTACT ME",
-    email: "EMAIL",
+    email: "EMAIL:",
     copy: "Copy",
     copied: "Copied",
     phone: "PHONE"
