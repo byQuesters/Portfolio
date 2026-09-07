@@ -81,7 +81,7 @@ const Proyectos = () => {
 
       <button className="container-project" onClick={() => openModalForProject("STJohns")}>
         <div className="nameprj">{t.projects.list.stjohns.name}</div>
-        <div className="categorie">{t.projects.categories.grupal}</div>
+        <div className="categorie">{t.projects.categories.personal}</div>
         <div className="photoprj">
           <Image src={StJ1} alt="" width={"auto"} height={"auto"} />
         </div>

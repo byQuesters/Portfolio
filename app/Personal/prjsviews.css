@@ -123,6 +123,7 @@ body{
     margin-bottom: 5%;
     border-radius: 20px;
     transition: 500ms;
+    background-color: rgb(214, 214, 214);
 }
 
 .container-project:hover .lenguajesprj{
@@ -195,11 +196,11 @@ body{
         margin-bottom: 15%;
     }
     .grid-containerprj{
-        grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(410px, 1fr));
     }
     .container-project{
         width:100%;
-        font-size: 47%;
+        font-size: 2.5vh;
         margin-bottom: 3%;
     }
     .container-project:last-child{
