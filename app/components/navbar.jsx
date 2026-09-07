@@ -88,17 +88,17 @@ export default function Navbar() {
   return (
     <div className={getNavbarClasses()}>
       <div className="access">
-        <a className={linkClass('/')} href="/">
+        <a className={linkClass('/')} href="./">
           <i className="bi bi-house-fill"></i>
           <span className="titulo">{t.home}</span>
         </a>
 
-        <a className={linkClass('/Personal')} href="/Personal">
+        <a className={linkClass('/Personal')} href="./Personal">
           <i className="bi bi-person-raised-hand"></i>
           <span className="titulo">{t.solo}</span>
         </a>
 
-        <a className={linkClass('/Grupal')} href="/Grupal">
+        <a className={linkClass('/Grupal')} href="./Grupal">
           <i className="bi bi-people-fill"></i>
           <span className="titulo">{t.grupal}</span>
         </a>
