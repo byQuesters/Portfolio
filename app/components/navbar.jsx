@@ -21,6 +21,9 @@ export default function Navbar() {
     ? 'CV ESPAÑOL 2026 - Alberto Ambriz.pdf'
     : 'CV ENGLISH 2026 - Alberto Ambriz.pdf';
 
+  // Rutas donde el navbar debe comportarse como en mobile (header fijo)
+  const isSoloOrGrupal = pathname === '/Personal' || pathname === '/Grupal';
+
   // Detección de dispositivo
   useEffect(() => {
     const mql = window.matchMedia(`(max-width: ${MOBILE_BREAKPOINT}px)`);
@@ -37,7 +40,11 @@ export default function Navbar() {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       const shouldBeScrolled = scrollY > 100;
-      if (shouldBeScrolled !== isScrolled && !isTransitioning) {
+      if (
+        shouldBeScrolled !== isScrolled &&
+        !isTransitioning &&
+        !isSoloOrGrupal
+      ) {
         setIsTransitioning(true);
         setTimeout(() => {
           setIsScrolled(shouldBeScrolled);
@@ -50,14 +57,23 @@ export default function Navbar() {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [isScrolled, isTransitioning, isMobile]);
+  }, [isScrolled, isTransitioning, isMobile, isSoloOrGrupal]);
+
+  // Si volvemos a la raíz "/" mientras isScrolled quedó en true por una
+  // sesión previa en /Personal o /Grupal, lo reseteamos para que el
+  // navbar lateral se muestre en su estado normal (no "scrolled").
+  useEffect(() => {
+    if (!isSoloOrGrupal && pathname === '/' && isScrolled && window.scrollY <= 100) {
+      setIsScrolled(false);
+    }
+  }, [pathname, isSoloOrGrupal, isScrolled]);
 
   const getNavbarClasses = () => {
-    const isHeader = isMobile || isScrolled;
+    const isHeader = isMobile || isScrolled || isSoloOrGrupal;
 
     let classes = 'navbar';
     if (isHeader) classes = 'navbar navbar-header';
-    if (isMobile) classes += ' navbar-header-mobile';
+    if (isMobile || isSoloOrGrupal) classes += ' navbar-header-mobile';
 
     classes += isTransitioning ? ' navbar-fade-out' : ' navbar-fade-in';
     return classes;
@@ -72,20 +88,20 @@ export default function Navbar() {
   return (
     <div className={getNavbarClasses()}>
       <div className="access">
-        <Link className={linkClass('/')} href="/">
+        <a className={linkClass('/')} href="/">
           <i className="bi bi-house-fill"></i>
-          <span className='titulo'>{t.navbar.home}</span>
-        </Link>
+          <span className="titulo">{t.home}</span>
+        </a>
 
-        <Link className={linkClass('/Personal')} href="/Personal">
+        <a className={linkClass('/Personal')} href="/Personal">
           <i className="bi bi-person-raised-hand"></i>
-          <span className='titulo'>{t.navbar.solo}</span>
-        </Link>
+          <span className="titulo">{t.solo}</span>
+        </a>
 
-        <Link className={linkClass('/Grupal')} href="/Grupal">
+        <a className={linkClass('/Grupal')} href="/Grupal">
           <i className="bi bi-people-fill"></i>
-          <span className='titulo'>{t.navbar.grupal}</span>
-        </Link>
+          <span className="titulo">{t.grupal}</span>
+        </a>
 
         <a className="link" href={cvFile} download={cvName}>
           <i className="bi bi-file-earmark-person-fill"></i>
@@ -94,6 +110,7 @@ export default function Navbar() {
 
         <button className="link" onClick={toggleLanguage}>
           <i className="bi bi-translate"></i>
+          <span className='titulo'>{t.navbar.translate}</span>
         </button>
       </div>
     </div>

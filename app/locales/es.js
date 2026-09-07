@@ -5,11 +5,12 @@ const es = {
     grupal: "Grupal",
     linkedin: "LinkedIn",
     github: "GitHub",
-    cv: "CV"
+    cv: "CV",
+    translate: "Traducir",
   },
   aboutme: {
     title: "SOBRE MI...",
-    description: "¡Hola! Soy un desarrollador FullStack Ingeniero de Software con más de 4 años de experiencia en el ámbito de la programación. ¡Espero con entusiasmo la oportunidad de formar parte de su equipo de desarrollo!."
+    description: "¡Hola! Soy un desarrollador FullStack Ingeniero de Software con más de 5 años de experiencia en el ámbito de la programación. ¡Espero con entusiasmo la oportunidad de formar parte de su equipo!"
   },
   tecnologias: {
     title: "TECNOLOGIAS",
@@ -116,8 +117,7 @@ const es = {
           title: "Number Recognition",
           category: "Personal",
           desc1: "Reconocimiento de numeros dibujados en el programa",
-          desc2: "Programa con inteligencia artificial entrenada para el reconocimiento de digitos numericos dibujados por el usuario."
-        }
+          desc2: "Programa con entrenamiento de red neuronal para reconocer numeros dibujados por el usuario, el programa esta desarrollado con Python y Pygame, ademas de utilizar la libreria Tensorflow para el entrenamiento de la red neuronal. El programa cuenta con un canvas donde el usuario puede dibujar un numero del 0 al 9 y el programa lo reconocera y mostrara el resultado en pantalla."},
       },
       energyflow: {
         name: "Energy Flow",

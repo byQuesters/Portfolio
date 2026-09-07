@@ -7,26 +7,22 @@ html{
     height: auto;
     overflow-x: hidden;
     width: 100%;
+    margin: auto;
     transition: 700ms;
     font-size: 2vh;
 }
 
 body{
-    margin-left: 4%;
     overflow-y: auto;
     width: 100%;
-    font-family: 'Roboto', sans-serif;
-
 }
 
 .main{
     overflow-y: visible;
-    width: 97%;
+    width: 100%;
     height: auto;
     color: rgb(255, 255, 255);
     padding: 2%;
-    border-radius: 20px;
-    font-family: 'Roboto', sans-serif;
 
 }
 
@@ -42,7 +38,7 @@ body{
 /* PROYECTOS */
 
 .projects{
-    margin-top: 5%;
+    margin-top: 10% !important;
     text-align: center;
     width: 100%;
     height: auto;

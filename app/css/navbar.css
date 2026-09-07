@@ -273,3 +273,10 @@
 .titulo {
   font-size: 1rem !important;
 }
+
+button {
+  text-decoration: none;  /* Inherits to child elements by default */
+  background-color: transparent;
+  border: none;
+  transition: 500ms;
+}

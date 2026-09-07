@@ -10,9 +10,6 @@
         margin-left: 0;
         width: 100%;
     }
-    .main{
-        margin-left: auto;
-    }
     .personaldata{
         height: 85vh;
         margin: auto;
@@ -106,7 +103,7 @@
     .grid-containerprj{
         grid-template-columns: 1fr;
         gap: 5vh 0%;
-        width: 100%;
+        width: 90%;
     }
     .container-project{
         width: 92%;
@@ -139,9 +136,6 @@
 }
 
 @media screen and (max-width: 540px) {
-    .main{
-        margin-left: auto; 
-    }
     .datos2{
         font-size: 70%;
     }
@@ -152,9 +146,6 @@
 
 /* iPmini */
 @media screen and (max-width: 768px) {
-    .main{
-        margin-left: auto; 
-    }
     body{
         margin-left: 0 !important;
     }
@@ -201,7 +192,7 @@
     .grid-containerprj{
         grid-template-columns: 1fr;
         gap: 5vh 0%;
-        width: 100%;
+        width: 90%;
     }
     .container-project{
         width: 92%;
@@ -227,7 +218,6 @@ body{
 }
 .main{
     width: 90%;
-    margin-left: auto; 
 }
 .personaldata{
     width: 90%;
@@ -293,7 +283,7 @@ body{
     gap: 6vh 0%;
     margin: auto;
     padding: 0%;
-    width: 100%;
+    width: 90%;
 }
 .container-project{
     height: auto;
@@ -331,10 +321,6 @@ font-size: 80%;
 body{
 margin-left: 0;
 width: 100%;
-}
-.main{
-width: 90%;
-margin-left: auto;
 }
 .personaldata{
 width: 90%;
@@ -411,7 +397,7 @@ grid-template-columns: 1fr;
 gap: 6vh 0%;
 margin: auto;
 padding: 0%;
-width: 100%;
+width: 90%;
 }
 .container-project{
 margin: 0 auto 4vh auto;
@@ -450,10 +436,6 @@ box-shadow: 1px 15px 30px rgba(0, 0, 0, 0.533);
     body{
         margin-left: 0;
         width: 100%;
-    }
-    .main{
-        margin-left: auto;
-        width: 90%;
     }
     .personaldata{
         width: 90%;
@@ -522,7 +504,7 @@ box-shadow: 1px 15px 30px rgba(0, 0, 0, 0.533);
         gap: 6vh 0%;
         margin: auto;
         padding: 0%;
-        width: 100%;
+        width: 90%;
     }
     .container-project{
         margin: 0 auto 4vh auto;
@@ -562,10 +544,7 @@ box-shadow: 1px 15px 30px rgba(0, 0, 0, 0.533);
         margin-left: 0;
         width: 100%;
     }
-    .main{
-        margin-left: auto;
-        width: 90%;
-    }.personaldata{
+    .personaldata{
         width: 90%;
         height: 80vh;
         font-size: 90%;
@@ -631,7 +610,7 @@ box-shadow: 1px 15px 30px rgba(0, 0, 0, 0.533);
         gap: 6vh 0%;
         margin: auto;
         padding: 0%;
-        width: 100%;
+        width: 90%;
     }
     .container-project{
         margin: 0 auto 4vh auto;

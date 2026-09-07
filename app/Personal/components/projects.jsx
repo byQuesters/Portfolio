@@ -44,6 +44,8 @@ import StJ1 from '../../images/StJ1.png';
 import StJ2 from '../../images/StJ2.png';
 import StJ3 from '../../images/StJ3.png';
 import StJ4 from '../../images/StJ4.png';
+import NR1 from '../../images/NR1.png';
+import NR2 from '../../images/NR2.png';
 
 import "../../css/modal.css";
 import "../../css/project.css";
@@ -198,20 +200,20 @@ const Proyectos = () => {
         </button>
 
         <button className="container-project" onClick={() => openModalForProject("NumberRecog")}>
-          <div className="nameprj">{t.projects.list.numberrecog.name}</div>
-          <div className="categorie">{t.projects.categories.personal}</div>
-          <div className="photoprj">
-
-          </div>
-          <div className="descriptionprj">
-            <h4>{t.projects.list.numberrecog.shortDesc}</h4>
-          </div>
-          <div className="lenguajesprj">
-          <Image src={pythonpng} width={200} height={200} alt="" />
-          </div>
-          <div className="github">
-            <i className="bi bi-eye-fill"></i>{t.projects.viewProject}
-          </div>
+            <div className="nameprj">{t.projects.list.numberrecog.name}</div>
+            <div className="categorie">{t.projects.categories.personal}</div>
+            <div className="photoprj">
+              <Image src={NR1} alt="" width={"auto"} height={"auto"} />
+            </div>
+            <div className="descriptionprj">
+              <h4>{t.projects.list.numberrecog.shortDesc}</h4>
+            </div>
+            <div className="lenguajesprj">
+            <Image src={pythonpng} width={200} height={200} alt="" />
+            </div>
+            <div className="github">
+              <i className="bi bi-eye-fill"></i>{t.projects.viewProject}
+            </div>
         </button>
 
       </div>
@@ -504,19 +506,15 @@ const Proyectos = () => {
             <div className="lenguajesprj1">
             <Image src={pythonpng} width={200} height={200} alt="" />
             </div>
-            {/* <div className="photoprj1">
-              <Image src={BB} alt="" width={"auto"} height={"auto"} />
-            </div> */}
-
             <div className="descriptionprj1">
               <h4>{t.projects.list.numberrecog.modal.desc1}</h4>
             </div>
             <div className='descriptionprj3'>
               <p>{t.projects.list.numberrecog.modal.desc2}</p>
             </div>
-            {/* <div className="photoprj1">
-              <Image src={BB1} alt="" width={"auto"} height={"auto"} />
-            </div> */}
+            <div className="photoprj1">
+              <Image src={NR2} alt="" width={"auto"} height={"auto"} />
+            </div>
             <br />
             <br />
             <button className='btngithublink'> 

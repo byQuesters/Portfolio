@@ -5,11 +5,12 @@ const en = {
     grupal: "Group",
     linkedin: "LinkedIn",
     github: "GitHub",
-    cv: "CV"
+    cv: "CV",
+    translate: "Translate"
   },
   aboutme: {
     title: "ABOUT ME...",
-    description: "Hello! I'm a FullStack developer Software Engineer with more than 4 years of experience in the programming field. I'm looking forward to the opportunity to be part of your development team!."
+    description: "Hello! I'm a FullStack developer Software Engineer with more than 5 years of experience in the programming field. I'm looking forward to the opportunity to be part of your team!"
   },
   tecnologias: {
     title: "TECHNOLOGIES",
@@ -116,7 +117,7 @@ const en = {
           title: "Number Recognition",
           category: "Personal",
           desc1: "Recognition of numbers drawn in the program",
-          desc2: "Program with artificial intelligence trained to recognize numeric digits drawn by the user."
+          desc2: "Program with neural network training to recognize numbers drawn by the user, the program is developed with Python and Pygame, in addition to using the Tensorflow library for neural network training. The program has a canvas where the user can draw a number from 0 to 9 and the program will recognize it and display the result on screen."
         }
       },
       energyflow: {

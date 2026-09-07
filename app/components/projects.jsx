@@ -70,6 +70,7 @@ import EF7 from "../images/EF7.PNG"
 import EF8 from "../images/EF8.PNG"
 import EF9 from "../images/EF9.PNG"
 import EF10 from "../images/EF10.jpeg"
+import NR1 from "../images/NR1.png"
 
 import "../css/modal.css";
 import "../css/project.css";
@@ -227,7 +228,7 @@ const Proyectos = () => {
           <div className="nameprj">{t.projects.list.numberrecog.name}</div>
           <div className="categorie">{t.projects.categories.personal}</div>
           <div className="photoprj">
-
+            <Image src={NR1} alt="" width={"auto"} height={"auto"} />
           </div>
           <div className="descriptionprj">
             <h4>{t.projects.list.numberrecog.shortDesc}</h4>
