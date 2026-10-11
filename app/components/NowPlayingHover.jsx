@@ -31,19 +31,19 @@ export default function NowPlayingHover({ children }) {
     }
   }, []);
 
-  // Fetch
+  // Fetch inicial + polling
   useEffect(() => {
     obtenerDatos();
     const id = setInterval(obtenerDatos, INTERVALO_POLL);
     return () => clearInterval(id);
   }, [obtenerDatos]);
 
-  // Hover
+  // Hover con debounce
   const alEntrar = () => {
     if (hoverTimer.current) clearTimeout(hoverTimer.current);
     hoverTimer.current = setTimeout(() => {
       setHover(true);
-      obtenerDatos(); // refresca al pasar el mouse
+      obtenerDatos();
     }, 150);
   };
 
@@ -58,13 +58,35 @@ export default function NowPlayingHover({ children }) {
     };
   }, []);
 
+  // Icono + texto según estado de reproducción
+  const estadoMusica = (estado) => {
+    if (estado === 'playing') {
+      return {
+        icono: 'bi-play-fill',
+        texto: 'Escuchando'
+      };
+    }
+    return {
+      icono: 'bi-pause-fill',
+      texto: 'Pausado'
+    };
+  };
+
   // Contenido del tooltip
   const renderTooltip = () => {
     const m = datos?.music;
 
+    // Sin datos o sin reproducción
     if (!m || (!m.track && m.state !== 'playing' && m.state !== 'paused')) {
-      return <div className="tooltip-vacio">No hay música reproduciéndose</div>;
+      return (
+        <div className="tooltip-vacio">
+          <i className="bi bi-music-note"></i>
+          <span>No hay música reproduciéndose</span>
+        </div>
+      );
     }
+
+    const { icono, texto } = estadoMusica(m.state);
 
     return (
       <div className="tooltip-contenido">
@@ -72,7 +94,8 @@ export default function NowPlayingHover({ children }) {
         <div className="tooltip-artista">{m.artist || '—'}</div>
         <div className="tooltip-album">{m.album || '—'}</div>
         <div className="tooltip-estado">
-          {m.state === 'playing' ? '▶ Escuchando' : '⏸ Pausado'}
+          <i className={`bi ${icono}`}></i>
+          <span>{texto}</span>
         </div>
       </div>
     );
