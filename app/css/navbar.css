@@ -151,15 +151,15 @@
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  padding: 0.5rem 1rem;
+  padding: 1vh 2.2vh;
   font-weight: bold;
   transition: 500ms;
   white-space: nowrap;
+  font-size: 5vh;
 }
 
 .link i {
   color: #424242;
-  font-size: 5vh;
   width: 4rem;
   margin-right: 1vh;
   text-align: center;
