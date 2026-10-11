@@ -14,6 +14,7 @@ import Tecnologias from './components/tecnologies';
 import Proyectos from './components/projects';
 import Contactame from './components/contactme';
 import Creador from './components/creator';
+import NowPlayingHover from './components/NowPlayingHover';
 
 import { useLanguage } from './context/LanguageContext';
 
@@ -119,11 +120,13 @@ export default function Portafolio() {
             <i className="bi bi-instagram"></i>
           </a>
         </button>
-        <button>
-          <a href="https://music.apple.com/profile/byquesters" target="_blank">
-            <i className="bi bi-apple-music"></i>
-          </a>
-        </button>
+        <NowPlayingHover>
+          <button>
+            <a href="https://music.apple.com/profile/byquesters" target="_blank">
+              <i className="bi bi-apple-music"></i>
+            </a>
+          </button>
+        </NowPlayingHover>
       </div>
   
       <>

@@ -559,3 +559,107 @@ button {
     border-top: 1px solid #424242;
     color: #424242;
 }
+
+
+
+/* MUSICA */
+/* Contenedor principal que envuelve el botón */
+.now-playing-wrapper {
+  position: relative; /* Para posicionar el tooltip */
+  display: inline-block;
+  padding: 1vh;
+}
+
+/* Estilo del tooltip flotante */
+.tooltip-flotante {
+  position: absolute;
+  top: 120%; /* Aparece encima del botón */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #0000001c; /* Fondo oscuro estilo iOS */
+  color: #f5f5f7;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  min-width: 200px;
+  width: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  pointer-events: none; /* Evita que el tooltip interfiera con el hover */
+  transition: opacity 0.2s ease-in-out;
+  border: 1px solid #2a2a321f;
+  backdrop-filter: blur(10px); /* Efecto de desenfoque */
+}
+
+/* Opcional: una pequeña flecha */
+.tooltip-flotante::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #1c1c1e transparent transparent transparent;
+}
+
+/* Estilos del contenido */
+.tooltip-pista {
+  font-weight: 600;
+  color: #040404; /* Rojo de Apple Music */
+  margin-bottom: 4px;
+}
+.tooltip-artista {
+  color: #8e8e93;
+  font-size: 0.8em;
+}
+.tooltip-album {
+  color: #8e8e93;
+  font-size: 0.8em;
+  font-style: italic;
+}
+.tooltip-estado {
+  margin-top: 6px;
+  font-size: 0.75em;
+  color: #d13030; /* Verde */
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.tooltip-cargando, .tooltip-vacio {
+  color: #8e8e93;
+  font-style: italic;
+}
+
+/* Cuando hay canción sonando: icono rojo */
+.now-playing-wrapper.esta-sonando .bi-apple-music {
+  color: #fa2d48 !important;
+  text-shadow: 0 0 10px rgba(250, 45, 72, 0.55);
+  animation: pulso-musica 1.6s ease-in-out infinite;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* También pinta el <a> por si acaso hereda color del botón */
+.now-playing-wrapper.esta-sonando a {
+  color: #fa2d48 !important;
+}
+
+/* Pequeño pulso estilo "está sonando" */
+@keyframes pulso-musica {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.65; }
+}
+
+/* El wrapper necesita position:relative para el tooltip */
+.now-playing-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* Color por defecto cuando no suena nada */
+.now-playing-wrapper:not(.esta-sonando) .bi-apple-music {
+  transition: color 0.3s ease;
+}
