@@ -580,7 +580,7 @@ button {
   color: #f5f5f7;
   padding: 12px 16px;
   border-radius: 12px;
-  font-size: 0.85rem;
+  font-size: 2vh;
   line-height: 1.4;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   z-index: 1000;
@@ -611,21 +611,21 @@ button {
 .tooltip-pista {
   font-weight: 600;
   color: #040404; /* Rojo de Apple Music */
-  margin-bottom: 4px;
 }
 .tooltip-artista {
-  color: #8e8e93;
-  font-size: 0.8em;
+  color: #030303;
+  font-size: 1.5vh;
+  margin-bottom: 5px;
 }
 .tooltip-album {
-  color: #8e8e93;
-  font-size: 0.8em;
+  color: #090909;
+  font-size: 1.2vh;
   font-style: italic;
 }
 .tooltip-estado {
   margin-top: 6px;
-  font-size: 0.75em;
-  color: #d13030; /* Verde */
+  font-size: 1.5vh;
+  color: #e70303;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -637,7 +637,7 @@ button {
 /* Cuando hay canción sonando: icono rojo */
 .now-playing-wrapper.esta-sonando .bi-apple-music {
   color: #fa2d48 !important;
-  text-shadow: 0 0 10px rgba(250, 45, 72, 0.55);
+  text-shadow: 0 0 5px rgba(250, 45, 72, 0.55);
   animation: pulso-musica 1.6s ease-in-out infinite;
   transition: color 0.3s ease, text-shadow 0.3s ease;
 }
@@ -662,4 +662,10 @@ button {
 /* Color por defecto cuando no suena nada */
 .now-playing-wrapper:not(.esta-sonando) .bi-apple-music {
   transition: color 0.3s ease;
+}
+
+.tooltip-estado i{
+  margin-top: 6px;
+  font-size: 1.5vh;
+  color: #fa2d48;
 }

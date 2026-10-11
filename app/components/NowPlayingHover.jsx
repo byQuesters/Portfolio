@@ -90,13 +90,13 @@ export default function NowPlayingHover({ children }) {
 
     return (
       <div className="tooltip-contenido">
-        <div className="tooltip-pista">{m.track || '—'}</div>
-        <div className="tooltip-artista">{m.artist || '—'}</div>
-        <div className="tooltip-album">{m.album || '—'}</div>
         <div className="tooltip-estado">
           <i className={`bi ${icono}`}></i>
           <span>{texto}</span>
         </div>
+        <div className="tooltip-pista">{m.track || '—'}</div>
+        <div className="tooltip-artista">{m.artist || '—'}</div>
+        <div className="tooltip-album">{m.album || '—'}</div>
       </div>
     );
   };
