@@ -573,10 +573,10 @@ button {
 /* Estilo del tooltip flotante */
 .tooltip-flotante {
   position: absolute;
-  top: 120%; /* Aparece encima del botón */
+  top: 120%;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #faf7f71c; /* Fondo oscuro estilo iOS */
+  background-color: #faf7f71c;
   color: #f5f5f7;
   padding: 12px 16px;
   border-radius: 12px;
@@ -589,10 +589,10 @@ button {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  pointer-events: none; /* Evita que el tooltip interfiera con el hover */
+  pointer-events: none;
   transition: opacity 0.2s ease-in-out;
   border: 1px solid #2a2a321f;
-  backdrop-filter: blur(8px); /* Efecto de desenfoque */
+  backdrop-filter: blur(8px); 
 }
 
 /* Opcional: una pequeña flecha */
@@ -610,7 +610,7 @@ button {
 /* Estilos del contenido */
 .tooltip-pista {
   font-weight: 600;
-  color: #040404; /* Rojo de Apple Music */
+  color: #fa2d48; /* Rojo de Apple Music */
 }
 .tooltip-artista {
   color: #030303;
@@ -625,7 +625,7 @@ button {
 .tooltip-estado {
   margin-top: 6px;
   font-size: 1.5vh;
-  color: #e70303;
+  color: #fa2d48;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
