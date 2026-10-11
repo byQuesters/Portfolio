@@ -161,7 +161,7 @@
   color: #424242;
   font-size: 5vh;
   width: 4rem;
-  margin-right: 0.5rem;
+  margin-right: 1vh;
   text-align: center;
   transition: 500ms;
 }
@@ -171,8 +171,8 @@
   opacity: 0;
   transform: translateX(-10px);
   transition: 500ms;
-  font-size: 1.2rem;
-  margin-left: 0.2rem;
+  font-size: 1.2vh;
+  margin-left: 1vh;
   white-space: nowrap;
   transition: 500ms;
 }
